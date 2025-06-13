@@ -457,8 +457,7 @@ In this task, you will be performing the role of the developer and completing th
 
      ![](images/M03/pv114.png)
 
-1. Select **Apps (1)** from the **Objects** menu, then click three dots next to 
- **Developer Compliance Center (2)** and then select **play (3)**. 
+1. Select **Apps (1)** from the **Objects** menu, then click three dots next to **Developer Compliance Center (2)** and then select **play (3)**. 
 
     ![](images/M03/pv115.png)
 
