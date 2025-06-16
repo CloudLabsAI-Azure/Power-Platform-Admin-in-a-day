@@ -488,7 +488,7 @@ In this task, you will be performing the role of the developer and completing th
 
 1. Select **Apps (1)** from the **Objects** menu, then click three dots next to **Developer Compliance Center (2)** and then select **play (3)**. 
 
-    ![](images/M03/pv115.png)
+     ![](images/M03/pv115.png)
 
 1. The application will list all the apps that you are the owner of. The information at the bottom of each card will indicate what is preventing your app from reaching full compliance.
 
