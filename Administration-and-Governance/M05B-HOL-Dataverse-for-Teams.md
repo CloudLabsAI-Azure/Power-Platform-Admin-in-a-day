@@ -402,8 +402,7 @@ In this task, you will be setting up the compliance process for the Governance C
 
 In this task, you will be performing the role of the developer and completing the application information that will be requested by the automated process.
 
-1. When the full process runs the maker will receive an email like the following, with a link to the Developer Compliance Center. For our exercise, we will briefly review and then we will 
-   launch the app from the maker portal.
+1. When the full process runs the maker will receive an email like the following, with a link to the Developer Compliance Center. For our exercise, we will briefly review and then we will launch the app from the maker portal.
 
    ![](images/M03/M3-EX3-T1-S1.png)
 
