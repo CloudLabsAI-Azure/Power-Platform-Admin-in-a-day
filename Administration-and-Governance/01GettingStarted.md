@@ -75,7 +75,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 ## Getting Started with Lab
 
-1. In the JumpVM, click on the **Power Apps** portal shortcut of the Microsoft Edge browser that is available on the desktop.
+1. In the JumpVM, click on the **Power Apps Portal** shortcut of the Microsoft Edge browser that is available on the desktop.
 
     ![](images/gp9.png)
 
