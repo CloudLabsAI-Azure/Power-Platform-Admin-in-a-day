@@ -285,29 +285,29 @@ In this exercise, you will create an environment, and a flow, and then view the 
 
 1. Navigate back to the **Power Platform admin center**.
 
-1. From the left navigation menu, select **Environments (1)** and select **+ New (2)**.
+1. From the left navigation menu, select **Manage (1)** and select **+ New (2)** under the **Environment** tab.
 
-   ![](images/M01/pp19.png)
+   ![](images/M01/e4t111.png)
 
 1. Enter **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (1)** for Name, select Region as **United States - Default (2)**, select **Trial (3)** as Type, select **Yes (4)** for Add a Dataverse data store?, and select **Next (5)**.
 
-   ![](images/po-11.png)
+   ![](images/e4t12.png)
 
 1. Leave the default values for **Language (1)** and **Currency (2)**. Under **Security group** section, select **+ Select (3)**.
 
-    ![](images/M01/pp20.png)
+    ![](images/M01/e4t13.png)
 
 1. Then set your security group to **All Contoso users (1)** and then select **Done (2)**.
 
-   ![](images/M01/pp21.png)
+   ![](images/M01/e4t14.png)
 
 1. Select **Save**.
 
-   ![](images/M01/po7.png)
+   ![](images/M01/e4t15.png)
 
 1. Wait for the environment to be created. Please do **refresh** the page. The state will change to **Ready** when the environment is ready.
 
-    ![](images/po-12.png)
+    ![](images/e4t16.png)
 
 
 ### Task 2: Create a flow to get the weather
@@ -316,7 +316,7 @@ In this exercise, you will create an environment, and a flow, and then view the 
 
    ![](images/M01/ppt13.png)
 
-2. Select **Flows (1)** from the left, select **+ New flow (2)** and select **Scheduled cloud flow (3)**.
+2. Select **Flows (1)** from the left, select **+ New flow (2)** drop down and select **Scheduled cloud flow (3)**.
 
    ![](images/po-13.png)
 
@@ -330,7 +330,7 @@ In this exercise, you will create an environment, and a flow, and then view the 
 
 5. Search for **MSN (1)** and select **Get current weather** MSN Weather **(2)**.
 
-   ![](images/M01/M1-EX4-T2-S5.png)
+   ![](images/M01/e4t25.png)
 
 6. Provide your **Location (1)**, select your preferred **Units (2)**, and select **+ New step (3)**.
 
@@ -344,7 +344,7 @@ In this exercise, you will create an environment, and a flow, and then view the 
 
 9. Select on the Body enter `Current weather for:` **(3)** and select **Location (4)** from the Dynamic content pane.
 
-   ![](images/M01/ppt18.png)
+   ![](images/M01/e4t26.png)
 
 10. Hit the **[ENTER]** key **,** enter **Temperature:** and then select **Temperature** from the Dynamic content pane.
 
@@ -352,11 +352,11 @@ In this exercise, you will create an environment, and a flow, and then view the 
 
 12. You may add other values to the email.
 
-    ![](images/M01/M1-EX4-T2-S10.png)
+    ![](images/M01/e4t27.png)
 
 13. Select **Save**.
 
-    ![](images/M01/po10.png)
+    ![](images/M01/e4t28.png)
 
 14. Go to My Flows by selecting the back arrow button located on the top left of the page.
 
@@ -384,13 +384,17 @@ In this task, you will create an environment-specific DLP and see how it impacts
 
    ![](images/M01/M1-EX4-T3-S1.png)
 
-1. Select **Data policies (1)** under **Policies** and Select **+ New Policy (2)**.
+1. Select **Security (1)** from the left pane, select **Data and privacy(2)** and Select **Data Policy (3)**.
 
-   ![](images/po-15.png)
+   ![](images/e4t29.png)
+
+1. Click on **+New Policy**
+
+    ![](images/e4t10.png)
 
 1. Enter **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (1)** for **Name** and select **Next (2)**.
 
-   ![](images/M01/pp28.png)
+   ![](images/M01/e4t211.png)
 
 1. Search for Microsoft Dataverse, search for **Microsoft Dataverse (1)** then select **Microsoft Dataverse (2)**, and select **Move to Business (3)**. Choose carefully, you may have to expand the Name column to differentiate 
    between connectors in your search results.
