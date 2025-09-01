@@ -162,27 +162,27 @@ In this exercise, you will be exploring the tenant to see what Power Platform as
 
 1. Select **Prebuilt connectors (1)** and review the **Business (2)** connectors.
 
-    ![](images/po-07.png)
+    ![](images/pb.png)
 
 1. Select **Scope (1)** and **Environments (2)** to see how it they are configured.
 
-   ![](images/po-08.png)
+   ![](images/es.png)
 
 1. Once finished, select **Cancel** button in the bottom right to head back to the Data Policies screen.
 
-   ![](images/M01/ppt11.png)
+   ![](images/cancel.png)
 
 1. Select the **Thrive Exception DLP (1)** and select **Edit Policy (2)**.
 
-    ![](images/po-09.png)
+    ![](images/tep.png)
 
 1. Select on the **Prebuilt connectors (1)** and select the **Business (2)** tab. Based on the use case for the Thrive application the connectors in the Business group have been established. You can also see how Scope and Environments are configured to only select the Thrive environments.
 
-    ![](images/M01/pv1.png)
+    ![](images/bui.png)
 
 1. To exit this screen, select the **Cancel** button on the bottom right of the screen again.
 
-    ![](images/M01/pp14.png)
+    ![](images/can.png)
 
 
 ## Exercise 2: Plan an environment strategy
@@ -287,9 +287,9 @@ In this exercise, you will create an environment, and a flow, and then view the 
 
 1. Navigate back to the **Power Platform admin center**.
 
-1. From the left navigation menu, select **Manage (1)** and select **+ New (2)** under the **Environment** tab.
+1. From the left navigation menu, select **Manage (1)**, select **Environment(2)** and then click on **+ New (3)** under the  tab.
 
-   ![](images/M01/e4t111.png)
+   ![](images/newenv.png)
 
 1. Enter **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (1)** for Name, select Region as **United States - Default (2)**, select **Trial (3)** as Type, select **Yes (4)** for Add a Dataverse data store?, and select **Next (5)**.
 
