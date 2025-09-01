@@ -51,37 +51,37 @@ In this exercise, you will be exploring the tenant to see what Power Platform as
 
     >**Note:** If you recieve any feedback pop-up, close it.
 
-1. From the left navigation menu, select **Environments**.
+1. From the left navigation menu, select **Manage**.
 
-    ![](images/pp-2.png)
+    ![](images/M01/manage.png)
 
 2. Review the list of environments. These are the environments that are available for you to manage.
 
-   ![](images/M01/ppt2.png)
+   ![](images/M01/envlist.png)
 
 3. Notice the **Type** column, you can see Fabrikam is already using several types of environments.
 
 4. You can filter and order environments. Select on the **Type (1)** column, select filter by **Production (2)**, and Select **Apply (3)**.
 
-   ![](images/po-04.png)
+   ![](images/M01/2.png)
 
 5. You should now see only the **Production** type environments.
 
-   ![](images/po-03.png)
+   ![](images/M01/prodenv.png)
 
 6. Select on the **Type (1)** column again and filter by **Default (2)** and **Production (3)**, and select **Apply (4)**.
 
-   ![](images/po-02.png)
+   ![](images/M01/dp.png)
 
 7. You should now see **Production** and **Default** environments.
 
 8. Select on the **Environments (1)** column, select **Sort order** by **Ascending (2)**, and select **Apply (3)**.
 
-   ![](images/po-01.png)
+   ![](images/M01/4.png)
 
 9. The list of environments will show **Production** and .**Default** environments ordered by environment name in ascending order.
 
-   ![](images/M01/ppt3.png)
+   ![](images/M01/PDA.png)
 
 10. Now remove the filters, click on **Clear all filters (1)** and then **Apply (2)**. You should see all environments.
 
@@ -90,7 +90,7 @@ In this exercise, you will be exploring the tenant to see what Power Platform as
 11. Next, notice all the environments with **Thrive Hr** in the name. These are a set of environments Contoso uses to manage the lifecycle of their Thrive apps; a suite of employee 
     engagement apps. They are built in Thrive Hr - Dev and then are promoted to Test -> UAT-> Production after testing by your admin team.
 
-    ![](images/M01/pp3.png)    
+    ![](images/M01/envlist.png)    
 
 12. Select on the **Type (1)** and filter by **Default (2)** and then **Apply (3)**.
 
@@ -101,31 +101,31 @@ In this exercise, you will be exploring the tenant to see what Power Platform as
 
 14. Select the default environment by Selecting the name in the list to drill down into the detail page.
 
-    ![](images/M01/ppt4.png)
+    ![](images/M01/denv.png)
 
 15. In the **Access** section, you’ll notice that there are multiple options to choose from, which can be used to determine who has access to which items.
 
 16. Select **See all** under **Security Roles**.
 
-    ![](images/M01/ppt5.png)
+    ![](images/M01/seeallsec.png)
 
 17. From here, you can review all of the **security roles** for your company and manage their access to the company’s data. By default, users have access to all security roles. The business unit currently listed is the same as the tenant and these are assigned to all users by default. Managed roles can be modified to create.
 
-    ![](images/M01/ppt6.png)    
+    ![](images/M01/roles.png)    
 
 18. Use the search box in the top right to enter **Environment Maker (1)**, then select the only result for **Environment Maker (2)** security role.
 
-    ![](images/M01/ppt7.png)
+    ![](images/M01/bu.png)
  
     >**Note:** Notice that the org is listed as the **Business Unit**; this means everyone in the organization will have this role by default. For environments other than the default, you control this. However, default is special and Tenant can’t be removed from the role.
 
 20. Go back to the Environment Details page, by clicking on the **default environment** name.
 
-    ![](images/M01/ppt8.png)
+    ![](images/M01/bu2.png)
 
 21. In the **Resources** section, Select **Power Apps**.
 
-    ![](images/M01/pp9.png)
+    ![](images/M01/pa.png)
 
 22. These are apps built by users in your default environment. Notice many of them are just test names because this is where a lot of users will experiment and build their first app. As you scroll down the list you might notice some names are more deliberate e.g., Product Showcase. Later in the course, we will talk about how to identify these upcoming apps so you can help guide them to ensure they mature and have adequate governance.
 
@@ -134,11 +134,13 @@ In this exercise, you will be exploring the tenant to see what Power Platform as
 
 ### Task 2: Review existing Data policies
 
-1. From the left navigation menu, expand **Policies** and select **Data policies (1)**.
+1. From the left navigation menu, expand **Security(1)**, then click on **Data and privacy (2)** and select **Data policy (3)**.
 
-    ![](images/ppt10-01.png)
+    ![](images/M01/datpol.png)
 
 1. Review the list of existing policies **(2)**.
+
+    ![](images/M01/expol.png)
 
     - As the login you are using is not a tenant admin but only an environment admin, you will see policies that impact environments of which you are a member.
 
@@ -150,13 +152,13 @@ In this exercise, you will be exploring the tenant to see what Power Platform as
 
 1. Notice that the **Contoso Global DLP** policy is intended to span all environments (except selected ones) and represents the Global DLP policy. In this lab environment, the **Contoso Global DLP** policy has 4 environments selected instead of "All except 4".
 
-1. You will also notice a DLP for **Thrive Exceptions**. That team had worked with the IT department to agree on exceptions they needed for their environments and their environment would be excluded from the Contoso Global DLP. This exception DLP policy would have their environments included and apply only to them.
+1. You will also notice a DLP for **Thrive Exceptions DLP**. That team had worked with the IT department to agree on exceptions they needed for their environments and their environment would be excluded from the Contoso Global DLP. This exception DLP policy would have their environments included and apply only to them.
 
    ![](images/po-05.png)
 
 1. Select the **Contoso Global DLP (1)** and select **Edit Policy (2)**.
 
-   ![](images/po-06.png)
+   ![](images/M01/poledit.png)
 
 1. Select **Prebuilt connectors (1)** and review the **Business (2)** connectors.
 
