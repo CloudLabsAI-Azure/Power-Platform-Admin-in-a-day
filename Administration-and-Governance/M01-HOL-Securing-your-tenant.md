@@ -384,13 +384,13 @@ In this task, you will create an environment-specific DLP and see how it impacts
 
    ![](images/M01/M1-EX4-T3-S1.png)
 
-1. Select **Security (1)** from the left pane, select **Data and privacy(2)** and Select **Data Policy (3)**.
+1. Select **Security (1)** from the left pane, select **Data and privacy(2)** and click **Data Policy (3)**.
 
-   ![](images/e4t29.png)
+   ![](images/M01/e4t29.png)
 
-1. Click on **+New Policy**
+1. Click on **+ New Policy**
 
-    ![](images/e4t10.png)
+    ![](images/M01/e4t10.png)
 
 1. Enter **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (1)** for **Name** and select **Next (2)**.
 
