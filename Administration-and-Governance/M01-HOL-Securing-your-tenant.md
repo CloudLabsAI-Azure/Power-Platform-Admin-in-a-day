@@ -401,37 +401,37 @@ In this task, you will create an environment-specific DLP and see how it impacts
 1. Search for Microsoft Dataverse, search for **Microsoft Dataverse (1)** then select **Microsoft Dataverse (2)**, and select **Move to Business (3)**. Choose carefully, you may have to expand the Name column to differentiate 
    between connectors in your search results.
 
-   ![](images/M01/pp29.png)
+   ![](images/mtb.png)
 
 1. Search for SharePoint, select **SharePoint (1)** and select **Move to Business (2)**.
 
-   ![](images/po-16.png)
+   ![](images/stb.png)
 
 1. Search for **Outlook (1)**, select **Office 365 Outlook (2)** and select **Move to Business (3)**.
 
-   ![](images/po-17.png)
+   ![](images/otb.png)
 
 1. Select the **Business** tab.
 
 1. You should now have three connectors moved to Business. Select **Next**.
 
-   ![](images/M01/po14.png)
+   ![](images/M01/bnext.png)
 
 1. Skip the Custom connector by Selecting the **Next** button, we won’t be using any in this example.
 
 1. Select **Add multiple environments (1)** from the options, then select **Next (2)**.
 
-    ![](images/po-18.png)
+    ![](images/multenv.png)
 
 1. Choose the environment you created **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (1)** and select **+ Add to Policy (2)**.
 
-    ![](images/M01/ppt15.png)
+    ![](images/envpol.png)
 
 1. Once done, select **Next**.
 
 1. Review the policy, to make sure you have **(3) Business** connectors added, and only one **Environment** selected and select **Create policy**.
 
-    ![](images/po-19.png)
+    ![](images/cp.png)
 
 1. From the **Power Apps** portal, click on **Power Platform (1)** and then select **Power Automate (2)**.
 
