@@ -37,17 +37,17 @@ collect additional information allowing it to be tailored to your individual org
 
 1. Navigate to **Microsoft Forms** with the following link https://forms.office.com/Pages/DesignPageV2.aspx?prevsubpage=design and if prompted, close the pop up screen.
 
-2. Select **+ New Form**.
+2. Select **Registration**.
 
-   ![](images/M02/pp52.png)
+   ![reg](images/M03/Regmsform.png)
 
 3. Select the **Untitled Form** Header.
 
-   ![](images/M02/pp53.png)
+   ![untitiled](images/M03/untform.png)
 
 4. Enter **New Environment Approval Request (1)** for title, enter **New environment request (2)** for description, and select **+ Quick start with (3)**.
 
-   ![](images/M02/pp55.png)
+   ![](images/M03/form2.png)
 
 5. Create the **Form** below, by following the below steps.
 
@@ -55,33 +55,33 @@ collect additional information allowing it to be tailored to your individual org
 
 6. Select **Text**.
 
-   ![](images/M03/pp56.png)
+   ![](images/M03/text.png)
 
 7. Enter **Environment Name (1)**, make the question **Required (2)**, and select **+ Add new question (3)**.
 
-   ![](images/M03/pp57.png)
+   ![](images/M03/addq.png)
 
 8. Select **Text** again.
 
 9. Enter **Business Justification (1)**, select **Long Answer (2)**, and make it **Required (3)** then select **+Add new question (4)**
 
-   ![](images/M03/pp58.png)
+   ![](images/M03/q2.png)
 
 10. Select **Text**.
 
 11. Enter **What connectors will you use? (1)** select **Long Answer (2)** and make it **Required (3)**.
 
-    ![](images/M03/pp59.png)
+    ![](images/M03/q3.png)
 
 12. The form will be saved automatically.
 
 13. Select **Preview**.
 
-    ![](images/M03/pp60.png)
+    ![](images/M03/pr.png)
 
 14. You can see the created form.
 
-    ![](images/M03/pp61.png)
+    ![](images/M03/cf.png)
 
 
 ## Exercise 2: Create Environment on Form Submit
@@ -96,17 +96,17 @@ In this exercise, you will be building the automated flow to process new form su
 
 1. Navigate to the **Power Platform admin center**.
 
-1. Navigate to **Environment (1)**, select the sandbox environment that you created in module one named **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (2)** in the list of environments.
+1. Navigate to **Environment**, select the sandbox environment that you created in module one named **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** in the list of environments.
 
-   ![](images/ppp1.png)
+   ![](images/sandenv.png)
 
 1. Select the **Delete** button.
 
-   ![](images/ppp2.png)
+   ![](images/sdel.png)
 
 1. Confirm the deletion by typing the environment name **(1)** and then select **Confirm (2)**. We have to delete it to create another Trial environment, which we can only have one at a time.
 
-   ![](images/ppp3.png)
+   ![](images/sdel2.png)
 
     >**Note**: Environment deletion might take some time, please wait until its get deleted.
 
@@ -145,9 +145,11 @@ In this exercise, you will be building the automated flow to process new form su
 
    ![](images/M03/pp67.png)
 
-1. Select **New Environment Approval Request (1)** for **Form Id** and click on the **dynamic content (2)** symbol to select **Response Id**. 
+1. Click on the **get response details** and Select **New Environment Approval Request (1)** for **Form Id** and click on the **dynamic content (2)** symbol to select **Response Id**. 
 
     ![](images/M03/pp68.png)
+
+    >**Note:** Please signin with ODL user credentials if prompted.
 
 1. Select the **Response Id** from the Dynamic content pane.    
 
@@ -367,15 +369,15 @@ In this exercise, you will be building the automated flow to process new form su
 
 1. Select **Collect responses**.
 
-   ![](images/M03/pp105.png)
+   ![](images/colresp.png)
 
 1. **Copy** the link.   
 
-   ![](images/M03/M3-EX2-T4-S2-1.png)
+   ![](images/cl.png)
 
 1. Paste the link in the browser and navigate to it.
 
-   ![](images/M03/pp106.png)
+   ![](images/form.png)
 
 1. The form should load, provide the following details and then click on **Submit (4)**.
 
@@ -383,7 +385,7 @@ In this exercise, you will be building the automated flow to process new form su
    - Business Justification: **We will use this Environment for training new employees (2)**
    - What connector will you use: **Microsoft Dataverse (3)**. 
 
-     ![](images/M03/pp107.png)   
+     ![](images/formfill.png)    
    
     >**Note**: For this course, we will be using this environment we created here later in another lab to deploy the Device Ordering solution using Azure Dev Ops, for that lab it will serve as the Test environment which is why we are suggesting naming it Central Apps Test. In real word use, most likely it would be a team/project development environment that would be requested using a form like this.
 
@@ -419,11 +421,11 @@ In this exercise, you will be building the automated flow to process new form su
 
 1. Navigate to the **Power Platform admin center**, and select **Environments (1)**. Click on **Refresh (2)** The new environment **Central Apps Test** should be listed there **(3)**.
 
-    ![](images/M03/pv50.png)
+    ![](images/cat.png)
 
 1. You should also get an email.
  
-    ![](images/M03/pp112.png)
+    ![](images/email.png)
 
 1. You may test for request rejection if you like.
 
