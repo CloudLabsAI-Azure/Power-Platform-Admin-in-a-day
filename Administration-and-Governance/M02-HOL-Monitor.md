@@ -30,21 +30,17 @@ Now in this exercise, you will explore the out-of-the-box analytics that are ava
 
 1. Navigate to **Power Platform admin center**.
 
-2. Select **Analytics **(1)**> Power Apps (2)**.
+2. Select **Monitor (1)** from the left pane, then select **Power Apps (2)** and click on the **Open settings (3)**
 
-    ![](images/M02/pp120.png)
+    ![](images/paop.png)
 
-3. Select the **Overview (1)** tab and select **Enable (2)** to redirect to the Analytics pane.
+3. **Enable (1)** the Tenant-level analytics  and click on **Save(2)**. Navigate back to Monitor and select the Power apps
 
-   ![](images/M02/pp121.png)
-
-4. In the Analytics pane, grant consent for tenant-level analytics by enabling the **Tenant-level analytics** feature and select **Save**.
-
-   ![](images/M02/tenant-save1.png)
+   ![](images/enableana.png)
 
    >**Note**: Once enabled, this feature aggregates data from environments across all regions in your tenant and copies it into the default environment region for tenant-level reporting. A tenant-level administrator role is required for the one-time operation of granting consent for tenant-level analytics.
 
-5. The **Overview** tab displays a message indicating that tenant-level analytics has been enabled. **Typically, these reports are displayed within 24-48 hours of enabling the feature**.
+4. The **Overview** tab displays a message indicating that tenant-level analytics has been enabled. **Typically, these reports are displayed within 24-48 hours of enabling the feature**.
 
    ![](images/M02/pp122.png)
 
@@ -234,21 +230,17 @@ In this exercise, you will configure Dataverse logging for a table that requires
 
     ![](images/po-46.png)
 
-1. Navigate to **Power Platform admin center** and select **Environments**.
+1. Navigate to **Power Platform admin center** and select **Manage(1)**, click on **Environments (2)**, Select the **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (3)** environment and select **Settings (4)** from the ribbon at the top.
 
-    ![](images/po-47.png)
+    ![](images/sand.png)
 
-1. Select the **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (1)** environment and select **Settings (2)** from the ribbon at the top.
+1. Expand **Audit and logs(1)** section and select **Audit settings(2)**.
 
-    ![](images/M02/po22.png)
-
-1. Expand **Audit and logs** section and select **Audit settings**.
-
-    ![](images/po-48.png)
+    ![](images/audit.png)
 
 1. Check on **Start auditing (1)** checkbox, select **Save (2)** and select **Cancel** to close.
 
-    ![](images/M02/pp134.png)
+    ![](images/startaduit.png)
 
 ### Task 2: Test auditing
 
@@ -317,11 +309,12 @@ Now in this exercise, you will explore the following key components:
 
    ![](images/M02/M2-EX3N-T1-S1.png)
 
+    >**Note:** Ensure your Power apps environment is in **Power Platform COE**.
 3. The App Source install experience will launch the **Power Platform admin center** and ask you to identify the target Environment. Close the popups and continue.
 
 4. Choose the **Power Platform COE (1)** Environment, review and agree to the two agreement checkboxes **(2)(3)**, then select the **Install (4)** button to continue.
 
-    ![](images/M02/pv5.png)
+    ![](images/createinst.png)
 
 1. Installation may take some time; meanwhile, you can continue with the next steps.
 
@@ -371,9 +364,13 @@ Now in this exercise, you will explore the following key components:
 
     > **Note:** The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit. 
 
-1. Before proceeding to the next step, navigate back to the **Power Platform Admin Center**, **Refresh (1)** the portal and make sure that **CoE Kit** is installed.
+1. Before proceeding to the next step, navigate back to the **Power Platform Admin Center**, **Refresh** the portal and navigate to the **Power Platform COE** environment and select **Dynamic 365 apps**.
 
-    ![](images/M02/ppm1.png)
+    ![](images/M02/dy365.png)
+
+1. Ensure the **Creator Kit** is installed 
+
+    ![](images/M02/ckinst.png)
 
 1. Navigate back to the [Power Apps](https://make.powerapps.com/) portal.
 
