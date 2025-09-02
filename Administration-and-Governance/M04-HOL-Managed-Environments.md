@@ -49,11 +49,11 @@ In this exercise, you will be shifting a pre-made environment from an unmanaged 
 
 1. On the **Add Dataverse** page, click on **+ Select** under **Security group**.
 
-   ![](images/M04/p4p2.png)
+   ![](images/M04/selsg.png)
 
 1. Set the **Security group** to **None (1)** then select **Done (2)**.
 
-   ![](images/M04/p4p3.png)
+   ![selsg](images/M04/m41.png)
 
 1. Enable **Dynamics 365 apps (1)**, and select **Save (2)**.
 
