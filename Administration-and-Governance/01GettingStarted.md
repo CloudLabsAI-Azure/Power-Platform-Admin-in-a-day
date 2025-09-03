@@ -28,6 +28,14 @@ By the end of this lab, you will be able to:
 - Basic understanding of Power Apps, Power Automate, and Microsoft Dataverse.
 - General knowledge of environment management, data governance, and DLP (Data Loss Prevention) policies.
 
+
+## Architecture 
+
+
+## Architecture Diagram 
+
+
+
 ## Getting Started with the Lab
  
 ### Accessing Your Lab Environment
