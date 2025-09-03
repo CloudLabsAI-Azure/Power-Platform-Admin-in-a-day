@@ -49,6 +49,7 @@ This architecture diagram explores the Power Platform ecosystem and its governan
 
 - **Security Roles**: Define permissions for users. With roles, you control who can view, edit, or manage apps and flows, keeping access restricted and safe.
 
+- **Microsoft Teams** : A collaboration and communication platform that integrates chat, meetings, file sharing, and apps in one place.
   
 ## Getting Started with the Lab
  
