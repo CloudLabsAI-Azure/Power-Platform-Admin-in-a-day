@@ -2,7 +2,7 @@
 
 # M06-Explore the CoE Starter Kit (Optional)
 
-### Estimated Duration: 75 minutes
+### Estimated Duration: 75 Minutes
 
 ## Lab Scenario
 In this lab, you will explore the Center of Excellence (CoE) Starter Kit—a powerful toolkit that helps you manage, govern, and nurture Power Platform adoption within your organization. You’ll learn how to leverage insights from the CoE dashboard, track connector usage, review audit logs, and apply compliance processes to applications.
@@ -36,7 +36,7 @@ Now in this exercise, you will explore the following key components:
 
 ### Task 1: Explore the Power Platform Admin View app
 
-1. Navigate to **Power Apps maker portal**.
+1. Navigate to **Power Apps**.
 
 2. Select the **Power Platform CoE** environment in the environment selector.
 
@@ -78,11 +78,11 @@ Now in this exercise, you will explore the following key components:
 
     ![](images/M02/pv98.png)
 
-13. The **Used in (1)** tab quickly shows you what apps are using this connector in all environments in your tenant **(2)**.
+13. The **Used in app (1)** tab quickly shows you what apps are using this connector in all **environments (2)** in your tenant.
 
     ![](images/M02/pv99.png)
 
-14. Select **Users (1)**, then **Makers (2)** from the left navigation; this shows you all the people who have built apps in your company.
+14. Select **Users (1)**, then **Makers (2)** from the left navigation; this shows you all the **people (3)** who have built apps in your company.
 
     ![](images/M02/pv101.png)
 
@@ -134,7 +134,7 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
     ![](images/M02/pt5.png)
 
-1. Click on the Acoount manager icon **(1)** from the top right corner and then click on **Free trial (2)**.
+1. Click on the **Acoount manager icon (1)** from the top right corner and then click on **Free trial (2)**.
 
     ![](images/M02/pt6.png)
 
@@ -166,7 +166,7 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
     ![](images/M02/pt11.png)
 
-1. Path for Report : `C:\Users\demouser\Downloads\CoEStarterKit` **(1)**. Select **Production_CoEDashboard_MMMYY.pbit** **(1)**, and then **Open (2)**. 
+1. Path for Report : `C:\Users\demouser\Downloads\CoEStarterKit` **(1)**. Select **Production_CoEDashboard_MMMYY.pbit** **(2)**, and then **Open (3)**. 
 
     ![](images/M02/pv100.png)
 
@@ -192,7 +192,7 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
      a) Select **File** at the top right, then select **Options and Settings > Options**.
    
-     ![](images/M02/M2-EX3-T2-S22-A.png)
+     ![](images/opt.png)
    
      b) Select **Security (1)** from the left.
    
@@ -212,7 +212,7 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
     more engaged with building apps. You can also quickly see which environments are most active. Additionally, items that are detailed as **(Blank)** indicate that there is no data to 
     reference in the table.
 
-    ![](images/M02/M2-EX3-T2-S24.png)
+    ![](images/M2-EX3-T2-S24.png)
 
 1. Review each page using the navigation at the bottom of the app and review the insights available.
 
@@ -248,7 +248,7 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
      ![](images/M02/pv110.png)
 
-1. Once the report loads, select the Environments page. Use any filters to visualize data.
+1. Once the report loads, select the **Environments** page. Use any filters to visualize data.
      ![](images/M02/M2-EX3-T2-S37-1.png)
 
 1. You have now successfully deployed the Power BI reports that come with the CoE starter kit.
@@ -301,15 +301,15 @@ In this exercise, you will be using the log search and alert tools to work with 
 
 1. Select **Search** using the default search criteria.
 
-   ![](images/M02/M2-EX6-T1-S3.png)
+   ![](images/M2-EX6-T1-S3.png)
 
 1. The **Job Status** will read as **Queued** once it has been set to process. **Refresh** the audit every few minutes or so until the status reads as **Completed**.
 
-   ![](images/M02/M2-EX6-T1-S5.png)
+   ![](images/M2-EX6-T1-S5.png)
 
 1. Select the Search name, which defaults to the audit date if no name has been inputted.
 
-   ![](images/M02/M2-EX6-T1-S6.png)
+   ![](images/M2-EX6-T1-S6.png)
 
     >**Note**: Portal will be updating your organization to support customization. So it might take around 24 to 48 hours to show the data and activities.
 
@@ -319,7 +319,7 @@ In this exercise, you will be using the log search and alert tools to work with 
 
 1. Review the items displayed; drill into a few of them to see the type of data available.
 
-   ![](images/M02/M2-EX6-T1-S7.png)
+   ![](images/M2-EX6-T1-S7.png)
 
 1. Select **Export** if you’d like to download the data for later viewing. Using export, you can open the data in other tools for analysis.
 
@@ -331,11 +331,11 @@ In this exercise, you will be using the log search and alert tools to work with 
 
 1. Select **Audit search** breadcrumb at the top of the page to navigate back to the search. This will not interrupt the export.
 
-    ![](images/M02/M2-EX6-T1-S10.png)
+    ![](images/M2-EX6-T1-S10.png)
 
 1. Select the **Activities** dropdown and select all Power Apps and Power Automate activities.
 
-    ![](images/M02/M2-EX6-T1-S11.png)
+    ![](images/M2-EX6-T1-S11.png)
 
 1. Select **Search** again and review the results once the status is Completed.
 
@@ -371,7 +371,7 @@ app, like business justification and the impact of an outage, from the maker.
 ### Task 1: Setup compliance process
 In this task, you will be setting up the compliance process for the Governance Components application that you installed in the previous lab.
 
-1. Now return to the tab where your **“Center of Excellence - Core Components”** solution is open.
+1. Now return to the tab where your **Center of Excellence - Core Components** solution is open.
 
 1. Open the CoE Setup and Upgrade Wizard app. Click **Apps** **(1)**, Click the three ellipses (⋯) next to the **CoE Setup and Upgrade Wizard** **(2)**. Select **Play** **(3)** to launch the app.
 
@@ -436,7 +436,7 @@ In this task, you will be performing the role of the developer and completing th
 
 1. If enabled, select **Save** at the top right.
 
-    ![](images/M03/M3-EX3-T1-S8.png)
+    ![](images/M3-EX3-T1-S8.png)
 
 1. Then select **Publish**.    
 
@@ -444,11 +444,11 @@ In this task, you will be performing the role of the developer and completing th
 
 1. From here, we can review the changes we made to the description as well as the app name and icon associated with it. Select **Publish this version**.
 
-    ![](images/M03/M3-EX3-T1-S9.png)
+    ![](images/M3-EX3-T1-S9.png)
 
 1. Wait for the publishing to complete, then select the **Back** button.
 
-     ![](images/M03/M3-EX3-T1-S10.png)
+     ![](images/M3-EX3-T1-S10.png)
 
 1. Select the Current environment **(1)** then Switch to the **Power Platform COE (2)** environment.
 
