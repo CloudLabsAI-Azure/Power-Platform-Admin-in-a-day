@@ -2,7 +2,7 @@
 
 # M05A-HOL-Power Apps in Teams
 
-### Estimated Duration: 45 minutes
+### Estimated Duration: 45 Minutes
 
 ## Lab Scenario
 
@@ -50,7 +50,7 @@ In this lab, you will complete the following exercises:
 
 1. Do the same for the rest of the users up to **Lab User10** and then select **Add**. (You will have **Lab User01 - Lab User05** selected to be added to the Team).
 
-1. Change all the users to have the role of **Owner (1)** to make them **co-owners** of the team and then click on **Create (2)**
+1. Change all the users to have the role of **Owner (1)** to make them **co-owners** of the team and then click on **Add (2)**
 
    ![](images/M05/p5p4.png)
 
@@ -68,7 +68,7 @@ In this lab, you will complete the following exercises:
 
    ![](images/M05/p5p7.png)
 
-1. Select the **Central IT (2)** team and then select **Create (2)**.
+1. Select the **Central IT (1)** team and then select **Create (2)**.
 
    ![](images/M05/p5p8.png)
 
@@ -78,7 +78,7 @@ In this lab, you will complete the following exercises:
 
     >**Note**: As your creating the App for the first time t might take around 10-15 minutes to create please wait.
 
-1. Please keep checking on the **Activity (1)** section, where you will get the notification once the App is ready then you can build the app **(2)**.
+1. Please keep checking on the **Activity (1)** section, where you will get the notification once the **App is ready then you can build the app (2)**.
 
    ![](images/M05/ppt51.png)
 
@@ -112,7 +112,7 @@ In this task, you will create an application, and a table, and add new columns t
 
 1. Select **Power Apps (1)** from the navigation bar, then select the **Home (2)** tab and choose **Start now (3)**.
 
-   ![](images/M05/M5B-EX1-T2-S3.png)
+   ![](images/papst.png)
 
 1. Select the **Central IT (1)** team and then select **Create (2)**.
 
@@ -124,9 +124,9 @@ In this task, you will create an application, and a table, and add new columns t
 
     >**Note**: You will be able to name the app only after the app is created that will take around 10-15 minutes as mentioned in the previous task. After 10-15 mins, please re perform **Step 1 to 2**. You will be able to provide the App name.
 
-1. Select **Add data (1)**, and then select **+ Create new table (2)**.
+1. Select **With data (1)**, and then select **+ Create new table (2)**.
 
-   ![](images/M05/M5B-EX1-T2-S6.png)
+   ![](images/M5B-EX1-T2-S6.png)
 
 1. On the **Create table** pane, select **Start with a blank table**.
 
@@ -168,7 +168,7 @@ In this task, you will create an application, and a table, and add new columns t
 
     ![](images/M05/p5p19.png)
 
-1. Select the first cell within the **Name** column, type **Ergonomic office chair**, enter a description within the **Description** cell and select today’s date for the **Requested date** cell.
+1. Select the first cell within the **New column**, type **Ergonomic office chair**, enter a description within the **Description** cell and select today’s date for the **Requested date** cell.
  
     ![](images/M05/p5p20.png)
 
@@ -182,7 +182,7 @@ In this task, you will create an application, and a table, and add new columns t
 
      ![](images/M05/p5p21.png)
 
-1. Select **Add data (1)** and then choose **Lab 01 Requests (2)**.     
+1. Select **With data (1)** and then choose **Lab 01 Requests (2)**.     
 
     ![](images/M05/p5p22.png)
 
@@ -194,7 +194,7 @@ In this task, you will create an application, and a table, and add new columns t
 
 1. Select **Preview**.
 
-    ![](images/M05/M5B-EX1-T2-S17.png)
+    ![](images/preee.png)
 
 1. The app should start in a preview. Select **+ New record**.
 
@@ -212,7 +212,7 @@ In this task, you will create an application, and a table, and add new columns t
 
 1. **Close** the preview.
 
-    ![](images/M05/M5B-EX1-T2-S21.png)
+    ![](images/closepre.png)
 
 1. Select **Publish to Teams**.
 
@@ -226,7 +226,7 @@ In this task, you will create an application, and a table, and add new columns t
 
     ![](images/M05/p5p26.png)
 
-1. From the navigation bar, select **Chat (1)**, then click on **Central IT channel (2)**. Locate the app tab you added and select it **(3)**. The app should load.
+1. From the navigation bar, select **Chat (1)**, then click on **Central IT channel (2)**. Locate the app tab you added and select it **Special Request Lab 01(3)**. The app should load.
 
    ![](images/M05/ppt54.png)
 
