@@ -212,11 +212,9 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
     ![](images/M02/pv108.png)
 
-1. Select the **Overview – Power Apps** tab, notice it gives a good high-level look at our tenant activity. If you have multiple locations, it will quickly highlight which users are 
-    more engaged with building apps. You can also quickly see which environments are most active. Additionally, items that are detailed as **(Blank)** indicate that there is no data to 
-    reference in the table.
+1. Select the **Overview – Power Apps** tab, notice it gives a good high-level look at our tenant activity. If you have multiple locations, it will quickly highlight which users are more engaged with building apps. You can also quickly see which environments are most active. Additionally, items that are detailed as **(Blank)** indicate that there is no data to reference in the table.
 
-    ![](images/M2-EX3-T2-S24.png)
+    ![](images/M02/M2-EX3-T2-S24.png)
 
 1. Review each page using the navigation at the bottom of the app and review the insights available.
 
