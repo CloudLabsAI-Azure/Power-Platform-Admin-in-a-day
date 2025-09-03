@@ -780,4 +780,4 @@ In this lab, you have accomplished the following:
 - Exercise 3 – Welcome New Makers (Optional if you have time)
 
 
-### You have successfully completed this Module.
+### You have successfully completed this module.
