@@ -50,13 +50,13 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![Manage Your Virtual Machine](images/gp1.png)
+![Manage Your Virtual Machine](images/updtenv.png)
  
 ### Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![Manage Your Virtual Machine](images/gp2.png)
+![Manage Your Virtual Machine](images/updatedsplit.png)
  
 ### Managing Your Virtual Machine
  
