@@ -282,4 +282,4 @@ In this lab, you have accomplished the following:
 - Exercise 2 - Create your first app
 - Exercise 3 - Share your app
 
-### You have successfully completed this lab.   
+### You have successfully completed this module.   

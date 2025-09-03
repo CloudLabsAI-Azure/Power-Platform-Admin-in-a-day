@@ -555,5 +555,5 @@ In this lab, you have accomplished the following:
 - Exercise 2 – Configured Dataverse logging for a table
 - Exercise 3 - Set up inventory components
 
-### You have successfully completed this Module.
+### You have successfully completed this module.
 

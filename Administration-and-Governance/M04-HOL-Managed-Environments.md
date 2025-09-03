@@ -648,4 +648,4 @@ In this lab, you have accomplished the following:
 - Exercise 2 – Power Platform Pipelines
 
 
-### You have successfully completed this lab.
+### You have successfully completed this module.
