@@ -31,6 +31,8 @@ In this exercise, you will be shifting a pre-made environment from an unmanaged 
 
 #### Task 1: Create a Managed Environment
 
+In this task you will, provision a sandbox with Dataverse, enable the managed environment setting, configure sharing limits, solution checker, usage insights, and add custom maker welcome content.
+
 1. Navigate to the **Power Platform Admin Center** (https://aka.ms/ppac).
 
 1. Select **Manage (1)** ,then select **Environments (2)**, then click on **+ New (3)** to create a new environment.
@@ -414,6 +416,7 @@ Power BI reports. Pipelines can deploy solutions, connections, connection refere
 
 ### Task 1: Configure a deployment pipeline
 
+In this task you will, enable managed environments, install the Power Platform Pipelines app, capture environment IDs, register Dev/Test/Prod in Dataverse, and create a pipeline with deployment stages
 
 #### 1A: Add the environments to the database.
 
@@ -525,6 +528,8 @@ Power BI reports. Pipelines can deploy solutions, connections, connection refere
 1. Do not navigate away from this page.
 
 ### Task 2: Run the pipeline
+
+In this task you will, import a sample solution, run the pipeline to deploy from Dev to Test and then to Prod, test immediate vs. scheduled deployments, and use the Deployment Pipeline Configuration app to monitor, edit, or cancel runs.
 
 1. Navigate to **Power Apps** in a new tab.
 
