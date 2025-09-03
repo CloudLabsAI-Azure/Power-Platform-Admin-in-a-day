@@ -20,6 +20,8 @@ In this lab, you will complete the following exercises:
 
 ### Task 1: Create a team
 
+In this task you will, create a private team named Central IT, add Lab Users 01–10 as members, and promote them to co-owners. 
+
 1. Navigate to **Microsoft Teams**, using the following link https://teams.microsoft.com/v2/. 
 
 1. If prompted, log in with the lab credentials.
@@ -55,6 +57,8 @@ In this lab, you will complete the following exercises:
    ![](images/M05/p5p4.png)
 
 ### Task 2: Create an app
+
+In this task you will, open Power Apps inside Teams, select the Central IT team, and create a new app
 
 1. From the left navigation pane, click on **Apps (1)**, search for **Power Apps (2)** then select **Open (3)**.
 
