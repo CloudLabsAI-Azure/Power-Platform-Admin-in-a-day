@@ -2,7 +2,7 @@
 
 # M04-HOL- Managed Environments
 
-### Estimated Duration: 80 minutes
+### Estimated Duration: 80 Minutes
 
 ## Lab Scenario
 
@@ -31,11 +31,13 @@ In this exercise, you will be shifting a pre-made environment from an unmanaged 
 
 #### Task 1: Create a Managed Environment
 
+In this task you will, provision a sandbox with Dataverse, enable the managed environment setting, configure sharing limits, solution checker, usage insights, and add custom maker welcome content.
+
 1. Navigate to the **Power Platform Admin Center** (https://aka.ms/ppac).
 
-1. Select **Environments (1)**, then select **+ New (2)** to create a new environment.
+1. Select **Manage (1)** ,then select **Environments (2)**, then click on **+ New (3)** to create a new environment.
 
-   ![](images/M04/p4p1.png)
+   ![](images/M04/1.png)
 
 1. On the **New Environment** page,
 
@@ -45,31 +47,31 @@ In this exercise, you will be shifting a pre-made environment from an unmanaged 
    - Select the toggle to 
    enable adding a Dataverse data store **(4)** - Then select **Next (5)**
 
-     ![](images/M04/p4p39.png)
+     ![](images/M04/m42.png)
 
 1. On the **Add Dataverse** page, click on **+ Select** under **Security group**.
 
-   ![](images/M04/p4p2.png)
+   ![](images/M04/selsg.png)
 
 1. Set the **Security group** to **None (1)** then select **Done (2)**.
 
-   ![](images/M04/p4p3.png)
+   ![selsg](images/M04/m41.png)
 
 1. Enable **Dynamics 365 apps (1)**, and select **Save (2)**.
 
-   ![](images/M04/p4p4.png)
+   ![](images/M04/dyn.png)
 
 1. Click refresh and check for the environment to be provisioned and marked as Ready.
 
     >**Note**: You can also refresh the portal to check for the environment
 
-1. Click on the **Environment (1)** then select **Managed Environment-<inject key="Deployment ID" enableCopy="false" />** Environment.
+1. In the **Environments** tab select **Managed Environment-<inject key="Deployment ID" enableCopy="false" />** Environment.
 
-   ![](images/M04/p4p5.png)
+   ![](images/M04/mgdenv.png)
 
 1. Select **Enable managed environment** to start the configuration process for this environment.
 
-   ![](images/M04/p4p6.png)
+   ![](images/M04/enmgenv.png)
 
     >**Note**: Administrators seeking to create or edit managed environments must have the Global Administrator role, Power Platform Administrator role, or the Dynamics 365 admin Microsoft Entra ID    Directory role. Delegated admins or Environment Admins will not be able to enable or edit managed environments. At the top of the panel that appears, the system informs you that a 
    particular license is required to use the resources. While an unmanaged environment will allow users to interact with resources freely, a managed environment prevents them 
@@ -81,11 +83,11 @@ In this exercise, you will be shifting a pre-made environment from an unmanaged 
 
     b. Select the **Limit individuals… (3)** checkbox and set the limit number to **3 (4)**
 
-     ![](images/M04/p4p7.png)    
+     ![](images/M04/m4manage.png)    
 
     c. Set Solution Checker to **Warn**. This will validate any custom solutions being imported to the environment. 
 
-      ![](images/M04/p4p8.png) 
+      ![](images/M04/m4sol.png) 
 
     d. Leave the **Usage insights** checked. This item is selected by default. 
 
@@ -99,15 +101,13 @@ In this exercise, you will be shifting a pre-made environment from an unmanaged 
        2. **Contribute ideas:** Submit an idea for a new app or flow idea at [Suggestion box]() 
        3. **Learn from others:** [Top tips]() by expert makers at Contoso
 
-      ![](images/M04/p4p9.png) 
+      ![](images/M04/seepr.png) 
 
     f. Leave data policies as it is. We will alter and review these later. 
 
-      ![](images/M04/M4-EX1-T1-S8.png)
-
     g. Select **Enable** once complete.
 
-      ![](images/M04/M4-EX1-T1-S9.png)
+      ![](images/M04/m4enable.png)
 
 1. A green banner will appear at the top notifying you of the successful update.
 
@@ -179,17 +179,17 @@ checker enforcer, follow this link (https://learn.microsoft.com/en-us/power-apps
 
 1. Select **Environments (1)**, then click **Managed Environment-<inject key="Deployment ID" enableCopy="false" /> (2)**.
 
-   ![](images/M04/p4p5.png)
+   ![](images/M04/mngenvi.png)
 
 1. Select **Edit Managed Environments** from the ribbon at the top of the page.
 
-   ![](images/M04/ppm14.png)
+   ![](images/M04/editmgenv.png)
 
 1. Change the **Solution checker** slider to **Block (1)**, then select **Save (2)**.
 
-    ![](images/M04/p4p15.png)
+    ![](images/M04/m4sec.png)
 
-1. Navigate back to the Power Apps **Solutions (1)** page. Click on **Managed (2)**. Then select the **three dots (3)** next to our imported solution, **Critical Error Solution** and select **Delete (4)**.
+1. Navigate back to the **Power Apps** select **Solutions (1)** page. Click on **Managed (2)**. Then select the **ellipses(3)** next to our imported solution, **Critical Error Solution** and select **Delete (4)**.
 
     ![](images/M04/pv77.png)
 
@@ -247,17 +247,17 @@ information for the makers associated with the environment.
 
 1. Navigate back to the **Power Platform Admin Center.**
 
-1. Select **Environments (1)**, then select the circle icon next to **Managed Environment-<inject key="Deployment ID" enableCopy="false" /> (2)**.
+1. Select **Environments**, then select the circle icon next to **Managed Environment-<inject key="Deployment ID" enableCopy="false" /> (2)**.
 
-   ![](images/M04/p4p5.png)
+   ![](images/M04/mngenvi.png)
 
 1. Select **Enable Managed Environments**.
 
-   ![](images/M04/p4p6.png)
+   ![](images/M04/enmgenv.png)
 
 1. Under **Maker welcome content**, select **See Preview**.
 
-   ![](images/M04/p4p19.png)
+   ![](images/M04/prev.png)
 
 1. This will create an overlay on your screen of the content in the text box of the setting.
 
@@ -272,7 +272,7 @@ Share Limiting can prevent makers from sharing **Canvas apps** to everyone in th
 are not impacted by sharing rules when sharing to a team bound to the environment, however, the sharing rules are enforced when a user attempts to share the app with individuals or groups 
 in a team that is not bound to the environment.
 
-![](images/M04/M4-EX1-T2-F5-overview.png)
+![](images/M04/share.png)
 
 **Important:** After being enabled, the sharing rules may not be enforced for up to an hour afterwards.
 
@@ -292,7 +292,7 @@ in a team that is not bound to the environment.
 
 1. Once the app loads, skip popup then select **+ (1)** on the view window and click on **Rectangle (2)**.
 
-    ![](images/M04/p4p21.png)
+    ![](images/M04/rect.png)
 
 1. Navigate to three elipses **(...)(1)** then select **Settings (2)**.
 
@@ -326,7 +326,7 @@ in a team that is not bound to the environment.
 
     ![](images/M04/p4p26.png)
 
-1. Navigate to **Pending invites (1)**, select all the three users **(2)** and the click on **Share (3)**.
+1. Navigate to **Pending invites (1)**, select all the **three users (2)** and the click on **Share (3)**.
 
     ![](images/M04/p4p27.png)
 
@@ -357,35 +357,35 @@ Power BI reports. Pipelines can deploy solutions, connections, connection refere
 
 1. Navigate to the **Power Platform admin center**.
   
-1. Clik on **Environmnent (1)** then select **Managed Environment-<inject key="Deployment ID" enableCopy="false" />** to open a detailed view for the environment.
+1. Clik on **Environmnent(1)** then select **Managed Environment-<inject key="Deployment ID" enableCopy="false" />** **(2)** to open a detailed view for the environment.
 
-    ![](images/M04/p4p5.png)
+    ![](images/M04/newmgenv.png)
 
 1. In the **Details** pane, select **Edit**.
 
-    ![](images/M04/p4p40.png)
+    ![](images/M04/edit.png)
   
 1. Clear out the existing name and replace it with **Thrive Hr (Initials) - Host (1)** to remain in line with the naming convention of the other environments and select **Save (2)**.
 
-    ![](images/M04/p4p41.png)
+    ![](images/M04/thr.png)
 
 1. To finish up the setup, you will need to enable managed environments for each of the associated environments in the pipeline. Navigate back to the **Environments (1)** page with the breadcrumbs at the top of the left-side navigation. Select the **Thrive Hr - Dev (2)**.
 
-    ![](images/M04/p4p32.png)
+    ![](images/M04/thrdev.png)
 
 1. Select **Enable Managed Environment**.
 
-    ![](images/M04/p4p33.png)
+    ![](images/M04/hrdev.png)
 
 1. For this lab, we will not be configuring each of the associated environments for other features (e.g., Limit Sharing, Usage insights, etc.). Select **Enable** at the bottom of the panel
 
-    ![](images/M04/p4p34.png)
+    ![](images/M04/thren.png)
 
 1. Repeat this process for **Thrive Hr - Prod** and **Thrive Hr - Test** environments in the setup .
 
 1. Click on the **Environment (1)** then select **Thrive Hr (Initials) - Host (2)**.
 
-    ![](images/M04/ppm15.png)
+    ![](images/M04/threnvhost.png)
 
      >**Note**: Refresh the portal, if you don not see the environment.
 
@@ -395,19 +395,19 @@ Power BI reports. Pipelines can deploy solutions, connections, connection refere
 
 1. Select **Install app** from the ribbon at the top.
 
-     ![](images/M04/M4-EX2-T0-S11.png)
+     ![](images/M04/install.png)
 
 1. Scroll down to locate **Power Platform Pipelines (1)** and select the name, then click on **Next (2)**.
 
-    ![](images/M04/M4-EX2-T0-S12.png)
+    ![](images/M04/pppp.png)
 
 1. Select the **Checkbox (1)** to agree to the Terms of Service, then select **Install (2)**.
 
-    ![](images/M04/M4-EX2-T0-S13.png)
+    ![](images/M04/inst.png)
 
 1. Confirm that the app is being installed onto the environment by checking that the **Status** reads as **Installing**.
 
-    ![](images/M04/p4p36.png)
+    ![](images/M04/installing.png)
 
    >**Note**: Wait until the Installation is complete, it may take around 20 - 25 mins. Then only you can see the App in Next task. Click **refresh** and check.
 
@@ -416,6 +416,7 @@ Power BI reports. Pipelines can deploy solutions, connections, connection refere
 
 ### Task 1: Configure a deployment pipeline
 
+In this task you will, enable managed environments, install the Power Platform Pipelines app, capture environment IDs, register Dev/Test/Prod in Dataverse, and create a pipeline with deployment stages
 
 #### 1A: Add the environments to the database.
 
@@ -423,11 +424,11 @@ Power BI reports. Pipelines can deploy solutions, connections, connection refere
 
 1. To do this, navigate back to the **Environments (1)** page of the Power Platform Admin site from the left-side navigation. Select the **... (2)** to the right of to **Thrive Hr - Dev**, then select **Detailed View (3)** to get the environment information.
 
-   ![](images/M04/p4p37.png)
+   ![](images/M04/dv.png)
 
 1. Locate the **Environment ID** in the details pane and copy it to a notepad for later.
 
-   ![](images/M04/p4p38.png)
+   ![](images/M04/envid.png)
 
 1. Repeat this process with **Thrive Hr – Test** and **Thrive Hr – Prod**, copying the IDs to the same notepad.
 
@@ -441,7 +442,7 @@ Power BI reports. Pipelines can deploy solutions, connections, connection refere
 
     >**Note**: App will not be available until the **Power Platform Pipelines** installation complete in previous step.
 
-1. Select **Environments (1)** on the left pane, and then click on **+ New** symbol.
+1. Select **Environments (1)** on the left pane, and then click on **+ New (2)** symbol.
 
    ![](images/M04/p4p44.png)
 
@@ -510,7 +511,7 @@ Power BI reports. Pipelines can deploy solutions, connections, connection refere
 
    ![](images/M04/p4p55.png)
 
-1. Again **On the New Deployment Stage** section provide the following details and then select **Save Aand close (6)**.
+1. Again **On the New Deployment Stage** section provide the following details and then select **Save and close (6)**.
 
    - Name: **Deploy to Prod (1)**
 
@@ -527,6 +528,8 @@ Power BI reports. Pipelines can deploy solutions, connections, connection refere
 1. Do not navigate away from this page.
 
 ### Task 2: Run the pipeline
+
+In this task you will, import a sample solution, run the pipeline to deploy from Dev to Test and then to Prod, test immediate vs. scheduled deployments, and use the Deployment Pipeline Configuration app to monitor, edit, or cancel runs.
 
 1. Navigate to **Power Apps** in a new tab.
 
@@ -594,7 +597,7 @@ Power BI reports. Pipelines can deploy solutions, connections, connection refere
 
     ![](images/M04/M4-EX2-T2-S16.png)
 
-1. By selecting the **Run History (1)** tab and selecting the **three dots (2)** next to the Start time. From here, you can also view the run information, such as any notes or comments **(3)**.    
+1. By selecting the **Run History (1)** tab and selecting the **three dots (2)** next to the Start time. From here, you can also view the run information, such as any notes or comments and **Cancel deployment(3)** if needed.    
 
     ![](images/M04/pv90.png)
 

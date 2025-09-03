@@ -2,7 +2,7 @@
 
 # M03-HOL-Action through Automation
 
-### Estimated Duration: 120 minutes
+### Estimated Duration: 120 Minutes
 
 ## Lab Scenario
 
@@ -35,53 +35,55 @@ collect additional information allowing it to be tailored to your individual org
 
 ### Task 1: Create Microsoft Form
 
+In this task you will, create a form titled New Environment Approval Request with required fields for Environment Name, Business Justification, and Connectors to be used, then preview the saved form.
+
 1. Navigate to **Microsoft Forms** with the following link https://forms.office.com/Pages/DesignPageV2.aspx?prevsubpage=design and if prompted, close the pop up screen.
 
-2. Select **+ New Form**.
+2. Select **Registration**.
 
-   ![](images/M02/pp52.png)
+   ![reg](images/M03/Regmsform.png)
 
 3. Select the **Untitled Form** Header.
 
-   ![](images/M02/pp53.png)
+   ![untitiled](images/M03/untform.png)
 
 4. Enter **New Environment Approval Request (1)** for title, enter **New environment request (2)** for description, and select **+ Quick start with (3)**.
 
-   ![](images/M02/pp55.png)
+   ![](images/M03/form2.png)
 
-5. Create the **Form** below, by following the below steps.
+5. Create the **Form** like below, by following the below steps.
 
    ![](images/M03/M3-EX1-T1-S5.png)
 
 6. Select **Text**.
 
-   ![](images/M03/pp56.png)
+   ![](images/M03/text.png)
 
 7. Enter **Environment Name (1)**, make the question **Required (2)**, and select **+ Add new question (3)**.
 
-   ![](images/M03/pp57.png)
+   ![](images/M03/addq.png)
 
 8. Select **Text** again.
 
 9. Enter **Business Justification (1)**, select **Long Answer (2)**, and make it **Required (3)** then select **+Add new question (4)**
 
-   ![](images/M03/pp58.png)
+   ![](images/M03/q2.png)
 
 10. Select **Text**.
 
 11. Enter **What connectors will you use? (1)** select **Long Answer (2)** and make it **Required (3)**.
 
-    ![](images/M03/pp59.png)
+    ![](images/M03/q3.png)
 
 12. The form will be saved automatically.
 
 13. Select **Preview**.
 
-    ![](images/M03/pp60.png)
+    ![](images/M03/pr.png)
 
 14. You can see the created form.
 
-    ![](images/M03/pp61.png)
+    ![](images/M03/cf.png)
 
 
 ## Exercise 2: Create Environment on Form Submit
@@ -94,23 +96,27 @@ In this exercise, you will be building the automated flow to process new form su
 
 ### Task 1: Delete your sandbox environment
 
+In this task you will, remove the earlier sandbox environment to free up the trial slot.
+
 1. Navigate to the **Power Platform admin center**.
 
-1. Navigate to **Environment (1)**, select the sandbox environment that you created in module one named **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (2)** in the list of environments.
+1. Navigate to **Environment**, select the sandbox environment that you created in module one named **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** in the list of environments.
 
-   ![](images/ppp1.png)
+   ![](images/sandenv.png)
 
 1. Select the **Delete** button.
 
-   ![](images/ppp2.png)
+   ![](images/sdel.png)
 
 1. Confirm the deletion by typing the environment name **(1)** and then select **Confirm (2)**. We have to delete it to create another Trial environment, which we can only have one at a time.
 
-   ![](images/ppp3.png)
+   ![](images/sdel2.png)
 
     >**Note**: Environment deletion might take some time, please wait until its get deleted.
 
 ### Task 2: Create New Environment Approval Flow
+
+In this task you will, build a flow triggered by form submissions that requests approval and conditionally creates a new environment.
 
 1. Navigate to **Power Automate**.
 
@@ -121,7 +127,7 @@ In this exercise, you will be building the automated flow to process new form su
 
    ![](images/M03/pv32.png)
 
-1. Select **My flows (1)**, select **+ New flow (2)** and select **Automated cloud flow (3)**.
+1. Select **My flows (1)**, select **+ New flow (2)** drop down and select **Automated cloud flow (3)**.
 
    ![](images/M03/pp62.png)
 
@@ -133,7 +139,7 @@ In this exercise, you will be building the automated flow to process new form su
 
    ![](images/M03/pp64.png)
 
-1. For the **Form Id**, select the **New Environment Approval Request** form you created.
+1. For the **Form Id**, select the **New Environment Approval Request** form which you created.
 
    ![](images/M03/pp65.png)
 
@@ -145,13 +151,15 @@ In this exercise, you will be building the automated flow to process new form su
 
    ![](images/M03/pp67.png)
 
-1. Select **New Environment Approval Request (1)** for **Form Id** and click on the **dynamic content (2)** symbol to select **Response Id**. 
+1. Click on the **get response details** and select **New Environment Approval Request (1)** for **Form Id** and click on the **dynamic content (2)** symbol to select **Response Id**. 
 
     ![](images/M03/pp68.png)
 
+    >**Note:** Please signin with ODL user credentials if prompted.
+
 1. Select the **Response Id** from the Dynamic content pane.    
 
-    ![](images/M03/M3-EX2-T2-S10.png)
+    ![](images/M3-EX2-T2-S10.png)
 
 1. Select **+ Add action**.
 
@@ -179,19 +187,19 @@ In this exercise, you will be building the automated flow to process new form su
 
    - Select **Responders Email** from the Dynamic content pane.
 
-     ![](images/M03/pv35.png)
+     ![](images/pv35.png)
 
 1. Hit the enter key and type **Environment Name:** and select **Environment Name** from the Dynamic content pane.
 
-    ![](images/M03/pv36.png)
+    ![](images/pv36.png)
 
 1. Hit the enter key again and type **Business Justification:** and select **Business Justification** from the Dynamic content pane.
 
-    ![](images/M03/pv37.png)
+    ![](images/pv37.png)
 
 1. Hit the enter key again type **Connectors:** and select **What connectors will you use?** from the Dynamic content pane.
 
-    ![](images/M03/pv38.png)
+    ![](images/pv38.png)
 
 1. Select **+ Add Action** under **Start and Wait for an Approval**.
 
@@ -250,6 +258,8 @@ In this exercise, you will be building the automated flow to process new form su
     ![](images/M03/pp85.png)
 
 ### Task 3: Create a Database and Notify the User
+
+In this task you will, extend the flow to provision a CDS database and send approval/rejection notification emails.
 
 1. Select **+ Add an action** under **Create Environment**.
 
@@ -317,7 +327,7 @@ In this exercise, you will be building the automated flow to process new form su
 
 1. Your email should look like the image below.
 
-    ![](images/M03/pp94.png)
+    ![](images/dn.png)
 
 1. Go to the **False** branch and select **Add an Action** to create a new connection under the **False** branch.
 
@@ -333,7 +343,7 @@ In this exercise, you will be building the automated flow to process new form su
 
 1. Select on the **To:** field and select **Responder’s Email** from the Dynamic Content pane.
 
-   ![](images/M03/pp98.png)
+   ![](images/respemail.png)
 
 1. Type **Rejected environment request (1)** for **Subject**.
 
@@ -361,21 +371,23 @@ In this exercise, you will be building the automated flow to process new form su
 
 ### Task 4: Test the Flow
 
+In this task you will, submit the form, approve the request via email, and verify that the new environment is created successfully in the admin center.
+
 1. Navigate to **Microsoft Forms** and open the form you created.
 
    ![](images/M03/pp104.png)
 
 1. Select **Collect responses**.
 
-   ![](images/M03/pp105.png)
+   ![](images/colresp.png)
 
 1. **Copy** the link.   
 
-   ![](images/M03/M3-EX2-T4-S2-1.png)
+   ![](images/cl.png)
 
-1. Paste the link in the browser and navigate to it.
+1. Paste the link in the browser and navigate to the create form.
 
-   ![](images/M03/pp106.png)
+   ![](images/form.png)
 
 1. The form should load, provide the following details and then click on **Submit (4)**.
 
@@ -383,7 +395,7 @@ In this exercise, you will be building the automated flow to process new form su
    - Business Justification: **We will use this Environment for training new employees (2)**
    - What connector will you use: **Microsoft Dataverse (3)**. 
 
-     ![](images/M03/pp107.png)   
+     ![](images/formfill.png)    
    
     >**Note**: For this course, we will be using this environment we created here later in another lab to deploy the Device Ordering solution using Azure Dev Ops, for that lab it will serve as the Test environment which is why we are suggesting naming it Central Apps Test. In real word use, most likely it would be a team/project development environment that would be requested using a form like this.
 
@@ -417,13 +429,13 @@ In this exercise, you will be building the automated flow to process new form su
 
     ![](images/M03/pp111.png)
 
-1. Navigate to the **Power Platform admin center**, and select **Environments (1)**. Click on **Refresh (2)** The new environment **Central Apps Test** should be listed there **(3)**.
+1. Navigate to the **Power Platform admin center**, and select **Environments (1)**. Click on **Refresh (2)** The new environment **Central Apps Test (3)** should be listed there.
 
-    ![](images/M03/pv50.png)
+    ![](images/cat.png)
 
 1. You should also get an email.
  
-    ![](images/M03/pp112.png)
+    ![](images/email.png)
 
 1. You may test for request rejection if you like.
 
@@ -445,19 +457,21 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 ### Task 1: Create Office 365 Group
 
-1. Navigate to the **Azure portal** from the desktop.
+In this task you will, set up a Microsoft 365 group in Azure AD called Lab Admin Makers and copy its Object ID for use in the flow.
+
+1. Navigate to the **Azure portal** from the desktop of the Lab VM.
 
 1. If prompted to stay signed in, you can click **No**.
 
 1. If an **Action required** pop-up window appears, click on **Ask later**.
 
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
 1. On the search bar, search for **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
    ![](images/M03/pv51.png)
 
-1. Select **Groups** under **Manage**.
+1. Under **Manage** select **Groups**.
 
    ![](images/M03/pv52.png)
 
@@ -481,6 +495,24 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 
 ### Task 2: Import Flow
+
+In this task you will, import the Send Welcome Email flow into the Power Platform CoE environment, configure necessary admin, Outlook, and Office 365 connections, and complete the setup.
+
+1. Navigate to **Power Platform admin centre** select **Manage (1)**, then select **Environment (2)**, then click on **Power Platform COE (3)**
+
+   ![](images/coe1.png)
+
+1. Click on **Settings**
+
+   ![](images/coe2.png)
+
+1. Expand the **Products (1)** and click on **features (2)**.
+
+   ![](images/coe3.png)
+
+1. Scroll down to **Create new canvas app and cloud flows in detaverse solutions** and ensure **both the toggle are Off**.
+
+   ![](images/coe4.png)
 
 1. Navigate to **Power Automate**.
 
@@ -559,7 +591,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 1. Select **Refresh list**, select the connection you just added, and select **Save**.
 
-    ![](images/M03/ppt47.png)
+    ![](images/ppt47.png)
 
 1. Select **Configure** for **Office 365 Group Connection**.
 
@@ -571,7 +603,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
     - Select **+ Create new**.
 
-      ![](images/M03/M3-EX4-T2-S15.png)
+      ![](images/M3-EX4-T2-S15.png)
 
     - Select **+ New connection**.
 
@@ -593,7 +625,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 1. Select **Refresh list**, select the connection you just added, and select **Save**.
 
-    ![](images/M03/ppt47.png)
+    ![](images/ppt47.png)
 
 1. Select Action for **Office 365 Users Connection**.
 
@@ -603,7 +635,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
     - Select **+ Create new**.
 
-      ![](images/M03/M3-EX4-T2-S15.png)
+      ![](images/M3-EX4-T2-S15.png)
 
     - Select **+ New connection**.
 
@@ -617,7 +649,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 1. Select **Refresh list**, select the connection you just added, and select **Save**.
 
-    ![](images/M03/ppt47.png)
+    ![](images/ppt47.png)
 
 1. Select **Import** and wait for the import to complete.
 
@@ -629,6 +661,8 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 
 ### Task 3: Edit and Test Flow
+
+In this task you will, edit the flow to use the created group’s ID, turn it on, and test it by creating a new app. Verify that the maker is added to the group and receives a welcome email.
 
 1. Navigate to the maker portal https://make.powerapps.com and select the **Central Apps Test** environment.
 
@@ -652,7 +686,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 1. Select the **Back** button.
 
-   ![](images/M03/M3-EX4-T3-S6.png)
+   ![](images/M3-EX4-T3-S6.png)
 
 1. Go back to the app maker main page by selecting the **Back** button.
 
@@ -690,7 +724,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
     ![](images/M03/pv69.png)
 
-1. Select on the back button.
+1. Select on the **back button**.
 
     ![](images/M03/pv70.png)
 
@@ -746,4 +780,4 @@ In this lab, you have accomplished the following:
 - Exercise 3 – Welcome New Makers (Optional if you have time)
 
 
-### You have successfully completed this lab.
+### You have successfully completed this Module.
