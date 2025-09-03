@@ -124,7 +124,7 @@ In this task, you will create an application, and a table, and add new columns t
 
     >**Note**: You will be able to name the app only after the app is created that will take around 10-15 minutes as mentioned in the previous task. After 10-15 mins, please re perform **Step 1 to 2**. You will be able to provide the App name.
 
-1. Select **With data (1)**, and then select **+ Create new table (2)**.
+1. Select **Add data (1)**, and then select **+ Create new table (2)**.
 
    ![](images/M05/M5B-EX1-T2-S6.png)
 
@@ -182,7 +182,7 @@ In this task, you will create an application, and a table, and add new columns t
 
      ![](images/M05/p5p21.png)
 
-1. Select **With data (1)** and then choose **Lab 01 Requests (2)**.     
+1. Select **Add data (1)** and then choose **Lab 01 Requests (2)**.     
 
     ![](images/M05/p5p22.png)
 
