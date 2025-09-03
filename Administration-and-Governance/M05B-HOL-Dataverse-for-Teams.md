@@ -36,6 +36,8 @@ Now in this exercise, you will explore the following key components:
 
 ### Task 1: Explore the Power Platform Admin View app
 
+In this task you will, launch the Admin View app in the CoE environment to review apps, flows, environments, connectors, and makers. Explore governance features like business justification, risk assessment, and app catalog tagging.
+
 1. Navigate to **Power Apps**.
 
 2. Select the **Power Platform CoE** environment in the environment selector.
@@ -90,6 +92,8 @@ Now in this exercise, you will explore the following key components:
 
 
 ### Task 2: Power BI Dashboard
+
+In this task you will, use the environment URL, configure the Production and Governance dashboard in Power BI Desktop, connect it to Dataverse, and review reports. Publish the dashboard to your workspace to monitor tenant-wide adoption, app usage, and environment activity.
 
 #### Get the environment URL
 You need the URL of the Power Platform environment where the CoE Starter Kit is installed. Power BI connects to Dataverse tables in that environment.
@@ -262,6 +266,8 @@ Using the Power BI report, you can easily see what apps and flows are using a co
 
 ### Task 1: Locate resources that use the Office 365 Outlook connector
 
+In this task you will, open the App Connector deep dive page in Power BI, select the Office 365 Outlook connector, and review filtered data to evaluate apps/flows using it and their connector tier.
+
 1. Navigate to the **Power BI report** you just published.
 
 2. Select the **App Connector deep dive** page in the report.
@@ -284,6 +290,8 @@ Before use, this must be enabled by a global tenant administrator using these in
 In this exercise, you will be using the log search and alert tools to work with the audit data.
 
 ### Task 1: Review audit logging in the environment
+
+In this task you will, open Microsoft Purview, navigate to Audit, and start recording activity. Perform a search to view logs, export data if needed, and filter results by activity type, user, or item. This allows admins to track activities such as flow edits and review detailed audit information for governance and compliance. 
 
 1. Navigate to **Microsoft purview** using the following link https://purview.microsoft.com/.
 
@@ -369,6 +377,7 @@ This app auditing sample process showcases how your CoE department or IT adminis
 app, like business justification and the impact of an outage, from the maker.
 
 ### Task 1: Setup compliance process
+
 In this task, you will be setting up the compliance process for the Governance Components application that you installed in the previous lab.
 
 1. Now return to the tab where your **Center of Excellence - Core Components** solution is open.
