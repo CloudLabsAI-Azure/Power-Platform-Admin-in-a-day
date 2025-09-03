@@ -656,4 +656,4 @@ In this lab, you have accomplished the following:
 - Exercise 5 – Configured a security role
 
 
-### You have successfully completed this Module.
+### You have successfully completed this module.
