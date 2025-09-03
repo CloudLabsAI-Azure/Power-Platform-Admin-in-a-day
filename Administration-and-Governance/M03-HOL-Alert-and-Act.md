@@ -259,6 +259,8 @@ In this task you will, build a flow triggered by form submissions that requests 
 
 ### Task 3: Create a Database and Notify the User
 
+In this task you will, extend the flow to provision a CDS database and send approval/rejection notification emails.
+
 1. Select **+ Add an action** under **Create Environment**.
 
    ![](images/M03/pv42.png)
@@ -369,6 +371,8 @@ In this task you will, build a flow triggered by form submissions that requests 
 
 ### Task 4: Test the Flow
 
+In this task you will, submit the form, approve the request via email, and verify that the new environment is created successfully in the admin center.
+
 1. Navigate to **Microsoft Forms** and open the form you created.
 
    ![](images/M03/pp104.png)
@@ -453,6 +457,8 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 ### Task 1: Create Office 365 Group
 
+In this task you will, set up a Microsoft 365 group in Azure AD called Lab Admin Makers and copy its Object ID for use in the flow.
+
 1. Navigate to the **Azure portal** from the desktop of the Lab VM.
 
 1. If prompted to stay signed in, you can click **No**.
@@ -489,6 +495,8 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 
 ### Task 2: Import Flow
+
+In this task you will, import the Send Welcome Email flow into the Power Platform CoE environment, configure necessary admin, Outlook, and Office 365 connections, and complete the setup.
 
 1. Navigate to **Power Platform admin centre** select **Manage (1)**, then select **Environment (2)**, then click on **Power Platform COE (3)**
 
@@ -654,6 +662,8 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 ### Task 3: Edit and Test Flow
 
+In this task you will, edit the flow to use the created group’s ID, turn it on, and test it by creating a new app. Verify that the maker is added to the group and receives a welcome email.
+
 1. Navigate to the maker portal https://make.powerapps.com and select the **Central Apps Test** environment.
 
    ![](images/M03/pv62.png)
@@ -770,4 +780,4 @@ In this lab, you have accomplished the following:
 - Exercise 3 – Welcome New Makers (Optional if you have time)
 
 
-### You have successfully completed this lab.
+### You have successfully completed this Module.
