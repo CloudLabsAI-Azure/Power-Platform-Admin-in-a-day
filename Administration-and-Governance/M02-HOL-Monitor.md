@@ -2,7 +2,7 @@
 
 # M02-HOL-Reporting and Telemetry
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 90 Minutes
 
 ## Lab Scenario
 
@@ -26,7 +26,7 @@ You need to use the assigned user and environment information to complete this l
 
 ## Exercise 1: Explore the out-of-the-box analytics
 
-Now in this exercise, you will explore the out-of-the-box analytics that are available from the Power Platform admin center.
+In this exercise, you will explore the out-of-the-box analytics that are available from the Power Platform admin center.
 
 1. Navigate to **Power Platform admin center**.
 
@@ -42,7 +42,7 @@ Now in this exercise, you will explore the out-of-the-box analytics that are ava
 
 4. The **Overview** tab displays a message indicating that tenant-level analytics has been enabled. **Typically, these reports are displayed within 24-48 hours of enabling the feature**.
 
-   ![](images/M02/pp122.png)
+   ![](images/ppap.png)
 
     > **Note**: **The below **tasks 1,2 and 3** has been made as read only because the service can take 24 to 36 hours to reflect service activities from the previous day**. Please go through the provided link for more details [Tenant-level analytics for Power Apps](https://learn.microsoft.com/en-us/power-platform/admin/tenant-level-analytics?tabs=new#how-do-i-enable-tenant-level-analytics)   
 
@@ -179,6 +179,8 @@ In this exercise, you will configure Dataverse logging for a table that requires
 
 ### Task 1: Review audit logging in the environment
 
+In this task you will, enable auditing for the Project table and its Due Date column, publish customizations, and turn on auditing at the environment level.
+
 1. Navigate to the **Power Apps** portal, click on Current Environment **(1)** and select the **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (2)** environment.
 
    ![](images/pp-1.png)
@@ -214,9 +216,7 @@ In this exercise, you will configure Dataverse logging for a table that requires
 
     ![](images/M02/M2-EX2-T1-S10.png)
 
-1. Scroll down to the **For this table** section.
-
-1. Select the **Audit changes to its data (1)** checkbox and select **Save (2)**.
+1. Scroll down to the **For this table** section and select the **Audit changes to its data (1)** checkbox and select **Save (2)**.
 
     ![](images/M02/pp132.png)
 
@@ -230,7 +230,7 @@ In this exercise, you will configure Dataverse logging for a table that requires
 
     ![](images/po-46.png)
 
-1. Navigate to **Power Platform admin center** and select **Manage(1)**, click on **Environments (2)**, Select the **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (3)** environment and select **Settings (4)** from the ribbon at the top.
+1. Navigate to **Power Platform admin center** and select **Manage(1)**, click on **Environments (2)**, select the **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (3)** environment and click on **Settings (4)** from the ribbon at the top.
 
     ![](images/sand.png)
 
@@ -238,11 +238,13 @@ In this exercise, you will configure Dataverse logging for a table that requires
 
     ![](images/audit.png)
 
-1. Check on **Start auditing (1)** checkbox, select **Save (2)** and select **Cancel** to close.
+1. Check on **Start auditing (1)** checkbox, select **Save (2)** and click **Cancel** to close.
 
     ![](images/startaduit.png)
 
 ### Task 2: Test auditing
+
+In this task you will, open the Project Admin app, create or edit the Annual Conference project, change its Due Date multiple times, and verify the changes in Audit History.
 
 1. Navigate to the **Power Apps** maker portal and make sure your in **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** environment.
 
@@ -266,7 +268,7 @@ In this exercise, you will configure Dataverse logging for a table that requires
 
 1. From this screen, reopen the **Annual Conference** project.
 
-1. Change the **Due Date** to any date in the future **(1)** and select **Save (2)**.
+1. Change the **Due Date (1)** to any date in the future and select **Save (2)**.
 
    ![](images/M02/pp135.png)
 
@@ -299,6 +301,8 @@ Now in this exercise, you will explore the following key components:
 
 ### Task 1 :  Import the Creator Kit and make connections
 
+In this task you will, install the Creator Kit from AppSource, configure the HTTP with Microsoft Entra ID connection, and import the CoE Starter Kit core and governance solutions into the the Power Platform COE environment.
+
 ### Installation of Creator Kit
 
 1. Go to the [Creator Kit page on AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview) page.
@@ -312,7 +316,7 @@ Now in this exercise, you will explore the following key components:
     >**Note:** Ensure your Power apps environment is in **Power Platform COE**.
 3. The App Source install experience will launch the **Power Platform admin center** and ask you to identify the target Environment. Close the popups and continue.
 
-4. Choose the **Power Platform COE (1)** Environment, review and agree to the two agreement checkboxes **(2)(3)**, then select the **Install (4)** button to continue.
+4. Choose the **Power Platform COE (1)** Environment, review and agree to the two agreement checkboxes **(2)(3)**, then select the **Install (4)** button to continue the installation.
 
     ![](images/createinst.png)
 
@@ -327,7 +331,7 @@ Now in this exercise, you will explore the following key components:
 
     ![](images/M02/M2-EX3N-T1-S3.png)
 
-1. Select **More (1)** from left navigation > **Connections (2)** 
+1. Select **More (1)** from left navigation and click on  **Connections (2)** 
 
     ![](images/M02/pv7.png)
 
@@ -339,7 +343,7 @@ Now in this exercise, you will explore the following key components:
 
     ![](images/M02/pv9.png)
 
-1. Set **Base Resource URL (1)** and **Microsoft Entra ID Resource URI (Application ID URI) (2)** to https://graph.microsoft.com/. Click **Create (3)**.
+1. Set the **Base Resource URL (1)** and **Microsoft Entra ID Resource URI (Application ID URI) (2)** to https://graph.microsoft.com/. Click **Create (3)**.
 
     ![](images/M02/pv10.png)
 
@@ -354,21 +358,21 @@ Now in this exercise, you will explore the following key components:
 
 1. Locate the downloaded **CoEStarterKit.zip** file.
 
-1. Right-click on the ZIP file **(1)** and select **Extract All... (2)**.
+1. Right-click on the **ZIP file (1)** and select **Extract All... (2)**.
 
     ![](images/M02/pv12.png)
 
-1. In the dialog box that appears, review the destination path **(1)** and then click on the "**Extract (2)**" button to unzip the contents.
+1. In the dialog box that appears, review the **destination path (1)** and then click on the"**Extract (2)** button to unzip the contents.
 
     ![](images/M02/pv13.png)
 
     > **Note:** The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit. 
 
-1. Before proceeding to the next step, navigate back to the **Power Platform Admin Center**, **Refresh** the portal and navigate to the **Power Platform COE** environment and select **Dynamic 365 apps**.
+1. Before proceeding to the next step, navigate back to the **Power Platform Admin Center**, **Refresh** the portal and navigate to the **Power Platform COE** environment and select **Dynamic 365 apps** under Resources.
 
     ![](images/M02/dy365.png)
 
-1. Ensure the **Creator Kit** is installed 
+1. Ensure the **Creator Kit is installed** 
 
     ![](images/M02/ckinst.png)
 
@@ -384,9 +388,9 @@ Now in this exercise, you will explore the following key components:
 
 1. Click **Browse (1)**.
 
-1. Navigate to  **C:\Users\demouser\Downloads\CoEStarterKit (1)** then select **CenterOfExcellenceCoreComponents_4_49_2_managed.zip (2)** solution file from the extracted folder then click on **Open (3)**.
+1. Navigate to  **C:\Users\demouser\Downloads\CoEStarterKit (1)** then select **CenterOfExcellenceCoreComponents_4_50_2_managed.zip (2)** solution file from the extracted folder then click on **Open (3)**.
 
-    ![](images/M02/pv15.png)
+    ![](images/f1.png)
 
 1. Click **Next**.    
 
@@ -411,9 +415,9 @@ Now in this exercise, you will explore the following key components:
 
 1. Click on **Browse (1)**.
 
-1. Navigate to **C:\Users\demouser\Downloads\CoEStarterKit (2)** folder then select the following file **CenterofExcellenceAuditComponents_3_27_1_managed.zip (3)** and then click on **Open (4)**.
+1. Navigate to **C:\Users\demouser\Downloads\CoEStarterKit (2)** folder then select the following file **CenterofExcellenceAuditComponents_3_27_3_managed.zip (3)** and then click on **Open (4)**.
 
-    ![](images/M02/ppm4.png)
+    ![](images/f2.png)
 
 1. Review the details, click **Next**, leave all environment variable values as default until you see the Import button.
 
@@ -433,11 +437,13 @@ Now in this exercise, you will explore the following key components:
 
 ### Task 2: Set up the Inventory components using the Setup Wizard
 
+In this task you will, launch the CoE Setup and Upgrade Wizard, configure environment variables and personas, run setup and inventory flows, and complete the setup to enable inventory dashboards and apps.
+
 1. From the **Solution (1)**, navigate to **Managed (2)** refresh the tab and open the **Center of Excellence - Core Components (3)** solution.
 
     ![](images/M02/pv19.png)
 
-1. Navigate to **Apps (1)** then click on the three dots in **COE Admin Command Center (2)** app and then **Play (3)**.
+1. Navigate to **Apps (1)** then click on the ellipse in **COE Admin Command Center (2)** app and then **Play (3)**.
 
     ![](images/M02/pv20.png)
 
@@ -506,7 +512,7 @@ for persona.
 
     ![](images/M02/ppm9.png)
 
-1. **Run Inventory flows**: Click toggle button for all the flows available on the page until all the flows are removed from the page. Click **Next**.
+1. **Run Inventory flows**: Click toggle button for all the flows available on the page, wait until all the flows are removed from the page and then click **Next**.
 
     ![](images/M02/pv31.png)
 
@@ -549,5 +555,5 @@ In this lab, you have accomplished the following:
 - Exercise 2 – Configured Dataverse logging for a table
 - Exercise 3 - Set up inventory components
 
-### You have successfully completed this lab.
+### You have successfully completed this Module.
 
