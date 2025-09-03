@@ -577,4 +577,8 @@ In this lab, you have accomplished the following:
 - Exercise 3 - Review tenant audit logs
 - Exercise 4 - Application Compliance Process
 
+### Conclusion
+
+In this lab Power **Platform Workshop: Administration and Governance**, we explored key aspects of administering and governing the Power Platform. We created Teams and Power Apps within Microsoft Teams, built custom tables, and published apps for team collaboration. Using the CoE Starter Kit, we reviewed the Power Platform Admin View app to gain visibility into apps, environments, connectors, and makers. We then configured and published Power BI dashboards to monitor adoption and usage trends, explored connector usage insights, and finally worked with Microsoft Purview audit logs to track user and admin activities for compliance. Together, these exercises provided a complete view of how to build, monitor, govern, and secure Power Platform solutions in an enterprise environment.
+
 ### You have successfully completed this lab.  
