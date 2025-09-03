@@ -31,11 +31,25 @@ By the end of this lab, you will be able to:
 
 ## Architecture 
 
+This architecture diagram explores the Power Platform ecosystem and its governance using the Power Platform Admin Center. We learned how to plan environments, apply Data Loss Prevention (DLP) policies, and assign security roles to ensure apps and flows remain secure and compliant. With Power Apps inside Teams, we created custom apps tailored for team needs, showing how quickly solutions can be built without heavy coding. Using Power Automate, we understood how flows connect services to automate repetitive business processes, enhancing productivity. To monitor usage, we published and used Power BI reports to analyze app and flow activities, check connector tiers, and track who is using connectors like Office 365 Outlook. Altogether, the lab showed how to combine productivity, automation, and governance in a secure and efficient way.
 
 ## Architecture Diagram 
 
+![](images/archi.png)
 
+### Explaination of components
 
+- **Power Platform Admin Center** – This is the main management hub for the Power Platform. From here, admins can create and manage environments, set up Data Loss Prevention (DLP) policies, monitor usage, and configure user roles. It ensures apps and flows are governed properly.
+
+- **Power Apps**: A low-code/no-code tool that lets you build custom business applications quickly. You can design apps that connect to data sources, automate tasks, and run inside Microsoft Teams or standalone, helping teams solve problems without heavy coding.
+
+- **Power Automate** :  A service that automates workflows between apps and services. It reduces manual work by creating “flows” that trigger actions automatically (e.g., send an email when a new record is added).
+
+- **Data Loss Prevention (DLP)**: A policy feature that controls how data can move between connectors. It prevents sensitive information from being shared outside allowed services, ensuring compliance and security.
+
+- **Security Roles**: Define permissions for users. With roles, you control who can view, edit, or manage apps and flows, keeping access restricted and safe.
+
+  
 ## Getting Started with the Lab
  
 ### Accessing Your Lab Environment
