@@ -2,7 +2,7 @@
 
 # M03-HOL-Action through Automation
 
-### Estimated Duration: 120 minutes
+### Estimated Duration: 120 Minutes
 
 ## Lab Scenario
 
@@ -35,6 +35,8 @@ collect additional information allowing it to be tailored to your individual org
 
 ### Task 1: Create Microsoft Form
 
+In this task you will, create a form titled New Environment Approval Request with required fields for Environment Name, Business Justification, and Connectors to be used, then preview the saved form.
+
 1. Navigate to **Microsoft Forms** with the following link https://forms.office.com/Pages/DesignPageV2.aspx?prevsubpage=design and if prompted, close the pop up screen.
 
 2. Select **Registration**.
@@ -49,7 +51,7 @@ collect additional information allowing it to be tailored to your individual org
 
    ![](images/M03/form2.png)
 
-5. Create the **Form** below, by following the below steps.
+5. Create the **Form** like below, by following the below steps.
 
    ![](images/M03/M3-EX1-T1-S5.png)
 
@@ -94,6 +96,8 @@ In this exercise, you will be building the automated flow to process new form su
 
 ### Task 1: Delete your sandbox environment
 
+In this task you will, remove the earlier sandbox environment to free up the trial slot.
+
 1. Navigate to the **Power Platform admin center**.
 
 1. Navigate to **Environment**, select the sandbox environment that you created in module one named **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** in the list of environments.
@@ -112,6 +116,8 @@ In this exercise, you will be building the automated flow to process new form su
 
 ### Task 2: Create New Environment Approval Flow
 
+In this task you will, build a flow triggered by form submissions that requests approval and conditionally creates a new environment.
+
 1. Navigate to **Power Automate**.
 
 1. Set your environment to **Power Platform CoE**.
@@ -121,7 +127,7 @@ In this exercise, you will be building the automated flow to process new form su
 
    ![](images/M03/pv32.png)
 
-1. Select **My flows (1)**, select **+ New flow (2)** and select **Automated cloud flow (3)**.
+1. Select **My flows (1)**, select **+ New flow (2)** drop down and select **Automated cloud flow (3)**.
 
    ![](images/M03/pp62.png)
 
@@ -133,7 +139,7 @@ In this exercise, you will be building the automated flow to process new form su
 
    ![](images/M03/pp64.png)
 
-1. For the **Form Id**, select the **New Environment Approval Request** form you created.
+1. For the **Form Id**, select the **New Environment Approval Request** form which you created.
 
    ![](images/M03/pp65.png)
 
@@ -145,7 +151,7 @@ In this exercise, you will be building the automated flow to process new form su
 
    ![](images/M03/pp67.png)
 
-1. Click on the **get response details** and Select **New Environment Approval Request (1)** for **Form Id** and click on the **dynamic content (2)** symbol to select **Response Id**. 
+1. Click on the **get response details** and select **New Environment Approval Request (1)** for **Form Id** and click on the **dynamic content (2)** symbol to select **Response Id**. 
 
     ![](images/M03/pp68.png)
 
@@ -153,7 +159,7 @@ In this exercise, you will be building the automated flow to process new form su
 
 1. Select the **Response Id** from the Dynamic content pane.    
 
-    ![](images/M03/M3-EX2-T2-S10.png)
+    ![](images/M3-EX2-T2-S10.png)
 
 1. Select **+ Add action**.
 
@@ -181,19 +187,19 @@ In this exercise, you will be building the automated flow to process new form su
 
    - Select **Responders Email** from the Dynamic content pane.
 
-     ![](images/M03/pv35.png)
+     ![](images/pv35.png)
 
 1. Hit the enter key and type **Environment Name:** and select **Environment Name** from the Dynamic content pane.
 
-    ![](images/M03/pv36.png)
+    ![](images/pv36.png)
 
 1. Hit the enter key again and type **Business Justification:** and select **Business Justification** from the Dynamic content pane.
 
-    ![](images/M03/pv37.png)
+    ![](images/pv37.png)
 
 1. Hit the enter key again type **Connectors:** and select **What connectors will you use?** from the Dynamic content pane.
 
-    ![](images/M03/pv38.png)
+    ![](images/pv38.png)
 
 1. Select **+ Add Action** under **Start and Wait for an Approval**.
 
@@ -319,7 +325,7 @@ In this exercise, you will be building the automated flow to process new form su
 
 1. Your email should look like the image below.
 
-    ![](images/M03/pp94.png)
+    ![](images/dn.png)
 
 1. Go to the **False** branch and select **Add an Action** to create a new connection under the **False** branch.
 
@@ -335,7 +341,7 @@ In this exercise, you will be building the automated flow to process new form su
 
 1. Select on the **To:** field and select **Responder’s Email** from the Dynamic Content pane.
 
-   ![](images/M03/pp98.png)
+   ![](images/respemail.png)
 
 1. Type **Rejected environment request (1)** for **Subject**.
 
@@ -375,7 +381,7 @@ In this exercise, you will be building the automated flow to process new form su
 
    ![](images/cl.png)
 
-1. Paste the link in the browser and navigate to it.
+1. Paste the link in the browser and navigate to the create form.
 
    ![](images/form.png)
 
@@ -419,7 +425,7 @@ In this exercise, you will be building the automated flow to process new form su
 
     ![](images/M03/pp111.png)
 
-1. Navigate to the **Power Platform admin center**, and select **Environments (1)**. Click on **Refresh (2)** The new environment **Central Apps Test** should be listed there **(3)**.
+1. Navigate to the **Power Platform admin center**, and select **Environments (1)**. Click on **Refresh (2)** The new environment **Central Apps Test (3)** should be listed there.
 
     ![](images/cat.png)
 
@@ -447,19 +453,19 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 ### Task 1: Create Office 365 Group
 
-1. Navigate to the **Azure portal** from the desktop.
+1. Navigate to the **Azure portal** from the desktop of the Lab VM.
 
 1. If prompted to stay signed in, you can click **No**.
 
 1. If an **Action required** pop-up window appears, click on **Ask later**.
 
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
 1. On the search bar, search for **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
    ![](images/M03/pv51.png)
 
-1. Select **Groups** under **Manage**.
+1. Under **Manage** select **Groups**.
 
    ![](images/M03/pv52.png)
 
@@ -483,6 +489,22 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 
 ### Task 2: Import Flow
+
+1. Navigate to **Power Platform admin centre** select **Manage (1)**, then select **Environment (2)**, then click on **Power Platform COE (3)**
+
+   ![](images/coe1.png)
+
+1. Click on **Settings**
+
+   ![](images/coe2.png)
+
+1. Expand the **Products (1)** and click on **features (2)**.
+
+   ![](images/coe3.png)
+
+1. Scroll down to **Create new canvas app and cloud flows in detaverse solutions** and ensure **both the toggle are Off**.
+
+   ![](images/coe4.png)
 
 1. Navigate to **Power Automate**.
 
@@ -561,7 +583,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 1. Select **Refresh list**, select the connection you just added, and select **Save**.
 
-    ![](images/M03/ppt47.png)
+    ![](images/ppt47.png)
 
 1. Select **Configure** for **Office 365 Group Connection**.
 
@@ -573,7 +595,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
     - Select **+ Create new**.
 
-      ![](images/M03/M3-EX4-T2-S15.png)
+      ![](images/M3-EX4-T2-S15.png)
 
     - Select **+ New connection**.
 
@@ -595,7 +617,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 1. Select **Refresh list**, select the connection you just added, and select **Save**.
 
-    ![](images/M03/ppt47.png)
+    ![](images/ppt47.png)
 
 1. Select Action for **Office 365 Users Connection**.
 
@@ -605,7 +627,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
     - Select **+ Create new**.
 
-      ![](images/M03/M3-EX4-T2-S15.png)
+      ![](images/M3-EX4-T2-S15.png)
 
     - Select **+ New connection**.
 
@@ -619,7 +641,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 1. Select **Refresh list**, select the connection you just added, and select **Save**.
 
-    ![](images/M03/ppt47.png)
+    ![](images/ppt47.png)
 
 1. Select **Import** and wait for the import to complete.
 
@@ -654,7 +676,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 1. Select the **Back** button.
 
-   ![](images/M03/M3-EX4-T3-S6.png)
+   ![](images/M3-EX4-T3-S6.png)
 
 1. Go back to the app maker main page by selecting the **Back** button.
 
@@ -692,7 +714,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
     ![](images/M03/pv69.png)
 
-1. Select on the back button.
+1. Select on the **back button**.
 
     ![](images/M03/pv70.png)
 
