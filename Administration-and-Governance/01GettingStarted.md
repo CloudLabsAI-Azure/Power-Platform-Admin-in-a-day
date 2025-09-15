@@ -12,7 +12,7 @@ By the end of this lab, you will be able to:
 
 - **Securing your Tenant**: In this hands-on lab, participants will assume the role of a Power Platform environment administrator for Fabrikam, discover and inventory existing Power Apps and flows in their tenant, and establish baseline data loss prevention and security policies. They will configure administrative connectors and governance tools to enforce these policies, ensuring users can continue building productive solutions while adhering to Fabrikam’s compliance requirements.
 
-- **Reporting and Telemetry**: In this hands-on lab, participants will gain hands‑on experience as Power Platform administrators by inventorying existing Power Apps, flows, and environments across their tenant using the CoE Starter Kit. They will configure and customize the CoE “Monitor” dashboards and analytics to track usage metrics—such as app and flow activity, connector calls, and environment health—and implement baseline data loss prevention policies to enforce corporate compliance.
+- **Reporting and Telemetry**: In this hands-on lab, participants will learn how to use the Power Platform admin tools and the CoE Starter Kit to explore analytics, configure Dataverse logging, and set up inventory components, gaining experience in monitoring usage and strengthening governance.
 
 - **Action through Automation**: In this hands-on lab, participants will gain hands‑on experience automating Power Platform environment requests by building a Microsoft Form–based submission process and configuring a Power Automate approval flow to provision new environments and Dataverse databases upon admin approval. They will also explore the CoE Starter Kit’s auditing and user‑onboarding components to enforce governance and welcome new app makers into approved environments.
 
@@ -20,7 +20,7 @@ By the end of this lab, you will be able to:
 
 - **Power Apps in Teams**: In this hands-on lab, participants will learn how to create a team in Microsoft Teams and build a Power App within it, gaining experience in app creation, publishing, and sharing for broader organizational use.
 
-- **Dataverse for Teams (Optional)**: In this hands-on lab, participants will create a Power App within a Microsoft Team, publish it for team use, and share it with users outside the team to understand broad distribution capabilities.
+- **Explore the CoE Starter Kit (Optional)**: In this hands-on lab, participants will explore the Center of Excellence (CoE) Starter Kit to understand how it supports governance and adoption of the Power Platform. They will learn to navigate the CoE dashboard, track connector usage, review audit logs, and apply compliance processes, gaining practical experience in managing and governing app usage within an organization.
 
 ## Prerequisites
 
