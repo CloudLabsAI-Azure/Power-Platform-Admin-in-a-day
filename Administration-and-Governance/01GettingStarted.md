@@ -20,7 +20,7 @@ By the end of this lab, you will be able to:
 
 - **Power Apps in Teams**: In this hands-on lab, participants will learn how to create a team in Microsoft Teams and build a Power App within it, gaining experience in app creation, publishing, and sharing for broader organizational use.
 
-- **Dataverse for Teams (Optional)**: In this hands-on lab, participants will create a Power App within a Microsoft Team, publish it for team use, and share it with users outside the team to understand broad distribution capabilities.
+- **Explore the CoE Starter Kit (Optional)**: In this hands-on lab, participants will explore the Center of Excellence (CoE) Starter Kit to understand how it supports governance and adoption of the Power Platform. They will learn to navigate the CoE dashboard, track connector usage, review audit logs, and apply compliance processes, gaining practical experience in managing and governing app usage within an organization.
 
 ## Prerequisites
 
