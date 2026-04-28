@@ -389,14 +389,6 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
     > **Note:** The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit. 
 
-1. Before proceeding to the next step, navigate back to the **Power Platform Admin Center**, **Refresh** the portal and navigate to the **Power Platform COE (1)** environment and select **Dynamic 365 apps (2)** under Resources.
-
-    ![](images/img-01-39.png)
-
-1. Ensure the **Creator Kit** is installed. 
-
-    ![](images/M02/ckinst.png)
-
 1. Navigate back to the [Power Apps](https://make.powerapps.com/) portal.
 
 1. Choose the **Power Platform COE (1)** Environment. In the left menu, click **Solutions (2)**.
@@ -409,7 +401,7 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
 1. Click **Browse (1)**.
 
-1. Navigate to  **C:\Users\demouser\Downloads\CoEStarterKit (1)** then select **CenterOfExcellenceCoreComponents_4_50_2_managed.zip (2)** solution file from the extracted folder then click on **Open (3)**.
+1. Navigate to  `C:\Users\demouser\Downloads\CoEStarterKit` (1) then select **CenterOfExcellenceCoreComponents_4_50_2_managed.zip (2)** solution file from the extracted folder then click on **Open (3)**.
 
     ![](images/f1.png)
 
@@ -425,7 +417,9 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
     ![](images/M02/ppm2.png)
 
+    > **Note**: You may proceed to the next module or page. Once installation is completed, please complete the remaining exercise.
 
+1. After 20-30 minutes, Please do **Refresh (1)** the portal then you will be able to see the successfully imported message **(2)**.
 ### Install COE Governance Solution.
 
 1. Go to the **Solutions (1)** tab.
@@ -436,7 +430,7 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
 1. Click on **Browse (1)**.
 
-1. Navigate to **C:\Users\demouser\Downloads\CoEStarterKit (2)** folder then select the following file **CenterofExcellenceAuditComponents_3_27_3_managed.zip (3)** and then click on **Open (4)**.
+1. Navigate to `C:\Users\demouser\Downloads\CoEStarterKit` (2) folder then select the following file **CenterofExcellenceAuditComponents_3_27_3_managed.zip (3)** and then click on **Open (4)**.
 
     ![](images/f2.png)
 
@@ -535,9 +529,9 @@ for persona.
 
 1. **Run Inventory flows**: Click toggle button for all the flows available on the page, wait until all the flows are removed from the page and then click **Next**.
 
-    ![](images/M02/pv31.png)
+    > **Note**: This page might take 1-2 hours sometimes to load. Proceed with further modules and keep this run in background.
 
-     >**Note**: This page might take some to load please wait untill its loaded. Proceed Next if no flows on the page
+    ![](images/M02/pv31.png)
 
 1. **Configure dataflows**: Click **Next**.
 
@@ -547,6 +541,8 @@ for persona.
 
 1. Close **CoE Setup and Upgrade Wizard** application.
 
+    > **Note:** For additional details about the Center of Excellence (CoE), we recommend reviewing the Microsoft Learn overview:
+    > https://learn.microsoft.com/en-us/power-platform/guidance/coe/overview
 ### Review
 
 In this lab, you have accomplished the following:
