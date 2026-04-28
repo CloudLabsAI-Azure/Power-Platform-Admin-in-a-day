@@ -529,7 +529,7 @@ for persona.
 
 1. **Run Inventory flows**: Click toggle button for all the flows available on the page, wait until all the flows are removed from the page and then click **Next**.
 
-    >**Note**: This page might take 1-2 hours sometimes to load. Proceed with further modules and keep this run in background.
+    > **Note**: This page might take 1-2 hours sometimes to load. Proceed with further modules and keep this run in background.
 
     ![](images/M02/pv31.png)
 
@@ -541,8 +541,8 @@ for persona.
 
 1. Close **CoE Setup and Upgrade Wizard** application.
 
-> Note: You can learn more about Center of excellence https://learn.microsoft.com/en-us/power-platform/guidance/coe/overview
-
+    > **Note:** For additional details about the Center of Excellence (CoE), we recommend reviewing the Microsoft Learn overview:
+    > https://learn.microsoft.com/en-us/power-platform/guidance/coe/overview
 ### Review
 
 In this lab, you have accomplished the following:
