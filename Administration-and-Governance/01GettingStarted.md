@@ -50,49 +50,39 @@ This architecture diagram explores the Power Platform ecosystem and its governan
 
 - **Microsoft Teams** : A collaboration and communication platform that integrates chat, meetings, file sharing, and apps in one place.
   
-## Getting Started with the Lab
- 
-### Accessing Your Lab Environment
+## Accessing Your Lab Environment
  
 Once you are ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
 ![Explore Lab Resources](images/pp51.png)
 
-### Lab Guide Zoom In/Zoom Out
+## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
 ![Manage Your Virtual Machine](images/gp4.png)
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
-### Exploring Your Lab Resources
+## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
 ![Manage Your Virtual Machine](images/updtenv.png)
  
-### Utilizing the Split Window Feature
+## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
 ![Manage Your Virtual Machine](images/updatedsplit.png)
  
-### Managing Your Virtual Machine
+## Managing Your Virtual Machine
  
 Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](images/gp3.png)
-
-### Lab Validation
-
-1. After completing the task, hit the **Validate** button under the Validation tab integrated into your lab guide. You can proceed to the next task if you receive a success message. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-
-   ![Manage Your Virtual Machine](images/gdev5.png)
-
-1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
 ## Getting Started with Lab
 
@@ -100,17 +90,17 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
     ![](images/gp9.png)
 
-1. On the **Sign in** window, you will see the login screen, enter the following username  and click on **Next**.
+1. On the **Sign in** window, you will see the login screen, enter the following username **(1)**  and click on **Next (2)**.
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-     ![](images/M01/sign-in.png)
+     ![](images/M01/signin-0505.png)
 
-1. Now enter the following **password**  and click on **Sign in**. 
+1. Now enter the following **Temporary Access Pass (1)**  and click on **Sign in (2)**. 
 
-    * Temporary Access Pass: <inject key="AzureAdUserPassword"></inject>
+    * **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
   
-      ![](images/password-1211.png)
+      ![](images/M01/signin1-0505.png)
 
 1. On the **Welcome to Power Apps**, when prompted, select **Get Started**.
 
@@ -122,21 +112,28 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 1. On the **Power Apps** select **Solutions (1)** and click on **Create a database (2)**.
 
-    ![](images/gp6.png)
+    ![](images/M01/page1-step6-0505.png)
 
 1. Now, leave all options as default and click on **Create my database** and the database creation process will start.
  
-    ![](images/gp7.png)
+    ![](images/page1-step7-0505.png)
 
     >**Note**: You may get an error like **Self service signup plan is required to complete the request**, but you can ignore that as the dataverse will be creating in the backend. It might take around 5-10 mins. You can proceed with the next steps.
 
-    >**Note**: You may get **Try again** message, please do refresh the page after 5-6 mins.
+    >**Note**: You may get **Try again** message, please do refresh the page after 5-6 mins. If it still doesn't work, it might take a while, you can proceed with the next steps.
 
-1. On the **Lab-VM**, double-click the **setup-powerapps-envs** file. When prompted, enter the username as **<inject key="AzureAdUserEmail"></inject>** and the password as **<inject key="AzureAdUserPassword"></inject>**, and wait for the script to finish.
+    > ![](images/page1-step7error-0505.png)
 
-    ![](images/img-01-121.png)
+1. On the **LabVM**, double-click the **setup-powerapps-envs** file. When prompted, enter the following, and wait for the script to finish.
 
-    ![](images/img-01-120.png)
+    - Username: **<inject key="AzureAdUserEmail"></inject>**
+    - Temporary Access Pass: **<inject key="AzureAdUserPassword"></inject>**, 
+
+        ![](images/img-01-121.png)
+
+        ![](images/img-01-120.png)
+
+1. When prompted Press any key to continue, you can click on the **Enter** key to close the command prompt.
 
 ## Support Contact
 
