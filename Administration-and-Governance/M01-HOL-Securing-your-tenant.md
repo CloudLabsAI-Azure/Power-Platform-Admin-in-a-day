@@ -1,16 +1,18 @@
-## Admin in a day
-
+<!--
 #### Please note- the exercises provided here should be completed in a non-production environment. Often you will be assigned an environment by your facilitator. However, if you are completing these labs on your own, make sure to provision a developer or trial environment.
+-->
 
-# M01-HOL-Securing your Tenant
+# Lab 1: Securing your Tenant
 
 ### Estimated Duration: 60 Minutes
 
-## Lab Scenario
+## Overview
 
-In this hands-on lab, you will act as an environment administrator for Fabrikam, supporting the adoption of the Power Platform while ensuring compliance with the organization's data and security policies. Your responsibilities include enabling employees to build Power Apps and Power Automate flows to boost productivity, while also maintaining control over data governance. You will begin by assessing existing Power Platform usage across the organization and then implement baseline security policies to align with Fabrikam’s compliance requirements.
+In this hands-on lab, you will act as an **Environment Administrator** for **Fabrikam**, supporting the adoption of the Power Platform while ensuring **compliance with the organization's data and security policies**. 
 
-## Lab Objectives
+Your responsibilities include enabling employees to build Power Apps and Power Automate flows to boost productivity, while also maintaining control over data governance. You will begin by **assessing existing Power Platform usage** across the organization and then implement baseline security policies to align with **Fabrikam’s compliance requirements**.
+
+## Objectives
 
 In this lab, you will complete the following exercises:
 
@@ -20,29 +22,27 @@ In this lab, you will complete the following exercises:
 - Exercise 4 – Evaluate the impact of adding DLP
 - Exercise 5 – Configure a security role
 
+<!--
 ### Lab Test Environment
 
 This lab is designed to be completed in an environment setup for multiple students to complete the Admin in a day series of hands-on labs. We will be providing an environment for you to 
 utilize for this course.
 
 You will be assigned one or more users to use to complete the tasks. Because this is a shared environment, some tasks that require a tenant Global Administrator or a Service Administrator will already be completed. Your account will only be an environment administrator.
+-->
 
 ## Exercise 1: Exploring existing Power Platform usage
-
-### Scenario
 
 In this exercise, you will be exploring the tenant to see what Power Platform assets have already been created. Specifically, you will be looking at the following:
 
 - Environments that have been created
 - Data Loss Prevention (DLP) policies.
 
->**Note**: Before Proceeding with the HOL, rename the default environment display name with **User and Team Productivity**.
-
 ### Task 1: Review existing environments
 
-In this task you will, navigate the Power Platform admin center to explore, filter, and analyze environments, security roles, and apps created in the default environment.
+In this task you will, navigate to the Power Platform admin center to explore, filter, and analyze environments, security roles, and apps created in the default environment.
 
-1. Open a new tab and navigate to **Power Platform admin center** by following the link:
+1. Open a new tab and navigate to **Power Platform admin center** by following the URL:
 
     ```
     https://aka.ms/ppac
@@ -95,8 +95,7 @@ In this task you will, navigate the Power Platform admin center to explore, filt
 
     ![](images/img-01-04.png)  
 
-1. This is the environment in which all users are makers and can build their apps and flows. Think of this environment as supporting personal productivity use of the platform. This is also the default location used by any customizations built with Power Apps in Office apps. The default environment can’t be deleted, but you can rename it to make clear its 
-    purpose. For example, some name it **User and Team Productivity** like we have in this tenant.
+1. This is the environment in which all users are makers and can build their apps and flows. Think of this environment as supporting personal productivity use of the platform. This is also the default location used by any customizations built with Power Apps in Office apps. The default environment can’t be deleted, but you can rename it to make clear its purpose.
 
 1. Select the default environment by Selecting the name in the list to drill down into the detail page.
 
@@ -136,13 +135,13 @@ In this task you will, examine existing DLP policies, including global and excep
 
 1. From the left navigation menu, select **Security (1)**, then click on **Data and privacy (2)** and select **Data policy (3)**.
 
-    ![](images/img-01-09.png)
+    ![](images/M01/L1T2S1-0505.png)
 
 1. Review the list of existing policies.
 
-    ![](images/M01/expol.png)
+    ![](images/M01/L1T2S2-0505.png)
 
-    - As the login you are using is not a tenant admin but only an environment admin, you will see policies that impact environments of which you are a member.
+    - As an environment admin, you will only see policies that impact environments of which you are a member. In this lab environment, you are a member of the default environment and the Thrive environments, so you will see policies that impact those environments.
 
     - As an environment admin or regular environment user, you will also be able to see any tenant-wide DLP policies applied to your environment. However, you would not be able to edit 
       those tenant-side DLP policies.
@@ -186,7 +185,7 @@ In this task you will, examine existing DLP policies, including global and excep
 
 ## Exercise 2: Plan an environment strategy
 
-In this exercise, you will be reviewing the scenario for Fabrikam that explains their current situation. After reviewing you will evaluate and propose an environmental plan.
+In this exercise, you will be planning an environment strategy for Fabrikam. You will review the scenario for Fabrikam that explains their current situation. After reviewing you will evaluate and propose an environmental plan.
 
 ### Task 1: Read about the current situation at Fabrikam
 
@@ -228,10 +227,9 @@ get wasted.
 
 ### Task 2: Build an Environment Plan
 
-In this task, you use the information from Task 1’s scenario to help you propose an environment plan for Fabrikam. To help you build the plan we have prepared a worksheet with questions 
-for you to answer.
+In this task, you use the information from Task 1’s scenario to help you propose an environment plan for Fabrikam. To help you build the plan we have prepared a worksheet with questions for you to answer.
 
-1. Open the File explorer, navigate to `C:\LabFiles\PPAdminAttendee%20(1)\PPAdminAttendee\M01 - HOL - Securing your tenant\Resources` **(1)** then select **M01 – HOL Environment Plan Worksheet.docx (2)** from the Resources folder.
+1. In the **LabVM**, open the File explorer, navigate to `C:\LabFiles\PPAdminAttendee%20(1)\PPAdminAttendee\M01 - HOL - Securing your tenant\Resources` **(1)** then open **M01 – HOL Environment Plan Worksheet.docx (2)** from the Resources folder.
 
     ![](images/M01/pp15.png)
 
@@ -245,11 +243,7 @@ In this task, we have provided you with a completed environment plan. Review the
 
     ![](images/M01/pp16.png)
 
-2. Talk to your trainer about any significant differences that do not make sense to you.
-
 ## Exercise 3: Plan a DLP strategy
-
-### Scenario
 
 In this exercise, you will be planning a DLP strategy for Fabrikam using the same scenario background information from the last exercise.
 
@@ -258,7 +252,7 @@ In this exercise, you will be planning a DLP strategy for Fabrikam using the sam
 In this task, you use the information from the last exercise’s scenario to help you propose a DLP plan for Fabrikam. To help you build the plan we have prepared a worksheet with questions 
 for you to answer.
 
-1. Open **M01 – HOL DLP Plan Worksheet.docx** from the Resources folder and complete it by answering each of the questions. You should spend no more than 10 minutes on this before proceeding to the next task.
+1. IN the **LabVM**, open **M01 – HOL DLP Plan Worksheet.docx** from the Resources folder and complete it by answering each of the questions. You should spend no more than 10 minutes on this before proceeding to the next task.
 
 ### Task 2: Review the example DLP plan and compare it to yours
 
@@ -270,9 +264,7 @@ In this task, we have provided you with a completed environment plan. Review the
 
 ## Exercise 4: Evaluate the impact of adding DLP
 
-### Scenario
-
-In this exercise, you will create an environment, and a flow, and then view the impact of adding a DLP policy.
+In this exercise, you will be creating a DLP policy and evaluating its impact on the user experience.
 
 ### Task 1: Create a trial environment
 
@@ -301,13 +293,13 @@ In this task you will, set up a new trial environment with Dataverse and assign 
 
     ![](images/img-01-14.png)
 
-1. Then set your security group to **All Contoso users (1)** and then select **Done (2)**.
+1. Then set your security group to **OTU - WA - xxxx (1)** and then select **Done (2)**.
 
-   ![](images/img-01-13.png)
+   ![](images/M01/E4T1S5-0505.png)
 
 1. On the **Add Dataverse** page, select **Save**.
 
-   ![](images/img-01-15.png)
+   ![](images/M01/E4T1S6-0505.png)
 
 1. Wait for the environment to be created. Please do **refresh** the page. The state will change to **Ready** when the environment is ready.
 
@@ -319,7 +311,7 @@ In this task you will, build a simple scheduled flow that retrieves weather data
 
 1. Navigate to the **Power Apps** portal, click on the **Environment (1)** and select the **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** **(2)** environment that you have created.
 
-   ![](images/M01/ppt13.png)
+   ![](images/M01/E4T2S1-0505.png)
 
 2. On the **Power Apps** portal, select **Flows (1)** from the left, select **+ New flow (2)** drop down and select **Scheduled cloud flow (3)**.
 
@@ -327,37 +319,36 @@ In this task you will, build a simple scheduled flow that retrieves weather data
 
 3. Enter **Weather Flow (1)** for **Flow Name**, select **Repeat every 1 Day (2)**, and select **Create (3)**.
 
-    ![](images/M01/pp24.png)
+    ![](images/M01/E4T2S3-0505.png)
 
 4. On the **Weather Flow** page, select **+ New step**.
 
-    ![](images/M01/pv2.png)
+    ![](images/M01/E4T2S4-0505.png)
 
 5. Search for **MSN (1)** and select **Get current weather** **(2)**.
 
    ![](images/img-01-16.png)
 
-6. Provide your **Location (1)**, select your preferred **Units (2)**, and select **+ New step**.
+6. Provide your **Location (1)**, select your preferred **Units (2)**, and select **+ New step (3)**.
 
-   ![](images/img-01-17.png)
+   ![](images/M01/E4T2S6-0505.png)
 
 7. Search for **send an email (1)** and select **Send an email (V2) (2)**.
 
    ![](images/img-01-18.png)
 
-8. Provide your email for **To:** **<inject key="AzureAdUserEmail"></inject> (1)** and enter **Current Weather (2)** for **Subject**.
+8. On the Send an Email (V2) step, provide the following details:
 
-9. Select on the Body enter `Current weather for:` **(3)**. Under the box select **Add dynamic content (4)** and select **Location (5)** from the Dynamic content pane.
+    - **To:** **<inject key="AzureAdUserEmail"></inject> (1)**
+    - **Subject:** **Current Weather (2)**
+    - **Body:** Enter **Current weather for: (3)**
+    - Then select the **Location (4)** value from the Insert parameters pane below. This will add the dynamic value for location to the body of the email.
 
-   ![](images/img-01-19.png)
+        ![](images/M01/E4T2S9-0505.png)
 
-10. Hit the **[ENTER]** key **,** enter **Temperature:** and then select **Temperature** from the Dynamic content pane.
+10. Hit the **[ENTER]** key, and type **Temperature: and Conditions: (1)** in seperate lines and then select **Temperature (2)** and **Conditions (3)** value from the insert parameters pane below. 
 
-11. Hit the **[ENTER]** key **,** enter **Conditions:** and select **Conditions** from the Dynamic content pane.
-
-12. You may add other values to the email and you body should like this.
-
-    ![](images/img-01-20.png)
+    ![](images/M01/E4T2S9.1-0505.png)
 
 13. Select **Save**.
 
@@ -365,29 +356,29 @@ In this task you will, build a simple scheduled flow that retrieves weather data
 
 14. Go to **My Flows** by selecting the **back arrow button** of Weather Flow located on the top left of the page.
 
-    ![](images/M01/pv3.png)
+    ![](images/M01/E4T2S11-0505.png)
 
 15. Select the checkbox of the flow **(1)** and select **Run (2)**.
 
-    ![](images/M01/pp26.png)
+    ![](images/M01/E4T2S12-0505.png)
 
 17. Select **Run flow**.
 
-    ![](images/pp27-1.png)
+    ![](images/M01/E4T2S13-0505.png)
 
 18. Select **Done** and wait for the flow run to complete. 
 
-19. Open a new tab in the same browser. Copy and paste the following link in browser https://outlook.office365.com/ to navigate to **Outlook**, now you should get an email with the weather information.
+19. Open a new tab in the same browser. Copy and paste the following link in browser https://outlook.office365.com/ to navigate to **Outlook**, and sign in with the ODL credentials.  Now you should get an email with the weather information.
 
-    ![](images/M01/ppt14.png)
+    ![](images/M01/E4T2S14-0505.png)
 
 ### Task 3: Create a DLP Policy
 
 In this task, you will create an environment specific DLP and see how it impacts your workflow.
 
-1. Navigate back to the **Power Platform admin center**. If you’re on the **Power Apps** website, you can do this by selecting the **gear** in the header, and selecting **Admin Center**.
+1. Navigate to the Power Apps portal, from the top right corner, click on the **gear icon (1)** and select **Admin Center (2)** to navigate to the **Power Platform admin center**.
 
-   ![](images/M01/pgad.png)
+   ![](images/M01/E4T3S1-0505.png)
 
 1. On the **Power Platform admin center** select **Security (1)** from the left pane, select **Data and privacy (2)** and click **Data Policy (3)**.
 
@@ -404,19 +395,19 @@ In this task, you will create an environment specific DLP and see how it impacts
 1. On the **Prebuilt connections** search for **Microsoft Dataverse (1)** then select **Microsoft Dataverse (2)**, and click on **Move to Business (3)**. Choose carefully, you may have to expand the Name column to differentiate 
    between connectors in your search results.
 
-   ![](images/img-01-23.png)
+   ![](images/M01/E4T3S5-0505.png)
 
 1. Search for **SharePoint (1)**, select **SharePoint (2)** and click on **Move to Business (3)**.
 
-   ![](images/img-01-24.png)
+   ![](images/M01/E4T3S6-0505.png)
 
 1. Search for **Outlook (1)**, select **Office 365 Outlook (2)** and click on **Move to Business (3)**.
 
-   ![](images/img-01-25.png)
+   ![](images/M01/E4T3S7-0505.png)
 
 1. Select the **Business (1)** tab. You should now have **three connectors (2)** moved to Business. Then click on **Next (3)**.
 
-   ![](images/img-01-26.png)
+   ![](images/M01/E4T3S8-0505.png)
 
 1. Skip the Custom connector by selecting the **Next** button, we won’t be using any in this example.
 
@@ -426,33 +417,27 @@ In this task, you will create an environment specific DLP and see how it impacts
 
 1. Choose the environment you created **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (1)** and select **+ Add to Policy (2)**. Once done, select **Next**.
 
-    ![](images/img-01-27.png)
+    ![](images/M01/E4T3S11-0505.png)
 
 1. Review the policy, to make sure you have **(3) Business**  **(1)** connectors added, and only  **1 environment(s)** **(2)** selected and select **Create policy (3)**.
 
-    ![](images/img-01-28.png)
+    ![](images/M01/E4T3S12-0505.png)
 
 1. Navigate to the **Power Apps** portal, from the left navigation menu, click on **Power Platform (1)** and then select **Power Automate (2)**.
 
-    ![](images/img-01-29.png)
+    ![](images/M01/E4T3S13-0505.png)
 
 1. Make sure you are in **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** environment.  
 
-    ![](images/po-20.png)
+    ![](images/M01/E4T3S14-0505.png)
 
-1. On the **Power Automate** page, from the left navigation menu, select **My flows**.
+1. On the **Power Automate** page, from the left navigation menu, select **My flows (1)**. The flow should now be suspended because of the **DLP** you created. **Select to open the flow.** This can take up to 5 minutes, wait a few minutes and then select refresh.
 
-    ![](images/po-21.png)
-
-1. The flow should now be suspended because of the **DLP** you created. **Select to open the flow.** This can take up to 5 minutes, wait a few minutes and then select refresh.
-
-    ![](images/po-22.png)
-
-    >**Note:** It might take some time to reflect. If your not able to see the status as **Suspended**. Navigate to **Weather Flow** flow in Power Apps and then click on **Save** again. Because sometimes Policy may not get reflected immediately. 
+    ![](images/M01/E4T3S15-0505.png)
 
 1. You should not be able to run the flow. There will be a notice at the top showing that the DLP is active and restricting access, and the **Status** should be suspended. Feel free to close the webpage/tab once you’ve confirmed it has been suspended.
 
-    ![](images/po-23.png)
+    ![](images/M01/E4T3S16-0505.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
@@ -460,7 +445,7 @@ In this task, you will create an environment specific DLP and see how it impacts
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="7590c1ab-04c9-4388-8474-c1f1aa46ade1" />
+<validation step="3379fa81-ffc4-49c5-82db-97274e81a612" />
 
 ## Exercise 5: Configure a security role
 
