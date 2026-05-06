@@ -1,21 +1,22 @@
-## Admin in a day
-
-# M04-HOL- Managed Environments
+# Lab 4: Managed Environments
 
 ### Estimated Duration: 80 Minutes
 
-## Lab Scenario
+## Overview
 
-In this hands-on lab, you are an administrator helping Contoso adopt and manage Power Platform more effectively. Contoso wants to gain finer control over their environments by enabling managed environments, and they have asked you to apply these features to an existing unmanaged environment. Additionally, the team developing the Device Order Management app is ready to move their solution from the development environment to the test environment. In this lab, you will use the Managed Environments and Pipelines features in Power Platform to apply new controls, configure the deployment path, and move the solution package through the Dev > Test > Prod cycle, beginning with the initial setup for deployment to the test environment.
+In this lab, you are an **administrator** helping Fabrikam **adopt and manage Power Platform more effectively**. Fabrikam wants to gain finer control over their environments by **enabling managed environments**, and they have asked you to apply these features to an existing unmanaged environment. Additionally, the team developing the **Device Order Management** app is ready to move their solution from the development environment to the test environment. 
+
+In this lab, you will use the Managed Environments and Pipelines features in Power Platform to apply new controls, configure the deployment path, and move the solution package through the Dev > Test > Prod cycle, beginning with the initial setup for deployment to the test environment.
 
 
-## Lab Objectives
+## Objectives
 
 In this lab, you will complete the following exercises:
 
 - Exercise 1 - Managed Environments
 - Exercise 2 – Power Platform Pipelines
 
+<!--
 ### Lab Test Environment
 
 This hands-on lab is designed to be completed in an environment setup for multiple students to complete the Admin in a day series of hands-on labs.
@@ -23,6 +24,7 @@ This hands-on lab is designed to be completed in an environment setup for multip
 
 You will be assigned one or more users to use to complete the hands-on tasks. Because this is a shared environment, some tasks that require a tenant Global Administrator or a Service 
 Administrator will already be performed.
+-->
 
 ### Exercise 1: Managed Environments
 
@@ -340,8 +342,6 @@ in a team that is not bound to the environment.
 
 ### Exercise 2: Power Platform Pipelines
 
-### Scenario
-
 Another feature of a managed environment is the ability to utilize the in-platform pipelines to democratize application lifecycle management (ALM) by bringing ALM automation  
 continuous integration and continuous delivery (CI/CD) capabilities to the service. Included with these is the ability to view out-of-the-box analytics within a central location and 
 Power BI reports. Pipelines can deploy solutions, connections, connection references, and environment variables to environments of the same region as the host environment.
@@ -622,9 +622,10 @@ In this task you will, import a sample solution, run the pipeline to deploy from
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="6c142d29-2422-47b3-bace-420477a05a8c" />     
+<validation step="2cafbfde-046f-4e7f-b645-7543771cb755" />     
 
-### Review
+## Summary
+
 In this lab, you have accomplished the following:
 
 - Exercise 1 - Managed Environments

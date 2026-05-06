@@ -1,15 +1,14 @@
-## Admin in a day
-
-# M06-Explore the CoE Starter Kit (Optional)
+# Lab 6: Explore the CoE Starter Kit (Optional)
 
 ### Estimated Duration: 75 Minutes
 
-## Lab Scenario
+## Overview
+
 In this lab, you will explore the Center of Excellence (CoE) Starter Kit—a powerful toolkit that helps you manage, govern, and nurture Power Platform adoption within your organization. You’ll learn how to leverage insights from the CoE dashboard, track connector usage, review audit logs, and apply compliance processes to applications.
 
 By the end of this lab, you will gain practical experience in using the CoE Starter Kit to support effective governance and make informed decisions regarding app usage and security.
 
-## Lab Objectives
+## Objectives
 
 In this lab, you will complete the following exercises:
 
@@ -18,9 +17,9 @@ In this lab, you will complete the following exercises:
 - Exercise 3 - Review tenant audit logs 
 - Exercise 4 - Application Compliance Process
 
-**Note:** All these exercises depend on the successful setup of the Inventory component of the CoE Starter Kit, which you completed in a previous exercise. Once the setup is complete, it may take approximately 3–4 hours for the data to be fully reflected in both the Power Platform and Power BI.
+**Note:** This lab depend on the successful setup of the Inventory component of the CoE Starter Kit, which you completed in a previous exercise. Once the setup is complete, it may take approximately 3–4 hours for the data to be fully reflected in both the Power Platform and Power BI.
 
-You may proceed with the exercises if the data has loaded successfully. If not, you'll need to wait until the data becomes available. In the meantime, you can review the exercises to familiarize yourself with the lab content.
+You may proceed with the exercises if the data has loaded successfully. If not, you'll need to wait until the data becomes available if the time permits or you can review the exercises to familiarize yourself with the lab content.
 
 ## Exercise 1: Explore the CoE Starter Kit
 
@@ -566,7 +565,7 @@ In this task, you will be performing the administrative review of the applicatio
 stages and steps to the process and requiring additional data from the maker.
 
 
-### Review
+## Summary
 
 In this lab, you have accomplished the following:
 

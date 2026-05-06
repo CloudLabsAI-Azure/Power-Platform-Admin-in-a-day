@@ -1,14 +1,12 @@
-# Admin in a day
-
-# M05A-HOL-Power Apps in Teams
+# Lab 5: Power Apps in Teams
 
 ### Estimated Duration: 45 Minutes
 
-## Lab Scenario
+## Overview
 
-In this hands-on lab, you will create a new team in Microsoft Teams and build a Power App within it. You will also learn how to configure team ownership and publish the app for collaboration within the team. 
+In this lab, you will create a new team in Microsoft Teams and build a Power App within it. You will also learn how to configure team ownership and publish the app for collaboration within the team. 
 
-## Lab Objectives
+## Objectives
 
 In this lab, you will complete the following exercises:
 
@@ -100,7 +98,7 @@ In this task you will, open Power Apps inside Teams, select the Central IT team,
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="011520fb-58d8-44f3-9fb3-5039bc2caea2" />
+<validation step="2d8c92b8-a1b7-4905-b5a4-5550f3c9c011" />
 
 ## Exercise 2: Create your first app
 
@@ -282,7 +280,7 @@ In this task, you will share the application and the table you created.
 
    ![](images/M05/p5p34.png) 
 
-### Review
+## Summary
 
 In this lab, you have accomplished the following:
 
