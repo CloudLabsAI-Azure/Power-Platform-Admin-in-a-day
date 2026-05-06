@@ -641,7 +641,7 @@ In this task you will, import the Send Welcome Email flow into the Power Platfor
 
 In this task you will, edit the flow to use the created group’s ID, turn it on, and test it by creating a new app. Verify that the maker is added to the group and receives a welcome email.
 
-1. Navigate to Power Apps maker portal with the following URL, and ensure to select the Central Apps Test environment.
+1. Navigate to Power Apps maker portal with the following URL, and ensure to select the **Central Apps Test** environment.
 
    ```
    https://make.powerapps.com/
@@ -659,17 +659,17 @@ In this task you will, edit the flow to use the created group’s ID, turn it on
 
    ![](images/img-01-72.png)
 
+   >**Note:** Select **Skip** on the **Welcome to Power Apps Studio** pop-up window.
+
 1. The app designer should open. Select **Save** at the top right of the page.
 
-   ![](images/M03/pv63.png)
+   ![](images/M03/E3T3S5-0605.png)
 
-   >**Note:** Select **Skip** on the **Welcome to Power Apps Studio** page.   
-
-1. Enter **Test app (1)** for App name and select **Create (2)**.
+1. On the Save as window, enter **Test app (1)** for App name and select **Create (2)**.
 
    ![](images/M03/pv64.png)
 
-1. Go back to the **Power Apps** main page by selecting the **Back** button.
+1. Go back to the **Power Apps** main page by selecting the **Back** button and on the Leave the app? window, select **Leave**.
 
    ![](images/M3-EX4-T3-S6.png)
 
@@ -681,7 +681,7 @@ In this task you will, edit the flow to use the created group’s ID, turn it on
 
    ![](images/M03/pv66.png)
 
-1. Navigate to **Power Automate**. Select the **Power Platform CoE** environment.
+1. Navigate to the tab where you have **Power Automate** opened. Select the **Power Platform CoE** environment.
 
 1. Select **My Flows (1)**. Search for **New Maker (2)** and then click on **Edit (3)** icon in the **Admin Alert | New Maker**.
 
@@ -691,11 +691,11 @@ In this task you will, edit the flow to use the created group’s ID, turn it on
 
     ![](images/M03/M3-EX4-T3-S13.png)
 
-1. Expand the **OfficialGroupID** box. Clear the current **Group ID**.
+1. Expand the **OfficialGroupID** box. Clear the existing **Group ID** from the Inputs field.
 
 1. Copy the **Object Id** from your notepad and paste it in the **OfficialGroupID** box.
 
-    ![](images/M03/pv68.png)
+    ![](images/M03/E3T3S14-0605.png)
 
 1. You may examine the steps of the flow. Select **Save**.
 
@@ -707,31 +707,31 @@ In this task you will, edit the flow to use the created group’s ID, turn it on
 
 1. **Turn on** the flow if it is off.
 
-    ![](images/M03/pv71.png)
+    ![](images/M03/E3T3S17-0605.png)
 
 1. Select **Run**.
 
     ![](images/M03/pv72.png)
 
-1. Select **Run Flow**.
+1. Select **Run Flow** and then click on **Done**.
 
     ![](images/M03/pv73.png)
 
-1. Select **Done**. **Refresh (1)** every few seconds until the flow status changes. Your flow run should succeed **(2)**.
+1. **Refresh (1)** every few seconds until the flow status changes. Your flow run should succeed **(2)**.
 
     ![](images/M03/pv74.png)
 
-1. Go back to the **Azure portal**. Select **Microsoft Enta ID**. Select **Groups** under **Manage**.
+1. Navigate back to the tab where you have the **Azure portal** opened. Go to **Microsoft Entra ID** > **Groups**.
 
    ![](images/M03/pv52.png)
 
-1. Select **All groups**. Search for **Lab Admin Makers** and then select it.
+1. Select **All groups (1)** and select the **Lab Admin Makers** group.
 
-    ![](images/M03/ppt40.png)
+    ![](images/M03/E3T3S22-0605.png)
 
-1. Select **Members**. You should have at least one member.
+1. From the **Members** tab, verify you have at least one member **(2)**.
 
-    ![](images/M03/ppt42.png)
+    ![](images/M03/E3T3S23-0605.png)
     
 1. Navigate to [Outlook](https://outlook.office365.com/). You should get a welcome email. Open the email. If you don’t get an email, it is probably because you didn’t create an application in the past 24 hours, create a new Power App and run the flow again.
     

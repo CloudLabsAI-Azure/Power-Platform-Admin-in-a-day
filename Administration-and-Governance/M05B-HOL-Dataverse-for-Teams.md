@@ -37,9 +37,7 @@ Now in this exercise, you will explore the following key components:
 
 In this task you will, launch the Admin View app in the CoE environment to review apps, flows, environments, connectors, and makers. Explore governance features like business justification, risk assessment, and app catalog tagging.
 
-1. Navigate to **Power Apps**.
-
-2. Select the **Power Platform CoE** environment in the environment selector.
+1. Navigate to **Power Apps** and select the **Power Platform CoE** environment in the environment selector.
 
    ![](images/M02/pv93.png)
 
@@ -57,19 +55,17 @@ In this task you will, launch the Admin View app in the CoE environment to revie
 
 6. Select the any app in the list to open the app details.
 
-   ![](images/M02/M2-EX3-T1-S6A.png)
+   ![](images/M06/E1T1S5-0605.png)
 
 7. In the **Governance** tab you can see the Business Justification provided by the app maker using the Developer Compliance Center app. The bottom part is where you as an admin can provide your risk assessment. You can also tag the app to show in the App Catalog and make it featured. You can customize the CoE entities to add additional fields here if needed.
 
-   ![](images/M02/M2-EX3-T1-S7A.png)
+   ![](images/M06/E1T1S6-0605.png)
 
 8. Select **Environments (1)** in the left navigation. This will show you a list of all the environments in your tenant and key metrics like several apps. To view all your environments, similar to the image below, switch the view at the top to **Active Environments (2)**.
 
-   ![](images/M02/pv96.png)
+   ![](images/M06/E1T1S7-0605.png)
 
-9. Select any environment to open the detail form.
-
-10. Review the data available.
+9. Select any environment to open the detail form and review the data available.
 
 11. Select the **Connectors (1)** link from the left navigation. This shows all the connectors available **(2)**.
 
@@ -81,9 +77,9 @@ In this task you will, launch the Admin View app in the CoE environment to revie
 
 13. The **Used in app (1)** tab quickly shows you what apps are using this connector in all **environments (2)** in your tenant.
 
-    ![](images/M02/pv99.png)
+    ![](images/M06/E1T1S11-0605.png)
 
-14. Select **Users (1)**, then **Makers (2)** from the left navigation; this shows you all the **people (3)** who have built apps in your company.
+14. Expand **Users (1)** and select **Makers (2)** from the left navigation; this shows you all the **people (3)** who have built apps in your company.
 
     ![](images/M02/pv101.png)
 
@@ -94,36 +90,43 @@ In this task you will, launch the Admin View app in the CoE environment to revie
 
 In this task you will, use the environment URL, configure the Production and Governance dashboard in Power BI Desktop, connect it to Dataverse, and review reports. Publish the dashboard to your workspace to monitor tenant-wide adoption, app usage, and environment activity.
 
-#### Get the environment URL
+### Task 2.1: Get the environment URL
+
 You need the URL of the Power Platform environment where the CoE Starter Kit is installed. Power BI connects to Dataverse tables in that environment.
 
-1. Go to the [Power Platform admin center](https://aka.ms/ppac).
+1. Navigate to Power Platform admin center using the below URL in a new tab:
 
-2. Select **Environments (1)**, then choose Power **platform COE environment (2)**.
+    ```
+    https://aka.ms/ppac
+    ```
 
-    ![](images/M02/pv102.png)
+2. Select **Manage (1)** from the left navigation pane. Then click on **Environments (2)** and select the **Power Platform CoE environment (3)** where you have installed the CoE Starter Kit.
 
-3. Right-click on the **Environment URL** **(1)** and select **Copy Link (2)** Address and paste it on notepad for future reference.
+    ![](images/M06/E1T2.1S2-0605.png)
 
-    ![](images/M02/pv103.png)
+3. Copy the URL under **Environment URL (1)** and save it in notepad for later use.
 
-#### Configure the Production and Governance Power BI dashboard
+    ![](images/M06/E1T2.1S3-0605.png)
 
-1. Navigate to PowerBI using the following link https://app.powerbi.com/ in your browser.
+### Task 2.2: Configure the Production and Governance Power BI dashboard
 
-1. If prompted, **Sign in** with your lab credentials.
+1. Navigate to Power BI portal using the following URL in a new browser tab:
 
-    ![](images/M02/pt3.png)
+    ```
+    https://app.powerbi.com/
+    ```
 
-1. Select **Next**.
+1. Enter the below email and click on **Submit (2)**.
 
-    ![](images/M02/pt2.png)
+    - Email: **<inject key="AzureAdUserEmail"></inject> (1)**
+
+    ![](images/M06/E1T2.2S2-0605.png)
 
 1. If prompted, please solve the puzzle.    
 
-1. Select **Continue**.
+1. On the You've selected Microsoft Fabric free page, select **Sign in**.
 
-    ![](images/M02/pt1.png)
+    ![](images/M06/E1T2.2S4-0605.png)
 
 1. On the **Create your account** page, provide the following details and then click on **Get started (4)**.
 
@@ -131,23 +134,21 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
    - Job: **PowerPlatformEngineer(2)**
    - Phone number: Enter random 10 digits **(3)**
 
-     ![](images/M02/pt4.png)
+     ![](images/M06/E1T2.2S5-0605.png)
 
 1. Click on **Get Started**.
 
-    ![](images/M02/pt5.png)
+    ![](images/M06/E1T2.2S6-0605.png)
 
 1. Click on the **Acoount manager icon (1)** from the top right corner and then click on **Free trial (2)**.
 
-    ![](images/M02/pt6.png)
+    ![](images/M06/E1T2.2S7-0605.png)
 
-1. Select **Activate**.
+1. On the **Activate your 60-day free fabric trail capacity** window, click on **Activate**.
 
     ![](images/M02/pt7.png)
 
-1. Select **Stay on current page**.
-
-    ![](images/M02/pt-8.png)
+1. On the **Your PowerBI Free trial has started** window, click on **Got it**.
 
 1. On the left side navigation select **Workspaces** and then click on **+ New workspace (2)**.
 
@@ -155,15 +156,23 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
 1. On the Create panel, provide a unique name like **CoE-LabAdmin<inject key="Deployment ID" enableCopy="false" /> (1)** and your lab admin user number and select **Apply (2)**.
 
-   ![](images/M02/pt10.png)
+   ![](images/M06/E1T2.2S11-0605.png)
 
-1. Launch **Power BI Desktop** on your local computer from the desktop.
+1. In Power BI portal, click on **Settings (1)** (gear box icon) from the top right corner, and select **Admin portal (2)**.
+
+    ![](images/M06/adminportal-0605.png)
+
+1. In the Admin portal, select **Tenant settings (1)**, search for **map (2)**. Enable the setting **Use Map and Filled Map visuals (3)** and click on **Apply (4)**.
+
+    ![](images/M06/adminportal1-0605.png)
+
+1. Launch **Power BI Desktop** from thr LabVM desktop.
 
    ![](images/M02/ppt22.png)
 
-1. Close the popup window.
+1. Close any popup window.
 
-1. Click on **Sign in** from the top bar, sign-in with your lab admin account credentials.
+1. Click on **Sign in** from the top bar, sign-in with your lab credentials.
 
 1. Once signed in, click on **Open (1)**, then **Browse this device (2)**.
 
@@ -175,37 +184,40 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
 1. Wait for sometime you will notice popup appears for org URL.    
 
-1. Wait for report to load. Enter the URL of your environment instance that yu have copies earlier. Include the https:// prefix for OrgUrl **(1)**. Then Click **Load (2)**.
+1. Wait for report to load. Enter the URL of your environment instance that you have copied earlier. Include the https:// prefix for OrgUrl **(1)**. Then Click **Load (2)**.
 
     ![](images/M02/pt11C.png)
 
-    >**Note:**  Paste the Environment URL you copied earlier. If the report loads before you provide the Environment URL, click **Transform Data (1)**, then select **Edit Parameters (2)** to 
+    >**Note:** If the report loads before you provide the Environment URL,then follow below steps: 
+    > - Click on **Transform Data (1)**, then select **Edit Parameters (2)**.
+    > ![](images/M02/pv104.png)
     
-     ![](images/M02/pv104.png)
+    > - Paste your **Environment URL (1)** then tenant type as **commercial (2)** and the click **Ok (3)**.
+    > ![](images/M02/pv105.png)  
 
-     - Paste your **Environment URL (1)** then tenant type as **commercial (2)** and the click **Ok (3)**.
-
-       ![](images/M02/pv105.png)     
-
-1. Sign In with environment credentials.
+    > - Click on Apply changes in the yellow banner.
+    > ![](images/M06/E1T2.2S18note3-0605.png)   
+    
+    > - When prompted to Sign in, click on **Sign in (1)** and use lab credentials to login. Then click on **Connect (2)**.
+    > ![](images/M06/E1T2.2S18note4-0605.png)
 
 1. The report should load automatically once the refresh has been completed.
 
 1. Follow the steps below to enable **map and filled map visuals**:
 
-     a) Select **File** at the top right, then select **Options and Settings > Options**.
-   
-     ![](images/opt.png)
-   
-     b) Select **Security (1)** from the left.
-   
-     c) Scroll down to the Map and Filled Map visuals section.
-   
-     d) Check the **Use Map and Filled Map visuals (2)** checkbox.
-   
-     e) Select **OK (3)** to close the Options dialog.
+    - Click on **File** from the top left corner, then select **Options and Settings (2)** > **Options (3)**.
 
-     ![](images/M02/pv106.png)
+        ![](images/M06/E1T2.2S20.1-0605.png)
+   
+        ![](images/M06/E1T2.2S20.2-0605.png)
+   
+    - Select **Security (1)** from the left.
+   
+     - Scroll down to the Map and Filled Map visuals section and check the **Use Map and Filled Map visuals (2)** checkbox.
+   
+    - Select **OK (3)** to close the Options dialog.
+
+        ![](images/M02/pv106.png)
 
 1. Review the **Introduction** page.
 
@@ -237,11 +249,9 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
      ![](images/M02/pt13.png)
 
-1. Wait for the publishing to complete and select **Open 'PBI’** Report in Power BI or **Got it**.
+1. Wait for the publishing to complete and then click on **Got it**.
 
-     ![](images/M02/pv109.png)
-
-1. If you selected **Open**, skip this step. Otherwise, if you selected ‘Got it’, navigate to Power BI. Select **Workspaces (1)** and then **CoE-LabAdmin<inject key="Deployment ID" enableCopy="false" /> (2)** Workspace you created. Otherwise, skip to step 37.
+1. Navigate to the Power BI Portal, and select **Workspaces (1)** and then **CoE-LabAdmin<inject key="Deployment ID" enableCopy="false" /> (2)** Workspace you created.
 
      ![](images/M02/pt14.png)
 
@@ -250,6 +260,7 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
      ![](images/M02/pv110.png)
 
 1. Once the report loads, select the **Environments** page. Use any filters to visualize data.
+
      ![](images/M02/M2-EX3-T2-S37-1.png)
 
 1. You have now successfully deployed the Power BI reports that come with the CoE starter kit.
@@ -257,9 +268,7 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
 ## Exercise 2: How much is a connector used in your Apps
 
-### Scenario
-
-Using the Power BI report, you can easily see what apps and flows are using a connector. In this exercise, you will find out who is using the Office 365 outlook connector.
+In this exercise, you will explore the Power Platform Admin View app in the CoE Starter Kit to locate resources that use the Office 365 Outlook connector. You will review filtered data to evaluate apps/flows using it and their connector tier.
 
 ### Task 1: Locate resources that use the Office 365 Outlook connector
 
@@ -278,19 +287,17 @@ In this task you will, open the App Connector deep dive page in Power BI, select
 
 ## Exercise 3: Review tenant audit logs 
 
-### Scenario
-
-All other auditing of Power Apps and Power Automate flows (other than CDS data modification) are viewed through the Microsoft Purview site.
-
-Before use, this must be enabled by a global tenant administrator using these instructions. In the tenant you are using we have already completed that for you as well as permitting you to view the audit log data for the tenant. That was done using the PowerShell command Add-RoleGroupMember “Compliance Management” -Member your user.
-
-In this exercise, you will be using the log search and alert tools to work with the audit data.
+In this exercise, you will review tenant audit logs in Microsoft Purview. You will search and filter the logs to find specific activities related to Power Apps and Power Automate, such as flow edits, and learn how to export the data for further analysis.
 
 ### Task 1: Review audit logging in the environment
 
 In this task you will, open Microsoft Purview, navigate to Audit, and start recording activity. Perform a search to view logs, export data if needed, and filter results by activity type, user, or item. This allows admins to track activities such as flow edits and review detailed audit information for governance and compliance. 
 
-1. Navigate to **Microsoft purview** using the following link https://purview.microsoft.com/.
+1. Navigate to **Microsoft purview** using the following URL:
+
+    ```
+    https://purview.microsoft.com/
+    ```
 
 1. Click on **Get Started**.
 
@@ -304,9 +311,11 @@ In this task you will, open Microsoft Purview, navigate to Audit, and start reco
 
    ![](images/M02/ppt25.png)
 
+1. On the COmplete organizational setup window, click on **Yes**.
+
 1. Select **Search** using the default search criteria.
 
-   ![](images/M2-EX6-T1-S3.png)
+   ![](images/M06/E3T1S6-0506.png)
 
 1. The **Job Status** will read as **Queued** once it has been set to process. **Refresh** the audit every few minutes or so until the status reads as **Completed**.
 
@@ -352,7 +361,7 @@ In this task you will, open Microsoft Purview, navigate to Audit, and start reco
 
 1. Try selecting an item to view detail. Copy the Item field and then go back to the list and select the filter results. Paste the item info you just copied into the file. The results list will now only show activities related to that item. For example, you could use this to show all activities for a specific flow.
 
->**Note:** Any information from before auditing was enabled, cannot be retrieved. This can be seen by selecting a date range from before the auditing was enabled.
+    >**Note:** Any information from before auditing was enabled, cannot be retrieved. This can be seen by selecting a date range from before the auditing was enabled.
 
 ## Exercise 4: Application Compliance Process (Read Only)
 
@@ -377,7 +386,11 @@ app, like business justification and the impact of an outage, from the maker.
 
 In this task, you will be setting up the compliance process for the Governance Components application that you installed in the previous lab.
 
-1. Now return to the tab where your **Center of Excellence - Core Components** solution is open.
+1. Navigate to **Power apps** portal in a new tab, and select the **Power Platform CoE** environment.
+
+1. From the Solution tab, select managed (2) and then select the **Center of Excellence – Core Components (3)** solution.
+
+    ![](images/M06/E4T1S2-0605.png)
 
 1. Open the CoE Setup and Upgrade Wizard app. Click **Apps** **(1)**, Click the three ellipses (⋯) next to the **CoE Setup and Upgrade Wizard** **(2)**. Select **Play** **(3)** to launch the app.
 
@@ -385,20 +398,25 @@ In this task, you will be setting up the compliance process for the Governance C
 
 1. Navigate to the **More features** page and select **Configure the feature** in **Compliance process**.
 
-    ![](images/M02/M2-EX3N-T1-S15.png)
+    ![](images/M06/E4T1S4-0605.png)
 
     > **Note:** The app will guide you through the setup process. If it indicates that some processes are running in the background, it means backend flows are still in progress. You will see the 'Get Started' screen only after all flows have successfully completed.
 
-1. Click **Refresh**. If a pop-up appears regarding flow configuration, proceed as prompted.
+1. Click **Refresh** on the Missing prerequisite window.
+
+    ![](images/M06/E4T1S5-0605.png)
 
 1. On the **Get Started** screen, click **Next**.
 
-1. On the **Exempt environments from this process** screen, click **Next**.  
-    ![](images/M02/M2-EX3N-T1-S16.png)
+1. On the **Exempt environments from this process** screen, click **Next**. 
+
+    ![](images/M06/E4T1S6-0605.png)
 
 1. On the **Configure settings** screen, click **Next**.
 
-1. On the **Turn on flows** screen, toggle **On** for all listed flows, then click **Next**.
+1. On the **Turn on flows** screen, toggle **On (1)** for all listed flows, then click **Next (2)**.
+
+    ![](images/M06/E4T1S9-0605.png)
 
 1. On the **Share Apps** screen, click **Done**. 
 1. Close the **CoE Setup and Upgrade Wizard** application.
@@ -414,15 +432,17 @@ In this task, you will be performing the role of the developer and completing th
 
 1. Navigate to **Power Apps** and select the **OTU WA (default)** environment.
 
-   ![](images/M03/pp113.png)
-
 1. Select **Apps (1)**, then **+ New app (2)** > **Start with page design (3)**.
 
-   ![](images/M04/po29.png)
+   ![](images/M06/E4T2S3-0605.png)
 
-1. Click on **+** on blank canvas app. Make sure **Tablet** is selected.
+1. On the **Start with design** page, select **Create from blank** option.
 
-    ![](images/M04/po30.png)
+   ![](images/img-01-70.png)
+
+1. On the **Start with a blank canvas** page, select **Tablet size**.
+
+   ![](images/img-01-72.png)
 
 1. Click on **Save** on the top right corner 
 
@@ -458,7 +478,7 @@ In this task, you will be performing the role of the developer and completing th
 
 1. Select the Current environment **(1)** then Switch to the **Power Platform COE (2)** environment.
 
-     ![](images/M03/pp119.png)
+     ![](images/M06/E4T2S14-0605.png)
 
 1. Select **Solutions (1)** from the left-side navigation, select **Managed (2)**, then the **Center of Excellence – Core Components (3)** solution.
 
@@ -478,7 +498,7 @@ In this task, you will be performing the role of the developer and completing th
 
     > **Note:** If the **Test App** is not available as an option, you may select any **Canvas** application to proceed with the remaining steps.
 
-1. Select the **Governance (1)** tab and set the **Admin Risk Assessment State** to **Requested (2)**.
+1. Select the **Governance (1)** tab and set the **Admin Requirement - Risk Assessment State** to **Requested (2)**.
 
      ![](images/M02/pv112.png)
 
@@ -490,7 +510,7 @@ In this task, you will be performing the role of the developer and completing th
 
 1. Navigate back to **Power Apps** main page, select **Solutions (1)** via the left-side navigation. Click on **Managed (2)** and then select the **Center of Excellence –** **Governance Components (3)**.
 
-     ![](images/M03/pv114.png)
+     ![](images/M06/E4T2S22-0605.png)
 
 1. Select **Apps (1)** from the **Objects** menu, then click three dots next to **Developer Compliance Center (2)** and then select **play (3)**. 
 
@@ -500,7 +520,7 @@ In this task, you will be performing the role of the developer and completing th
 
 1. Click on **Allow**.
 
-    ![](images/M03/pv116.png)
+    ![](images/M06/E4T2S25-0605.png)
 
 1. You should see at least one app that has the name lab admin and your number or the **Test App** name. Select the card to review the details of the app.
 
@@ -523,11 +543,11 @@ In this task, you will be performing the role of the developer and completing th
 
 In this task, you will be performing the administrative review of the application details that were submitted by the developer.
 
-1. In the maker portal, with the **Power Platform CoE** environment selected.
+1. In the Power Apps portal, with the **Power Platform CoE** environment selected.
 
 1. Select **Apps (1)**. Click on three dots next to **Power Platform Admin View (1)** app and then select **Play (3)**.
 
-     ![](images/M03/pv120.png)
+     ![](images/M06/E4T3S2-0605.png)
 
 1. Select **PowerApps Apps (1)** in the left navigation, select the drop down  **(2)** and then change the view to **Compliance-Submitted (3)**.
 
@@ -574,7 +594,7 @@ In this lab, you have accomplished the following:
 - Exercise 3 - Review tenant audit logs
 - Exercise 4 - Application Compliance Process
 
-### Conclusion
+## Conclusion
 
 In this lab Power **Platform Workshop: Administration and Governance**, we explored key aspects of administering and governing the Power Platform. We created Teams and Power Apps within Microsoft Teams, built custom tables, and published apps for team collaboration. Using the CoE Starter Kit, we reviewed the Power Platform Admin View app to gain visibility into apps, environments, connectors, and makers. We then configured and published Power BI dashboards to monitor adoption and usage trends, explored connector usage insights, and finally worked with Microsoft Purview audit logs to track user and admin activities for compliance. Together, these exercises provided a complete view of how to build, monitor, govern, and secure Power Platform solutions in an enterprise environment.
 
