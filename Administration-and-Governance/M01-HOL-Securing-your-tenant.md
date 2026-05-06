@@ -293,9 +293,9 @@ In this task you will, set up a new trial environment with Dataverse and assign 
 
     ![](images/img-01-14.png)
 
-1. Then set your security group to **OTU - WA - xxxx (1)** and then select **Done (2)**.
+1. Then set your security group to **None (1)** and then select **Done (2)**.
 
-   ![](images/M01/E4T1S5-0505.png)
+   ![](images/M01/E4T1S5-new-0505.png)
 
 1. On the **Add Dataverse** page, select **Save**.
 
@@ -449,77 +449,110 @@ In this task, you will create an environment specific DLP and see how it impacts
 
 ## Exercise 5: Configure a security role
 
-### Scenario
-
-In this exercise, you are going to import a pre-built Power Apps canvas app that was built in another environment. The application allows users to see a list of Projects stored in 
-Dataverse. After importing you will build a Security Role to allow users to work with the Project table data. Finally, you will see how to share the application with a Microsoft Entra 
-ID Security group and assign the security role you just built.
+In this exercise, you will be configuring a security role to allow users to access the Project table in Dataverse. You will then share a canvas app that uses the Project table with a security group and assign the security role you created to the group.
 
 ### Task 1: Import project management solution
 
 In this task you will, import the Fabrikam Project Management solution, run the sample data flow, and test the canvas app with new project records.
 
-1. Navigate to the **Power Apps** portal, click on **Environment (1)** and select **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (2)** you created.
+1. Navigate to the **Power Apps** portal, and make sure you are in the **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> environment** you created earlier.
 
-   ![](images/pp-1.png)
+   ![](images/E5T1S1-0505.png)
 
 2. On the left navigation menu, select **Solutions (1)** and click on **Import solution (2)**.
 
-   ![](images/po-24.png)
+   ![](images/E5T1S2-0505.png)
 
 3. On the **Import a solution** page, select **Browse**.
+
+   ![](images/E5T1S3-0505.png)
 
 4. Navigate to **C:\LabFiles\PPAdminAttendee%20(1)\PPAdminAttendee\M01 - HOL - Securing your tenant\Resources (1)** folder, select the **Fabrikam Project Management (2)** solution and select **Open (3)**.
 
    ![](images/M01/pp32.png)
 
-5. One the file is **Uploaded** select **Next**.
+5. One the file is **Uploaded (1)** select **Next (2)**.
 
-   ![](images/po-25.png)
+   ![](images/E5T1S5-0505.png)
 
-6. Select **Import** and wait for the import to complete. You should get a **notification (1)** when the import succeeds.
+6. Select **Import** and wait for the import to complete. 
 
-7. Select **Publish all customizations (2)** and wait for the publishing to complete.
+   ![](images/E5T1S6-0505.png)
 
-   ![](images/po-26.png)
+7. You should get a **notification (1)** when the import succeeds. Select **Publish all customizations (2)** and wait for the publishing to complete.
+
+   ![](images/E5T1S7-0505.png)
 
 8. Select to open the **solution** you just imported.
 
-   ![](images/po-27.png)
+   ![](images/E5T1S8-0505.png)
 
 9. The solution should have six components.
 
-    ![](images/M01/M1-EX5-T1-S9.png)
+    ![](images/E5T1S9-0505.png)
 
-10. Select to open the **Import Sample Data – Projects** flow. You are going to run this flow to insert some sample project data for the app to use.
+10. Select the **Import Sample Data – Projects (1)** flow. You are going to run this flow to insert some sample project data for the app to use. Click on **Edit (2)**.
 
-    ![](images/po-28.png)
-
-11. Select **Edit**.
-
-    ![](images/po-29.png)
+    ![](images/E5T1S10-0505.png)
 
 12. At this point, you may be asked to sign in to the flow, click on **Sign in**.
 
-    ![](images/M01/pp33.png)
+    ![](images/E5T1S11-0505.png)
 
     - Select **Sign in** again for the **Microsoft Dataverse**
 
         ![](images/img-01-30.png)
 
-    - Select **Continue**.
+        >**Note:** When prompted with the sign in window, please sign in with the ODL credentials.
+        
+1. Ignore the error message `Create and authorize OAuth connection failed`, and click on the back arrow button. 
 
-      ![](images/po-30.png)
+    ![](images/M01/back.png)
+
+
+1. Select the **Connection references (1)** tab from the left navigation menu. Click on the three dots next to the **Microsoft Dataverse (2)** connection reference and select **Edit (3)**.
+
+    ![](images/E5T1S13new-0505.png)
+
+1. On the Edit Microsoft Dataverse connection reference page, click on the **Connection (1)** dropdown and select **+ New connection (2)**.
+
+    ![](images/E5T1S14new-0505.png)
+
+1. You will be navigated to the Connections page, where search of **Dataverse (1)** and select **+ (2)** on Microsoft Dataverse.
+
+    ![](images/E5T1S15new-0505.png)
+
+1. On the Connect to Microsoft Dataverse page, select the Authentication Type as **OAuth (1)**, and then select **Create (2)**.
+
+    ![](images/E5T1S16new-0505.png)
+
+1. You will be prompted to sign in, please sign in with the ODL credentials. On the Confirmation required window, check **(1)** the request and click on **Allow access (2)**. 
+
+    ![](images/E5T1S17new-0505.png)
+
+1. Navigate back to the Connection reference page in the Solution, select the **Microsoft Dataverse** connection reference, click on the three dots and select **Edit (2)** again.
+
+1. In the Connection dorpdown, now select the **<inject key="azureAdUserEmail"></inject> (3)** connection you just created and select **Save (4)**.
+
+    ![](images/E5T1S18new-0505.png)
+
+1. In the Solution, naviagte to **All (1)**, select the **Import Sample Data – Projects (2)** flow, and select **Edit (3)**.
+
+    ![](images/E5T1S20new-0505.png)
+
+1. Select **Continue**.
+
+      ![](images/E5T1S21new-0505.png)
 
 13. Select to expand the **Parse JSON** step.
 
-    ![](images/po-31.png)
+    ![](images/E5T1S12-0505.png)
 
 14. Examine the sample records the flow will create.
 
 15. Select **Save** and wait for the flow to be saved.
 
-    ![](images/po-32.png)
+    ![](images/E5T1S14-0505.png)
 
 16. Go back to the details view of the flow by selecting the back button.
 
@@ -531,7 +564,7 @@ In this task you will, import the Fabrikam Project Management solution, run the 
 
 19. Select **Run** to run the flow.
 
-    ![](images/po-33.png)
+    ![](images/E5T1S28new-0505.png)
 
 20. Select **Run flow**.
 
@@ -541,27 +574,27 @@ In this task you will, import the Fabrikam Project Management solution, run the 
 
 22. Select the **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** environment.
 
-    ![](images/po-35.png)
+    ![](images/E5T1S31new-0505.png)
 
 23. Go back to the solution page, by selecting the **Back arrow** button.
 
-    ![](images/M01/pp35.png)
+    ![](images/E5T1S32new-0505.png)
 
 24. Select **Apps (1)**, then click on the ellipses of **Project Admin (2)**, and click **Play (3)** to run the Canvas application.
 
-    ![](images/M01/pv4.png)
+    ![](images/E5T1S33new-0505.png)
 
 25. The application should load, and you should see the sample project records the flow created. Select the **+ New** to create a new project.
 
-    ![](images/M01/pp37.png)
+    ![](images/E5T1S34new-0505.png)
 
 26. Enter **Test Project (1)** for Title, select **Due date (2)** and select **Save and Close (3)**.
 
-    ![](images/M01/ppt17.png)
+    ![](images/E5T1S35new-0505.png)
 
 27. The application should create a new record and take you back to the list of projects.
 
-     ![](images/M01/pp39.png)
+     ![](images/E5T1S36new-0505.png)
 
 28. Close the Project List application browser window or tab.
 
@@ -569,39 +602,35 @@ In this task you will, import the Fabrikam Project Management solution, run the 
 
 In this task you will, build a new Project Manager role, configure permissions on the Project table, and publish the changes.
 
-1. Navigate to the **Power Apps** portal and make sure you have your sandbox environment selected.
-
-1. Select **Solutions (1)** and select to open the **Fabrikam Project Management (2)** solution.
-
-   ![](images/po-36.png)
+1. Navigate to the **Power Apps** portal and make sure you have your sandbox environment selected and open the **Fabrikam Project Management** solution.
 
 1. Select **+ New (1)** drop-down and select **Security (2)** > **Security role (3)**.
 
-    ![](images/po-37.png)
+    ![](images/E5T2S2-0505.png)
 
-1. Enter **Project Manager (1)** for **Role Name**, select the **Business unit (2)** from the drop down and select **Save (3)**.
+1. Enter **Project Manager (1)** for **Role Name**, select your **Business unit (2)** from the drop down and select **Save (3)**.
 
-   ![](images/po-38.png)
+   ![](images/E5T2S3-0505.png)
 
 1. Search for **Project (1)**, locate the **Project** table and click on the name of the entity. This action will give this role User rights to the Project entity **(2)**.
 
-    ![](images/M01/pp42.png)
+    ![](images/E5T2S4-0505.png)
 
 1. By clicking on the dropdown for the permissions under the read column, if you kept selecting the **Organization** on the label it would increase the permissions.
 
-   ![](images/M01/pp43.png)
+   ![](images/E5T2S5-0505.png)
 
 1. You will now give this role organization **Read** privilege. Select **Organization (1)** from the **None** drop down  of read column and click on **Save (2)**.
 
-   ![](images/M01/pp44.png)
+   ![](images/E5T2S6-0505.png)
 
 1. Click on **<-Back** to navigate back to the Fabrikam Project Management page.
 
-   ![](images/M01/pp45.png)
+   ![](images/E5T2S7-0505.png)
 
 1. Select **Publish all customizations** and wait for the publishing to be completed.
 
-    ![](images/po-40.png)
+    ![](images/E5T2S8-0505.png)
 
 1. Do not navigate away from this page.
 
@@ -611,11 +640,11 @@ In this task you will, share the Project List app with a security group and assi
 
 1. Go back to the **Solutions** page by selecting the **Back to Solutions** button. 
 
-   ![](images/M01/pp46.png)
+   ![](images/E5T3S1-0505.png)
 
 1. Click on **Apps (1)**, then select the radio button of the **Project List (2)** application, and select **Share (3)**.
 
-   ![](images/M01/po19.png)
+   ![](images/E5T3S2-0505.png)
 
 1. On the **Share** pane, select the **ellipses (1)**, and select **Use classic sharing (2)**.
 
@@ -627,7 +656,7 @@ In this task you will, share the Project List app with a security group and assi
 
 1. Close the share pane.
  
-### Review
+## Summary
 
 In this lab, you have accomplished the following:
 

@@ -1,15 +1,12 @@
-## Admin in a day
-
-# M02-HOL-Reporting and Telemetry
+# Lab 2: Reporting and Telemetry
 
 ### Estimated Duration: 90 Minutes
 
-## Lab Scenario
+## Overview
 
-In this Hands-on Lab, you are an administrator helping adopt the Power Platform. An important part of keeping the Power Platform running successfully is monitoring the ongoing usage. In this hands-on lab, you will be using the platform tools and the COE Starter Kit to 
-perform usage monitoring.
+In this lab, you will learn about the **monitoring capabilities of the Power Platform**. Monitoring is a critical aspect of administration and governance, as it allows you to track usage, identify potential issues, and ensure that your Power Platform environment is running smoothly.
 
-## Lab Objectives
+## Objectives
 
 In this lab, you will complete the following exercises:
 
@@ -17,11 +14,13 @@ In this lab, you will complete the following exercises:
 - Exercise 2 – Configure Dataverse logging for a table
 - Exercise 3 - Set up inventory components
 
+<!--
 ### Lab Test Environment
 
 This lab is designed to be completed in an environment setup for multiple students to complete the Admin in a day series of hands-on labs.
 
 You need to use the assigned user and environment information to complete this lab. You must have completed the prior labs to complete this lab.
+-->
 
 ## Exercise 1: Explore the out-of-the-box analytics
 
@@ -174,42 +173,37 @@ In this exercise, you will explore the out-of-the-box analytics that are availab
 
 ## Exercise 2: Configure Dataverse logging for a table
 
-In this exercise, you will configure Dataverse logging for a table that requires auditing.
+In this exercise, you will configure auditing for a table in Dataverse, which is the underlying data platform for Power Apps. Auditing allows you to track changes to data in your tables, including who made the change and when it was made. This can be useful for monitoring and troubleshooting issues in your applications.
 
 ### Task 1: Review audit logging in the environment
 
 In this task you will, enable auditing for the Project table and its Due Date column, publish customizations, and turn on auditing at the environment level.
 
-1. Navigate to the **Power Apps** portal, click on Current Environment **(1)** and select the **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (2)** environment.
+1. Navigate to the **Power Apps** portal, and ensure that the **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** environment is selected.
 
-   ![](images/pp-1.png)
+1. On the left navigation menu, select **Solutions (1)** and open the **Fabrikam Project Management (2)** solution.
 
-1. On the left navigation menu, select **Solutions (1)** and choose the **Fabrikam Project Management (2)** solution to open it.
+   ![](images/M02/E2T1S2-0605.png)
 
-   ![](images/M02/pp129.png)
+1. Expand **Tables (1)** and select the **Project (2)** table. Select **Columns (3)** under the **Schema** section.
 
-1. Select **Tables (1)** and select the **Project (2)** table. Select **Columns (3)** under the **Schema** section.
+   ![](images/M02/E2T1S3-0605.png)
 
-   ![](images/M02/pp130.png)
+1. Click on **Due Date (1)** column to open it. On the Edit column pane, expand **Advance Options (2)**.
 
-1. Locate and select **Due Date** to open it.
+   ![](images/M02/E2T1S4-0605.png)
 
-   ![](images/M02/M2-EX2-T1-S5.png)
+1. Under the **Advanced Options** section, ensure that **Enable Auditing (1)** is enabled for this column. A notice will be underneath the option, informing you that auditing is not enabled for the organization. We will fix this in a later step. Select **Cancel (2)** to close the field details pane.
 
-1. Expand the **Advanced Options** section. Check and ensure that **Enable Auditing (1)** is enabled for this column. A notice will be underneath the option, informing you that auditing is not enabled 
-   for the organization. We will fix this in a later step.
-
-1. Select **Cancel (2)** to close the field details pane.
-
-   ![](images/po-43.png)
+   ![](images/M02/E2T1S5-0605.png)
 
 1. Navigate back to the Tables by selecting the **Tables** using the breadcrumbs at the top.
 
-   ![](images/po-44.png)
+   ![](images/M02/E2T1S6-0605.png)
 
 1. Select the **Project (1)** table radio-button, and then select **Properties (2)** from the ribbon up top.
 
-   ![](images/M02/pp131.png)
+   ![](images/M02/E2T1S7-0605.png)
 
 1. Expand the **Advanced options** section.
 
@@ -217,17 +211,11 @@ In this task you will, enable auditing for the Project table and its Due Date co
 
 1. Scroll down to the **For this table** section and select the **Audit changes to its data (1)** checkbox and select **Save (2)**.
 
-    ![](images/M02/pp132.png)
+    ![](images/M02/E2T1S9-0605.png)
 
-1. Select **All** from the left navigation of the solution.
+1. Select **All (1)** from the left navigation of the solution and click on **Publish all customizations (2)** from the ribbon at the top. Wait for the publishing to be completed before moving to the next step.
 
-    ![](images/M02/pp133.png)
-
-1. Select **Publish all customizations** and wait for the publishing to be completed. A green banner will appear to let you know when it is complete.
-
-    ![](images/po-45.png)
-
-    ![](images/po-46.png)
+    ![](images/M02/E2T1S10-0605.png)
 
 1. Navigate to **Power Platform admin center** and select **Manage (1)**, click on **Environments (2)**, select the **My Sandbox-<inject key="Deployment ID" enableCopy="false" /> (3)** environment and click on **Settings (4)** from the ribbon at the top.
 
@@ -237,7 +225,7 @@ In this task you will, enable auditing for the Project table and its Due Date co
 
     ![](images/audit.png)
 
-1. Check on **Start Auditing (1)** checkbox, select **Save (2)** and click **Cancel** to close.
+1. Check on **Start Auditing (1)** checkbox, select **Save (2)**.
 
     ![](images/img-01-33.png)
 
@@ -245,43 +233,45 @@ In this task you will, enable auditing for the Project table and its Due Date co
 
 In this task you will, open the Project Admin app, create or edit the Annual Conference project, change its Due Date multiple times, and verify the changes in Audit History.
 
-1. Navigate to the **Power Apps** portal and make sure your in **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** environment.
+1. Navigate back to the **Power Apps** portal where your **Fabrikam Project Management** solution is open.
 
 1. Select **Apps (1)** and select the **Project Admin (2)** application to launch.
 
-   ![](images/po-49.png)
+   ![](images/M02/E2T2S2-0605.png)
+
+    > **Note:** If prompted to sign in, click on Sign in and provide your ODL account credentials.
 
 1. If you can see the **Annual Conference** project select it to open it and skip to step 5, if you do not see it, continue with the steps below.
 
-   ![](images/M02/po24.png)
+   ![](images/M02/E2T2S3-0605.png)
 
    - Create a new project by selecting the green **+ New** from the ribbon at the top.
 
-     ![](images/M02/po25.png)
+     ![](images/M02/E2T2S3.1-0605.png)
 
-   - For the **Title**, enter **Annual Conference**. Choose the **Due date** as today’s date.
+   - For the **Title**, enter **Annual Conference (1)**. Choose the **Due date** as today’s date **(2)**.
 
-   - Then, select **Save & Close**.
+   - Then, select **Save & Close (3)**.
 
-     ![](images/M02/M2-EX2-T2-S6.png)
+     ![](images/M02/E2T2S3.2-0605.png)
 
 1. From this screen, reopen the **Annual Conference** project.
 
 1. Change the **Due Date (1)** to any date in the future date and select **Save (2)**.
 
-   ![](images/M02/pp135.png)
+   ![](images/M02/E2T2S5-0605.png)
 
 1. Change the **Due Date** and save a couple more times.
 
 1. Select **Related (1)** and select **Audit History (2)**.
 
-    ![](images/po-50.png)
+    ![](images/M02/E2T2S7-0605.png)
 
 1. You should see the change history for each of your changes. Select **Update/Create** to open one of the change history records.
 
     ![](images/M02/pp136.png)
 
-     >**Note**: Sometimes it might take sometime to get open, no need to wait. Please proceed with the next Exercise.
+     >**Note**: Sometimes it might take sometime to generate the Audit history, no need to wait, you can check this later. Please proceed with the next Exercise.
 
 1. You should see the **Filed Name**, **Old Value** and **New Value**.
 
@@ -291,18 +281,13 @@ In this task you will, open the Project Admin app, create or edit the Annual Con
 
 ## Exercise 3: Set up inventory components
 
-This article guides you in setting up the inventory component of the CoE Starter Kit. The inventory centralizes data on apps, flows, and makers, helping you monitor and manage your Power Platform environment. It enables admin apps, dashboards, and tools like DLP Editor and Set App Permissions for better governance.
-
-Now in this exercise, you will explore the following key components:
-
-- Import the Creator Kit and make connections
-- Set up the Inventory components using the Setup Wizard
+In this exercise, you will set up the inventory components of the CoE Starter Kit. The inventory centralizes data on apps, flows, and makers, helping you monitor and manage your Power Platform environment. It enables admin apps, dashboards, and tools like DLP Editor and Set App Permissions for better governance.
 
 ### Task 1 :  Import the Creator Kit and make connections
 
 In this task you will, install the Creator Kit from AppSource, configure the HTTP with Microsoft Entra ID connection, and import the CoE Starter Kit core and governance solutions into the the Power Platform COE environment.
 
-### Installation of Creator Kit
+### Task 1.1: Installation of Creator Kit
 
 1. On the **Power Apps** portal, select the **Environment** and select **Power Platform COE**.
 
@@ -324,41 +309,41 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
 1. On the **Import a solution** page, select **Browse**, and choose the file that you downloaded.
 
-    ![](images/img-01-112.png)
+    ![](images/M02/E3T1S5-0605.png)
 
     ![](images/img-01-113.png)
 
 1. After selecting the file, on the **Import a solution** page, click **Next**. Select **Import**.
 
-    ![](images/img-01-114.png)
+    ![](images/M02/E3T1S6.1-0605.png)
 
-    ![](images/img-01-115.png)
+    ![](images/M02/E3T1S6.2-0605.png)
 
 1. Wait for the import to complete, and then proceed with the next steps.
 
-### Create Connections
+### Task 1.2: Create Connections
 
-1. Open a new tab and navigate to the **Power Automate** portal, by using the following link.
+1. Open a new tab and navigate to the **Power Automate** portal, by using the following URL.
 
     ```
     https://make.powerautomate.com/
     ```
 
-1. Select your **Power Platform COE** environment.
+1. Click on thr **Environments (1)** and select **Power Platform COE (2)**.
 
-    ![](images/M02/M2-EX3N-T1-S3.png)
+    ![](images/M02/E3T1.2S2-0605.png)
 
-1. Select **More (1)** from left navigation and click on  **Connections (2)** 
+1. Select **More (1)** from left navigation and click on **Connections (2)** 
 
-    ![](images/M02/pv7.png)
+    ![](images/M02/E3T1.2S3-0605.png)
 
 1. Select **+ New Connection**.
 
-    ![](images/M02/pv8.png)
+    ![](images/M02/E3T1.2S4-0605.png)
 
-1. Search for **HTTP with Microsoft Entra ID (1)** and then click on **HTTP with Microsoft Entra ID (preauthorized) (2)**
+1. Search for **HTTP with Microsoft Entra ID (1)** and then click on **+ (plus sign)** sign on **HTTP with Microsoft Entra ID (preauthorized) (2)**
 
-    ![](images/img-01-36.png)
+    ![](images/M02/E3T1.2S5-0605.png)
 
 1. Set the **Base Resource URL (1)** and **Microsoft Entra ID Resource URI (Application ID URI) (2)** to https://graph.microsoft.com/. Click **Create (3)**.
 
@@ -370,8 +355,13 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
     ![](images/img-01-38.png)
 
-### Import the core components solution
-1. Open a new tab in the browser, copy and paste the link, and download the **[CoE Starter Kit](https://aka.ms/CoeStarterKitDownload)** to your virtual machine.
+### Task 1.3: Import the core components solution
+
+1. Open a new tab in the browser, copy and paste the below URL, to download the **CoE Starter Kit** to your virtual machine.
+
+    ```
+    https://aka.ms/CoeStarterKitDownload
+    ```
 
 1. You can see the downloaded file in the right top corner, **download (1)** section. Click on the **Folder (2)** icon to open the foder in the File explorer.
 
@@ -391,90 +381,87 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
 1. Navigate back to the [Power Apps](https://make.powerapps.com/) portal.
 
-1. Choose the **Power Platform COE (1)** Environment. In the left menu, click **Solutions (2)**.
+1. Choose the **Power Platform COE (1)** Environment. In the left menu, click **Solutions (2)**. Click the **Import solution (3)** button at the top.
 
-    ![](images/po-51.png)
+    ![](images/M02/E3T1.3S7-0605.png)
 
-1. Click the **Import solution** button at the top.
+1. Click **Browse**.
 
-    ![](images/M02/pv14.png)
+    ![](images/M02/E3T1S5-0605.png)
 
-1. Click **Browse (1)**.
-
-1. Navigate to  `C:\Users\demouser\Downloads\CoEStarterKit` (1) then select **CenterOfExcellenceCoreComponents_4_50_2_managed.zip (2)** solution file from the extracted folder then click on **Open (3)**.
+1. Navigate to  **`C:\Users\demouser\Downloads\CoEStarterKit` (1)** then select **CenterOfExcellenceCoreComponents_4.50.9_managed.zip (2)** solution file from the extracted folder then click on **Open (3)**.
 
     ![](images/f1.png)
 
 1. Click **Next**.    
 
+    ![](images/M02/E3T1.3S10-0605.png)
+
 1. Review the details, click **Next** twice, leave all environment variable values as default until you see the Import button.
 
 1. Finally, click on **Import**.
 
-    ![](images/M02/pv17.png)
+    ![](images/M02/E3T1.3S12-0605.png)
 
 14. Please wait until this is complete before moving on to new tasks. This may take **20–30 minutes**. During the import, you may see a **warning notification** at the top of the screen (e.g., "Flow imported with warnings"). This is expected and does not necessarily indicate a failure.
 
-    ![](images/M02/ppm2.png)
+    > **Note**: You can proceed to the next Lab or page. Once this installation is completed, please complete this remaining exercise.
 
-    > **Note**: You may proceed to the next module or page. Once installation is completed, please complete the remaining exercise.
+    ![](images/M02/E3T1.3S13-0605.png)
 
-1. After 20-30 minutes, Please do **Refresh (1)** the portal then you will be able to see the successfully imported message **(2)**.
-### Install COE Governance Solution.
+1. After 20-30 minutes, please do refresh the portal then you will be able to see the successfully imported message.
 
-1. Go to the **Solutions (1)** tab.
+### Task 1.4: Install COE Governance Solution.
 
-1. Click on **Import solution (2)** from the top-menu.
-
-    ![](images/M02/ppm3.png)
+1. From the Solutions tab, click on **Import solution** button at the top.
 
 1. Click on **Browse (1)**.
 
-1. Navigate to `C:\Users\demouser\Downloads\CoEStarterKit` (2) folder then select the following file **CenterofExcellenceAuditComponents_3_27_3_managed.zip (3)** and then click on **Open (4)**.
+1. Navigate to `C:\Users\demouser\Downloads\CoEStarterKit` (2) folder then select the following file **CenterofExcellenceAuditComponents_3.27.7_managed.zip (3)** and then click on **Open (4)**.
 
     ![](images/f2.png)
 
-1. Review the details, click **Next**, leave all environment variable values as default until you see the Import button.
+1. Review the details, click **Next** three times, leave all environment variable values as default until you see the Import button.
 
 1. Finally, click on **Import**.
 
-    ![](images/M02/pv18.png)
+    ![](images/M02/E3T1.4S5-0605.png)
 
 1. Wait for the import process to complete. This may take **5 minutes**. During the import, you may see a **warning notification** at the top of the screen (e.g., "Flow imported with warnings"). This is expected and does not necessarily indicate a failure.
 
-1. Please do **Refresh (1)** the portal then you will be able to see the successfully imported message **(2)**.
+1. Please do **Refresh** the portal after 5-7 minutes then you will be able to see the successfully imported message.
 
-    ![](images/M02/ppm5.png)
+    ![](images/M02/E3T1.4S7-0605.png)
 
-1. Once the import is complete, navigate to **Solutions (1)** then **All (2)** and then you can verify the installation by checking the **Center of Excellence – Core Components (3)** and **Center of Excellence - Governance Components (4)**.
+1. Once the import is complete, in the Solutions page, select **All (1)** and then you can verify the installation by checking the **Center of Excellence – Core Components and Center of Excellence - Governance Components (2)**.
 
-    ![](images/M02/ppm6.png)
+    ![](images/M02/E3T1.4S8-0605.png)
 
 ### Task 2: Set up the Inventory components using the Setup Wizard
 
 In this task you will, launch the CoE Setup and Upgrade Wizard, configure environment variables and personas, run setup and inventory flows, and complete the setup to enable inventory dashboards and apps.
 
-1. From the **Solution (1)**, navigate to **Managed (2)** refresh the tab and open the **Center of Excellence - Core Components (3)** solution.
+1. From the Solution page, navigate to **Managed (1)** and open the **Center of Excellence - Core Components (2)** solution.
 
-    ![](images/M02/pv19.png)
+    ![](images/M02/E3T2S1-0605.png)
 
 1. Navigate to **Apps (1)** then click on the ellipse in **COE Admin Command Center (2)** app and then **Play (3)**.
 
-    ![](images/M02/pv20.png)
+    ![](images/M02/E3T2S2-0605.png)
 
-1. Click **Sign In (1)** for RSS, then click **Allow (2)**. 
+1. On the Allow CoE Admin COmmand Center to access your data? window, click **Sign In (1)** for RSS, then click **Allow (2)**. 
 
-    ![](images/M02/M2-EX3N-T1-S10B.png)
+    ![](images/M02/E3T2S3-0605.png)
 
 1. Click **Environment Varibles (1)** under **CoE configuration** from left navigation pannel and then click **admin_AdminMail (2)**, then click **edit (3)**.
 
     ![](images/M02/pv21.png)
 
-1. Paste **<inject key="AzureAdUserEmail"></inject> (1)** email id in the **Value** section , then click **Save (2)**
+1. On the **Configure Environment Variable** window, paste **<inject key="AzureAdUserEmail"></inject> (1)** email id in the **Value** section , then click **Save (2)**
 
-    ![](images/M02/ppm7.png)
+    ![](images/M02/E3T2S5-0605.png)
 
-1. Now return to the previous tab where your “Center of Excellence - Core Components” is open.
+1. Now return to the previous tab where your **Center of Excellence - Core Components** solution is open.
 
     ![](images/M02/ppm8.png)
 
@@ -484,38 +471,35 @@ In this task you will, launch the CoE Setup and Upgrade Wizard, configure enviro
 
 1. Grant all app permission and click **Allow**.
 
-    ![](images/M02/M2-EX3N-T1-S12.png)
+    ![](images/M02/E3T2S8-0605.png)
 
 1. Confirm pre-requisites: Click **Next**.
 
     ![](images/M02/pv23.png)
 
-1. Configure communication methods: Click **configure group** and select **Create new group** 
-for persona.
+1. Configure communication methods: Click **Configure group (1)** and select **Create new group (2)** under Admin persona.
 
-    ![](images/M02/pv24.png)
+    ![](images/M02/E3T2S10-0605.png)
 
 1. You will be navigate to azure portal. Select **Microsoft 365** **(1)** for group type. Give group name as **COE Admin Group** **(2)**. Click **No Owners Selected** **(3)**. 
 
-    ![](images/M02/pv-23.png)
+    ![](images/M02/E3T2S11-0605.png)
 
 1. Search for **odl (1)**, select the **environment email ID (2)** and then **Select (3)** Similarly, you can select multiple members to assign to the Admin persona. 
 
-    ![](images/M02/pv26.png)
+    ![](images/M02/E3T2S12-0605.png)
 
 1. Once you've made your selections, click **Create** to proceed.    
 
-    ![](images/M02/pv27.png)
-
 1. Navigate back to the **CoE Setup and Upgrade Wizard** tab. **Refresh** the page, then proceed to configure the Admin persona by selecting the newly created group **COE Admin Group (1)** and then **Select group (2)**.
 
-    ![](images/M02/pv28.png)
+    ![](images/M02/E3T2S14-0605.png)
 
-1. In the same way, you can create new groups for the **Maker persona** and **User persona**. For now, you can select the same **CoE Admin Group** for both.
+1. In the same way, you can create new groups for the **Maker persona** and **User persona**. For now, you can select the same **CoE Admin Group** for both **(1)**.
 
-1. After completing all three configuration, click **Next** to continue.
+1. After completing all three configuration, click **Next (2)** to continue.
 
-    ![](images/M02/pv29.png)
+    ![](images/M02/E3T2S16-0605.png)
 
 1. **Configure mandatory settings**: Review tenant id from Service principal details in the environment section of lab guide and select **Next**
 
@@ -523,9 +507,11 @@ for persona.
 
     ![](images/M02/pv30.png)
 
-1. **Run setup flows**: Click **Refresh**, wait about 5 minutes for the process to complete, then refresh again. Once done, click **Next**.
+1. **Run setup flows**: Click **Refresh (1)**, wait about 5 minutes for the process to complete **(2)**, then refresh again. Once done, click **Next (3)**.
 
-    ![](images/M02/ppm9.png)
+    ![](images/M02/E3T2S19.1-0605.png)
+
+    ![](images/M02/E3T2S19.2-0605.png)
 
 1. **Run Inventory flows**: Click toggle button for all the flows available on the page, wait until all the flows are removed from the page and then click **Next**.
 
@@ -543,7 +529,8 @@ for persona.
 
     > **Note:** For additional details about the Center of Excellence (CoE), we recommend reviewing the Microsoft Learn overview:
     > https://learn.microsoft.com/en-us/power-platform/guidance/coe/overview
-### Review
+
+## Summary
 
 In this lab, you have accomplished the following:
 
