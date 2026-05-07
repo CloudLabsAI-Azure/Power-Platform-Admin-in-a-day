@@ -1,4 +1,4 @@
-# Lab 6: Explore the CoE Starter Kit (Optional)
+# Lab 6: Explore the CoE Starter Kit (Read Only)
 
 ### Estimated Duration: 75 Minutes
 
@@ -8,6 +8,9 @@ In this lab, you will explore the Center of Excellence (CoE) Starter Kit—a pow
 
 By the end of this lab, you will gain practical experience in using the CoE Starter Kit to support effective governance and make informed decisions regarding app usage and security.
 
+> **Note:** As the outcomes of this lab depend on the data from the CoE Starter Kit, which may take several hours to populate, this lab is designed to be **read-only**. You will be guided through the steps and shown screenshots of the expected outcomes, allowing you to understand the process and results without needing to perform the exercises hands-on.
+
+
 ## Objectives
 
 In this lab, you will complete the following exercises:
@@ -16,10 +19,6 @@ In this lab, you will complete the following exercises:
 - Exercise 2 - How much is a connector used in your
 - Exercise 3 - Review tenant audit logs 
 - Exercise 4 - Application Compliance Process
-
-**Note:** This lab depend on the successful setup of the Inventory component of the CoE Starter Kit, which you completed in a previous exercise. Once the setup is complete, it may take approximately 3–4 hours for the data to be fully reflected in both the Power Platform and Power BI.
-
-You may proceed with the exercises if the data has loaded successfully. If not, you'll need to wait until the data becomes available if the time permits or you can review the exercises to familiarize yourself with the lab content.
 
 ## Exercise 1: Explore the CoE Starter Kit
 
@@ -85,7 +84,6 @@ In this task you will, launch the Admin View app in the CoE environment to revie
 
 15. Select one of the Makers and explore the detail form.
 
-
 ### Task 2: Power BI Dashboard
 
 In this task you will, use the environment URL, configure the Production and Governance dashboard in Power BI Desktop, connect it to Dataverse, and review reports. Publish the dashboard to your workspace to monitor tenant-wide adoption, app usage, and environment activity.
@@ -120,7 +118,7 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
     - Email: **<inject key="AzureAdUserEmail"></inject> (1)**
 
-    ![](images/M06/E1T2.2S2-0605.png)
+        ![](images/M06/E1T2.2S2-0605.png)
 
 1. If prompted, please solve the puzzle.    
 
@@ -363,7 +361,7 @@ In this task you will, open Microsoft Purview, navigate to Audit, and start reco
 
     >**Note:** Any information from before auditing was enabled, cannot be retrieved. This can be seen by selecting a date range from before the auditing was enabled.
 
-## Exercise 4: Application Compliance Process (Read Only)
+## Exercise 4: Application Compliance Process 
 
 In this exercise, you will be walking through the application compliance process that has been put in place using the CoE Starter Kit. As part of this, you will be playing both the role of 
 the application developer and the administrator see both sides of the process.
@@ -530,14 +528,13 @@ In this task, you will be performing the role of the developer and completing th
 
      ![](images/M03/pv118.png)
 
-1. In the **Support Details** section fill in all the fields with information about your application, you can make it as detailed as you want but submit information for each field in this section **(1)**.
+1. In the **Support Details** section fill in all the fields with information about your application, you can make it as detailed as you want but submit information for each field in this section **(1)**. Click on **Save (2)**. 
+
+    > **Note:** A sample information is provided in the image below, but you can enter any information you want in these fields as they are just for demonstration purposes.
+
+     ![](images/M06/support-details-0705.png)
 
 1. Normally we would also adjust the description by editing the app, but for this lab will skip that.
-
-1. Select **Save (2)** to save the information about the application and close the Support Details panel.
-
-     ![](images/M03/pv119.png)
-
 
 ### Task 3: Admin Review
 
@@ -559,19 +556,19 @@ In this task, you will be performing the administrative review of the applicatio
 
 1. Select **Validate Maker Business Requirements (1)** in the process guide. This shows you the current stage of the review process and highlights the progress. Notice it says the maker provided the business requirements. Set **Confirm Business Impact** to **Low Risk (2)** and close by selecting the **X (3)** at the top right of the card.
 
-   ![](images/M03/pv124.png)
+   ![](images/M06/E4T3S5-0605.png)
 
 1. Review the information provided by the maker by selecting the **Governance** tab.
 
-   ![](images/M03/pv125.png)
+   ![](images/M06/E4T3S6-0605.png)
 
 1. In the **Admin** section change the Risk Assessment to **Minor**.
 
-   ![](images/M03/pv126.png)
+   ![](images/M06/E4T3S7-0605.png)
 
 1. After reviewing, select **Validate Maker Business Requirements (1)** you can advance the process to the next stage by selecting the **Next Stage (2)**.
 
-   ![](images/M03/pv127.png)
+   ![](images/M06/E4T3S8-0605.png)
 
 1. The process guide will now have either a Mitigation plan as the active stage or an Access risk depending on if the maker indicated the app is critical or not, select **Next Stage** again to advance.
 
@@ -596,6 +593,10 @@ In this lab, you have accomplished the following:
 
 ## Conclusion
 
-In this lab Power **Platform Workshop: Administration and Governance**, we explored key aspects of administering and governing the Power Platform. We created Teams and Power Apps within Microsoft Teams, built custom tables, and published apps for team collaboration. Using the CoE Starter Kit, we reviewed the Power Platform Admin View app to gain visibility into apps, environments, connectors, and makers. We then configured and published Power BI dashboards to monitor adoption and usage trends, explored connector usage insights, and finally worked with Microsoft Purview audit logs to track user and admin activities for compliance. Together, these exercises provided a complete view of how to build, monitor, govern, and secure Power Platform solutions in an enterprise environment.
+By completing this **Power Platform Workshop: Administration and Governance** hands-on lab, you have gained end-to-end experience in administering and governing the Power Platform within an enterprise environment. You explored how to assess existing usage, implement security controls, and apply Data Loss Prevention (DLP) policies to protect organizational data. You learned how to monitor platform activity using built-in analytics, Dataverse logging, and the CoE Starter Kit.
+
+You also designed and automated business processes using Power Automate, enabling controlled environment provisioning and user onboarding. Through Managed Environments and pipelines, you understood how to enforce governance and manage application lifecycle across development stages. Additionally, you built and shared Power Apps within Microsoft Teams, enabling collaboration and productivity.
+
+Finally, you explored compliance and auditing capabilities using the CoE Starter Kit and Microsoft Purview, gaining insights into app governance and risk management. Overall, this lab equipped you with practical skills to balance innovation and control while managing Power Platform adoption effectively in a real-world organization.
 
 ### You have successfully completed this lab.  
