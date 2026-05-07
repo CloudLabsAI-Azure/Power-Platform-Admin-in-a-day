@@ -17,7 +17,7 @@ In this lab, you will complete the following exercises:
 <!--
 ### Lab Test Environment
 
-This lab is designed to be completed in an environment setup for multiple students to complete the Admin in a day series of hands-on labs.
+This lab is designed to be completed in an environment set up for multiple students to complete the Admin in a day series of hands-on labs.
 
 You need to use the assigned user and environment information to complete this lab. You must have completed the prior labs to complete this lab.
 -->
@@ -32,7 +32,7 @@ In this exercise, you will explore the out-of-the-box analytics that are availab
 
     ![](images/img-01-31.png)
 
-3. **Enable (1)** the Tenant-level analytics  and click on **Save (2)**. Navigate back to Monitor and select the Power apps
+3. **Enable (1)** the Tenant-level analytics  and click on **Save (2)**. Navigate back to Monitor and select the Power Apps
 
    ![](images/img-01-32.png)
 
@@ -42,7 +42,7 @@ In this exercise, you will explore the out-of-the-box analytics that are availab
 
    ![](images/ppap.png)
 
-    > **Note**: **The below **tasks 1,2 and 3** has been made as read only because the service can take 24 to 36 hours to reflect service activities from the previous day**. Please go through the provided link for more details [Tenant-level analytics for Power Apps](https://learn.microsoft.com/en-us/power-platform/admin/tenant-level-analytics?tabs=new#how-do-i-enable-tenant-level-analytics)   
+    > **Note**: **The below **tasks 1,2 and 3** has been made as read-only because the service can take 24 to 36 hours to reflect service activities from the previous day**. Please go through the provided link for more details [Tenant-level analytics for Power Apps](https://learn.microsoft.com/en-us/power-platform/admin/tenant-level-analytics?tabs=new#how-do-i-enable-tenant-level-analytics)   
 
 ### Task 1: Explore the Power Automate analytics (Read only)
 
@@ -81,7 +81,7 @@ In this exercise, you will explore the out-of-the-box analytics that are availab
 
 ### Task 2: Explore the Power Apps analytics (Read only)
 
-1. In the **Power Platform admin center**. Under **Analytics**, expand **Power Apps (1)**. Change the Primary Tab to **Environment View (2)**. Click on **Change filters (3)**. Switch the environment to **Power Platform COE (4)** by changing the available filters and the click on **Apply (4)**
+1. In the **Power Platform admin center**. Under **Analytics**, expand **Power Apps (1)**. Change the Primary Tab to **Environment View (2)**. Click on **Change filters (3)**. Switch the environment to **Power Platform COE (4)** by changing the available filters and clicking on **Apply (4)**
 
    ![](images/M03/pp125.png)
 
@@ -98,7 +98,7 @@ In this exercise, you will explore the out-of-the-box analytics that are availab
 
    ![](images/M02/M2-EX1-T2-S8.png)
 
-1. Hover your mouse over the far-right corner of the unique user's data, and under **Region** you can select **...** to show more options.
+1. Hover your mouse over the far-right corner of the unique user's data, and under **Region**, you can select **...** to show more options.
 
    ![](images/M02/M2-EX1-T2-S9.png)
 
@@ -106,7 +106,7 @@ In this exercise, you will explore the out-of-the-box analytics that are availab
 
     ![](images/M02/M2-EX1-T2-S10.png)
 
-1. If you have Excel installed choose one of the options and select **Export**. After the file downloads review the details available. If you don’t have Excel simply select **Cancel**.
+1. If you have Excel installed, choose one of the options and select **Export**. After the file downloads, review the details available. If you don’t have Excel, simply select **Cancel**.
 
     ![](images/M02/M2-EX1-T2-S11.png)
 
@@ -177,7 +177,7 @@ In this exercise, you will configure auditing for a table in Dataverse, which is
 
 ### Task 1: Review audit logging in the environment
 
-In this task you will, enable auditing for the Project table and its Due Date column, publish customizations, and turn on auditing at the environment level.
+In this task, you will enable auditing for the Project table and its Due Date column, publish customizations, and turn on auditing at the environment level.
 
 1. Navigate to the **Power Apps** portal, and ensure that the **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** environment is selected.
 
@@ -189,7 +189,7 @@ In this task you will, enable auditing for the Project table and its Due Date co
 
    ![](images/M02/E2T1S3-0605.png)
 
-1. Click on **Due Date (1)** column to open it. On the Edit column pane, expand **Advance Options (2)**.
+1. Click on the **Due Date (1)** column to open it. On the Edit column pane, expand **Advance Options (2)**.
 
    ![](images/M02/E2T1S4-0605.png)
 
@@ -201,7 +201,7 @@ In this task you will, enable auditing for the Project table and its Due Date co
 
    ![](images/M02/E2T1S6-0605.png)
 
-1. Select the **Project (1)** table radio-button, and then select **Properties (2)** from the ribbon up top.
+1. Select the **Project (1)** table radio button, and then select **Properties (2)** from the ribbon up top.
 
    ![](images/M02/E2T1S7-0605.png)
 
@@ -231,7 +231,7 @@ In this task you will, enable auditing for the Project table and its Due Date co
 
 ### Task 2: Test auditing
 
-In this task you will, open the Project Admin app, create or edit the Annual Conference project, change its Due Date multiple times, and verify the changes in Audit History.
+In this task, you will open the Project Admin app, create or edit the Annual Conference project, change its Due Date multiple times, and verify the changes in Audit History.
 
 1. Navigate back to the **Power Apps** portal where your **Fabrikam Project Management** solution is open.
 
@@ -241,7 +241,7 @@ In this task you will, open the Project Admin app, create or edit the Annual Con
 
     > **Note:** If prompted to sign in, click on Sign in and provide your ODL account credentials.
 
-1. If you can see the **Annual Conference** project select it to open it and skip to step 5, if you do not see it, continue with the steps below.
+1. If you can see the **Annual Conference** project, select it to open it and skip to step 5, if you do not see it, continue with the steps below.
 
    ![](images/M02/E2T2S3-0605.png)
 
@@ -271,7 +271,7 @@ In this task you will, open the Project Admin app, create or edit the Annual Con
 
     ![](images/M02/pp136.png)
 
-     >**Note**: Sometimes it might take sometime to generate the Audit history, no need to wait, you can check this later. Please proceed with the next Exercise.
+     >**Note**: Sometimes it might take some time to generate the Audit history, no need to wait, you can check this later. Please proceed with the next Exercise.
 
 1. You should see the **Filed Name**, **Old Value** and **New Value**.
 
@@ -283,9 +283,9 @@ In this task you will, open the Project Admin app, create or edit the Annual Con
 
 In this exercise, you will set up the inventory components of the CoE Starter Kit. The inventory centralizes data on apps, flows, and makers, helping you monitor and manage your Power Platform environment. It enables admin apps, dashboards, and tools like DLP Editor and Set App Permissions for better governance.
 
-### Task 1 :  Import the Creator Kit and make connections
+### Task 1:  Import the Creator Kit and make connections
 
-In this task you will, install the Creator Kit from AppSource, configure the HTTP with Microsoft Entra ID connection, and import the CoE Starter Kit core and governance solutions into the the Power Platform COE environment.
+In this task, you will install the Creator Kit from AppSource, configure the HTTP with Microsoft Entra ID connection, and import the CoE Starter Kit core and governance solutions into the Power Platform COE environment.
 
 ### Task 1.1: Installation of Creator Kit
 
@@ -299,7 +299,7 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
     https://aka.ms/creatorkitdownload 
     ```
 
-1. You can see the downloaded file in the right top corner, **download (1)** section. Click on the **Folder (2)** icon to open the foder in the File explorer.
+1. You can see the downloaded file in the top right corner, **download (1)** section. Click on the **Folder (2)** icon to open the folder in the File Explorer.
 
    ![](images/img-01-110.png)
 
@@ -323,7 +323,7 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
 ### Task 1.2: Create Connections
 
-1. Open a new tab and navigate to the **Power Automate** portal, by using the following URL.
+1. Open a new tab and navigate to the **Power Automate** portal by using the following URL.
 
     ```
     https://make.powerautomate.com/
@@ -357,13 +357,13 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
 ### Task 1.3: Import the core components solution
 
-1. Open a new tab in the browser, copy and paste the below URL, to download the **CoE Starter Kit** to your virtual machine.
+1. Open a new tab in the browser, copy and paste the URL below to download the **CoE Starter Kit** to your virtual machine.
 
     ```
     https://aka.ms/CoeStarterKitDownload
     ```
 
-1. You can see the downloaded file in the right top corner, **download (1)** section. Click on the **Folder (2)** icon to open the foder in the File explorer.
+1. You can see the downloaded file in the top right corner, **download (1)** section. Click on the **Folder (2)** icon to open the folder in the File Explorer.
 
     ![](images/M02/pv11.png)
 
@@ -397,7 +397,7 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
     ![](images/M02/E3T1.3S10-0605.png)
 
-1. Review the details, click **Next** twice, leave all environment variable values as default until you see the Import button.
+1. Review the details, click **Next** twice, and leave all environment variable values as default until you see the Import button.
 
 1. Finally, click on **Import**.
 
@@ -409,11 +409,11 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
     ![](images/M02/E3T1.3S13-0605.png)
 
-1. After 20-30 minutes, please do refresh the portal then you will be able to see the successfully imported message.
+1. After 20-30 minutes, please do refresh the portal, and then you will be able to see the successfully imported message.
 
 ### Task 1.4: Install COE Governance Solution.
 
-1. From the Solutions tab, click on **Import solution** button at the top.
+1. From the Solutions tab, click on the **Import solution** button at the top.
 
 1. Click on **Browse (1)**.
 
@@ -421,7 +421,7 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
     ![](images/f2.png)
 
-1. Review the details, click **Next** three times, leave all environment variable values as default until you see the Import button.
+1. Review the details, click **Next** three times, and leave all environment variable values as default until you see the Import button.
 
 1. Finally, click on **Import**.
 
@@ -429,7 +429,7 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
 1. Wait for the import process to complete. This may take **5 minutes**. During the import, you may see a **warning notification** at the top of the screen (e.g., "Flow imported with warnings"). This is expected and does not necessarily indicate a failure.
 
-1. Please do **Refresh** the portal after 5-7 minutes then you will be able to see the successfully imported message.
+1. Please do **Refresh** the portal after 5-7 minutes, then you will be able to see the successfully imported message.
 
     ![](images/M02/E3T1.4S7-0605.png)
 
@@ -439,7 +439,7 @@ In this task you will, install the Creator Kit from AppSource, configure the HTT
 
 ### Task 2: Set up the Inventory components using the Setup Wizard
 
-In this task you will, launch the CoE Setup and Upgrade Wizard, configure environment variables and personas, run setup and inventory flows, and complete the setup to enable inventory dashboards and apps.
+In this task, you will launch the CoE Setup and Upgrade Wizard, configure environment variables and personas, run setup and inventory flows, and complete the setup to enable inventory dashboards and apps.
 
 1. From the Solution page, navigate to **Managed (1)** and open the **Center of Excellence - Core Components (2)** solution.
 
@@ -449,7 +449,7 @@ In this task you will, launch the CoE Setup and Upgrade Wizard, configure enviro
 
     ![](images/M02/E3T2S2-0605.png)
 
-1. On the Allow CoE Admin COmmand Center to access your data? window, click **Sign In (1)** for RSS, then click **Allow (2)**. 
+1. On the Allow CoE Admin Command Center, to access your data? window, click **Sign In (1)** for RSS, then click **Allow (2)**. 
 
     ![](images/M02/E3T2S3-0605.png)
 
@@ -469,7 +469,7 @@ In this task you will, launch the CoE Setup and Upgrade Wizard, configure enviro
 
     ![](images/M02/pv22.png)
 
-1. Grant all app permission and click **Allow**.
+1. Grant all app permissions and click **Allow**.
 
     ![](images/M02/E3T2S8-0605.png)
 
@@ -481,11 +481,11 @@ In this task you will, launch the CoE Setup and Upgrade Wizard, configure enviro
 
     ![](images/M02/E3T2S10-0605.png)
 
-1. You will be navigate to azure portal. Select **Microsoft 365** **(1)** for group type. Give group name as **COE Admin Group** **(2)**. Click **No Owners Selected** **(3)**. 
+1. You will be navigated to the Azure portal. Select **Microsoft 365** **(1)** for group type. Give group name as **COE Admin Group** **(2)**. Click **No Owners Selected** **(3)**. 
 
     ![](images/M02/E3T2S11-0605.png)
 
-1. Search for **odl (1)**, select the **environment email ID (2)** and then **Select (3)** Similarly, you can select multiple members to assign to the Admin persona. 
+1. Search for **odl (1)**, select the **environment email ID (2)**, and then **Select (3)**. Similarly, you can select multiple members to assign to the Admin persona. 
 
     ![](images/M02/E3T2S12-0605.png)
 
@@ -497,11 +497,11 @@ In this task you will, launch the CoE Setup and Upgrade Wizard, configure enviro
 
 1. In the same way, you can create new groups for the **Maker persona** and **User persona**. For now, you can select the same **CoE Admin Group** for both **(1)**.
 
-1. After completing all three configuration, click **Next (2)** to continue.
+1. After completing all three configurations, click **Next (2)** to continue.
 
     ![](images/M02/E3T2S16-0605.png)
 
-1. **Configure mandatory settings**: Review tenant id from Service principal details in the environment section of lab guide and select **Next**
+1. **Configure mandatory settings**: Review tenant ID from Service principal details in the environment section of the lab guide and select **Next**
 
 1. **Configure inventory data source** : Click **Next**.
 
@@ -513,9 +513,9 @@ In this task you will, launch the CoE Setup and Upgrade Wizard, configure enviro
 
     ![](images/M02/E3T2S19.2-0605.png)
 
-1. **Run Inventory flows**: Click toggle button for all the flows available on the page, wait until all the flows are removed from the page and then click **Next**.
+1. **Run Inventory flows**: Click the toggle button for all the flows available on the page, wait until all the flows are removed from the page, and then click **Next**.
 
-    > **Note**: This page might take 1-2 hours sometimes to load. Proceed with further modules and keep this run in background.
+    > **Note**: This page might take 1-2 hours sometimes to load. Proceed with further modules and keep this run in the background.
 
     ![](images/M02/pv31.png)
 
