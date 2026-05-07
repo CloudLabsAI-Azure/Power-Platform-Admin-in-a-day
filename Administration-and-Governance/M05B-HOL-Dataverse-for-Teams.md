@@ -23,10 +23,10 @@ In this lab, you will complete the following exercises:
 ## Exercise 1: Explore the CoE Starter Kit
 
 In this exercise, you will explore some of the apps and analytics that are part of the Power Platform CoE Starter Kit. We have already installed and configured the starter kit for the 
-tenant you are using for this lab. As part of configuring, we imported the solution, shared the apps, configured the flows that synchronize data and published the Power BI report. If you 
+tenant you are using for this lab. As part of configuring, we imported the solution, shared the apps, configured the flows that synchronize data, and published the Power BI report. If you 
 were doing this with your tenant, you would follow the instructions to complete these steps.
 
-Now in this exercise, you will explore the following key components:
+Now, in this exercise, you will explore the following key components:
 
 - Power Platform Admin View app
 - Power BI Dashboard
@@ -34,17 +34,17 @@ Now in this exercise, you will explore the following key components:
 
 ### Task 1: Explore the Power Platform Admin View app
 
-In this task you will, launch the Admin View app in the CoE environment to review apps, flows, environments, connectors, and makers. Explore governance features like business justification, risk assessment, and app catalog tagging.
+In this task, you will launch the Admin View app in the CoE environment to review apps, flows, environments, connectors, and makers. Explore governance features like business justification, risk assessment, and app catalog tagging.
 
 1. Navigate to **Power Apps** and select the **Power Platform CoE** environment in the environment selector.
 
    ![](images/M02/pv93.png)
 
-3. Select **Apps (1)** from the left side navigation and you should see a list of available apps in this environment, click on three dots in **Power Platform Admin View (2)**, Click **Play (3)**.
+3. Select **Apps (1)** from the left side navigation, and you should see a list of available apps in this environment. Click on three dots in **Power Platform Admin View (2)**, click **Play (3)**.
 
    ![](images/M02/pv94.png)
 
-4. When the app starts you will land on the Power Platform Dashboard page. This dashboard gives you a quick look at the most active makers, and environments.
+4. When the app starts, you will land on the Power Platform Dashboard page. This dashboard gives you a quick look at the most active makers and environments.
 
    ![](images/M02/M2-EX3-T1-S4A.png)
 
@@ -52,15 +52,15 @@ In this task you will, launch the Admin View app in the CoE environment to revie
 
    ![](images/M02/pv95.png)
 
-6. Select the any app in the list to open the app details.
+6. Select any app in the list to open the app details.
 
    ![](images/M06/E1T1S5-0605.png)
 
-7. In the **Governance** tab you can see the Business Justification provided by the app maker using the Developer Compliance Center app. The bottom part is where you as an admin can provide your risk assessment. You can also tag the app to show in the App Catalog and make it featured. You can customize the CoE entities to add additional fields here if needed.
+7. In the **Governance** tab, you can see the Business Justification provided by the app maker using the Developer Compliance Center app. The bottom part is where you, as an admin, can provide your risk assessment. You can also tag the app to show in the App Catalog and make it featured. You can customize the CoE entities to add additional fields here if needed.
 
    ![](images/M06/E1T1S6-0605.png)
 
-8. Select **Environments (1)** in the left navigation. This will show you a list of all the environments in your tenant and key metrics like several apps. To view all your environments, similar to the image below, switch the view at the top to **Active Environments (2)**.
+8. Select **Environments (1)** in the left navigation. This will show you a list of all the environments in your tenant and key metrics for several apps. To view all your environments, similar to the image below, switch the view at the top to **Active Environments (2)**.
 
    ![](images/M06/E1T1S7-0605.png)
 
@@ -86,13 +86,13 @@ In this task you will, launch the Admin View app in the CoE environment to revie
 
 ### Task 2: Power BI Dashboard
 
-In this task you will, use the environment URL, configure the Production and Governance dashboard in Power BI Desktop, connect it to Dataverse, and review reports. Publish the dashboard to your workspace to monitor tenant-wide adoption, app usage, and environment activity.
+In this task, you will use the environment URL, configure the Production and Governance dashboard in Power BI Desktop, connect it to Dataverse, and review reports. Publish the dashboard to your workspace to monitor tenant-wide adoption, app usage, and environment activity.
 
 ### Task 2.1: Get the environment URL
 
 You need the URL of the Power Platform environment where the CoE Starter Kit is installed. Power BI connects to Dataverse tables in that environment.
 
-1. Navigate to Power Platform admin center using the below URL in a new tab:
+1. Navigate to Power Platform admin center using the URL below in a new tab:
 
     ```
     https://aka.ms/ppac
@@ -102,19 +102,19 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
     ![](images/M06/E1T2.1S2-0605.png)
 
-3. Copy the URL under **Environment URL (1)** and save it in notepad for later use.
+3. Copy the URL under **Environment URL (1)** and save it in Notepad for later use.
 
     ![](images/M06/E1T2.1S3-0605.png)
 
 ### Task 2.2: Configure the Production and Governance Power BI dashboard
 
-1. Navigate to Power BI portal using the following URL in a new browser tab:
+1. Navigate to the Power BI portal using the following URL in a new browser tab:
 
     ```
     https://app.powerbi.com/
     ```
 
-1. Enter the below email and click on **Submit (2)**.
+1. Enter the email below and click on **Submit (2)**.
 
     - Email: **<inject key="AzureAdUserEmail"></inject> (1)**
 
@@ -128,7 +128,7 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
 1. On the **Create your account** page, provide the following details and then click on **Get started (4)**.
 
-   - Country: **Unites states (1)**
+   - Country: **United States (1)**
    - Job: **PowerPlatformEngineer(2)**
    - Phone number: Enter random 10 digits **(3)**
 
@@ -156,7 +156,7 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
    ![](images/M06/E1T2.2S11-0605.png)
 
-1. In Power BI portal, click on **Settings (1)** (gear box icon) from the top right corner, and select **Admin portal (2)**.
+1. In the Power BI portal, click on **Settings (1)** (gear box icon) from the top right corner, and select **Admin portal (2)**.
 
     ![](images/M06/adminportal-0605.png)
 
@@ -168,9 +168,9 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
    ![](images/M02/ppt22.png)
 
-1. Close any popup window.
+1. Close any pop-up window.
 
-1. Click on **Sign in** from the top bar, sign-in with your lab credentials.
+1. Click on **Sign in** from the top bar, sign in with your lab credentials.
 
 1. Once signed in, click on **Open (1)**, then **Browse this device (2)**.
 
@@ -180,13 +180,13 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
     ![](images/M02/pv100.png)
 
-1. Wait for sometime you will notice popup appears for org URL.    
+1. Wait for sometime you will notice a pop-up appears for the org URL.    
 
-1. Wait for report to load. Enter the URL of your environment instance that you have copied earlier. Include the https:// prefix for OrgUrl **(1)**. Then Click **Load (2)**.
+1. Wait for the report to load. Enter the URL of your environment instance that you have copied earlier. Include the https:// prefix for OrgUrl **(1)**. Then Click **Load (2)**.
 
     ![](images/M02/pt11C.png)
 
-    >**Note:** If the report loads before you provide the Environment URL,then follow below steps: 
+    >**Note:** If the report loads before you provide the Environment URL, then follow the steps below: 
     > - Click on **Transform Data (1)**, then select **Edit Parameters (2)**.
     > ![](images/M02/pv104.png)
     
@@ -227,11 +227,11 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 
 1. Review each page using the navigation at the bottom of the app and review the insights available.
 
-1. Select any **Environment** visual to view the filtered datain the report
+1. Select any **Environment** visual to view the filtered data in the report
 
     ![](images/M02/M2-EX3-T2-S27-1.png)
 
-1. Select **Apps**. On the **Apps** page notice the Creation Trend, this is an effective way to watch adoption progress.
+1. Select **Apps**. On the **Apps** page, notice the Creation Trend. This is an effective way to watch adoption progress.
 
     ![](images/M02/M2-EX3-T2-S29-1.png)
 
@@ -270,17 +270,17 @@ In this exercise, you will explore the Power Platform Admin View app in the CoE 
 
 ### Task 1: Locate resources that use the Office 365 Outlook connector
 
-In this task you will, open the App Connector deep dive page in Power BI, select the Office 365 Outlook connector, and review filtered data to evaluate apps/flows using it and their connector tier.
+In this task, you will open the App Connector deep dive page in Power BI, select the Office 365 Outlook connector, and review filtered data to evaluate apps/flows using it and their connector tier.
 
 1. Navigate to the **Power BI report** you just published.
 
 2. Select the **App Connector deep dive** page in the report.
 
-3. You can click on **Office 365 outlook** connector in visual to view the filtered data. 
+3. You can click on the **Office 365 Outlook** connector in the visual to view the filtered data. 
 
    ![](images/M02/M2-EX5-T1-S3-1.png)
 
-5. Using this you could evaluate things like the apps/flows using connector or Connector tier.
+5. Using this, you could evaluate things like the apps/flows using the connector or Connector tier.
 
 
 ## Exercise 3: Review tenant audit logs 
@@ -289,7 +289,7 @@ In this exercise, you will review tenant audit logs in Microsoft Purview. You wi
 
 ### Task 1: Review audit logging in the environment
 
-In this task you will, open Microsoft Purview, navigate to Audit, and start recording activity. Perform a search to view logs, export data if needed, and filter results by activity type, user, or item. This allows admins to track activities such as flow edits and review detailed audit information for governance and compliance. 
+In this task, you will open Microsoft Purview, navigate to Audit, and start recording activity. Perform a search to view logs, export data if needed, and filter results by activity type, user, or item. This allows admins to track activities such as flow edits and review detailed audit information for governance and compliance. 
 
 1. Navigate to **Microsoft purview** using the following URL:
 
@@ -309,7 +309,7 @@ In this task you will, open Microsoft Purview, navigate to Audit, and start reco
 
    ![](images/M02/ppt25.png)
 
-1. On the COmplete organizational setup window, click on **Yes**.
+1. On the Complete organizational setup window, click on **Yes**.
 
 1. Select **Search** using the default search criteria.
 
@@ -319,7 +319,7 @@ In this task you will, open Microsoft Purview, navigate to Audit, and start reco
 
    ![](images/M2-EX6-T1-S5.png)
 
-1. Select the Search name, which defaults to the audit date if no name has been inputted.
+1. Select the Search name, which defaults to the audit date if no name has been input.
 
    ![](images/M2-EX6-T1-S6.png)
 
@@ -327,7 +327,7 @@ In this task you will, open Microsoft Purview, navigate to Audit, and start reco
 
      ![](images/M02/ppt26.png)    
 
-1. Please go through the steps, no need to perform as currently there is no data available.     
+1. Please go through the steps; no need to perform, as currently there is no data available.     
 
 1. Review the items displayed; drill into a few of them to see the type of data available.
 
@@ -353,32 +353,24 @@ In this task you will, open Microsoft Purview, navigate to Audit, and start reco
 
 1. Look for an activity of Edited Flow, and select the item to open the detail. Review what data is provided.
 
-1. A common task is to look at all of the activity for a particular user. Copy the user from this Edited flow activity and go back to the Audit search.
+1. A common task is to look at all of the activity for a particular user. Copy the user from this edited flow activity and go back to the Audit search.
 
 1. Paste the user you copied into the Users filter and select search again. Now you are looking at all the activity for a single user.
 
-1. Try selecting an item to view detail. Copy the Item field and then go back to the list and select the filter results. Paste the item info you just copied into the file. The results list will now only show activities related to that item. For example, you could use this to show all activities for a specific flow.
+1. Try selecting an item to view the details. Copy the Item field and then go back to the list and select the filter results. Paste the item info you just copied into the file. The results list will now only show activities related to that item. For example, you could use this to show all activities for a specific flow.
 
-    >**Note:** Any information from before auditing was enabled, cannot be retrieved. This can be seen by selecting a date range from before the auditing was enabled.
+    >**Note:** Any information from before auditing was enabled cannot be retrieved. This can be seen by selecting a date range from before the auditing was enabled.
 
 ## Exercise 4: Application Compliance Process 
 
-In this exercise, you will be walking through the application compliance process that has been put in place using the CoE Starter Kit. As part of this, you will be playing both the role of 
-the application developer and the administrator see both sides of the process.
+In this exercise, you will be walking through the application compliance process that has been put in place using the CoE Starter Kit. As part of this, you will be playing both the role of the application developer and the administrator, seeing both sides of the process.
 
-The goal of this process is to help IT that doesn't know what all these apps are intended for or how to support individual apps when the helpdesk is called, and it's unclear whether all 
-the apps are being maintained to any standard. They can see details like the description and number of shared users from the Power Apps for Admins connector, but they need to communicate 
-directly with the app owner to fully understand the situation around the apps. Especially in a large organization, it's not feasible for the IT team to be responsible for manually 
-reaching out to each app owner individually, and those details can't be stored in email conversations.
+The goal of this process is to help IT that doesn't know what all these apps are intended for or how to support individual apps when the helpdesk is called, and it's unclear whether all the apps are being maintained to any standard. They can see details like the description and number of shared users from the Power Apps for Admins connector, but they need to communicate directly with the app owner to fully understand the situation around the apps. Especially in a large organization, it's not feasible for the IT team to be responsible for manually reaching out to each app owner individually, and those details can't be stored in email conversations.
 
 To automate this, a flow **Admin | Compliance Detail Request** is used to iterate through all the apps in the tenant and check whether the apps are compliant. If the owner hasn't 
-submitted a business justification and the app was shared broadly (in this example, with more than 20 users or at least one group), the flow sends the owner an email to notify them that 
-their specific app isn't in compliance with the policy. The email contains a link to the Developer Compliance Center canvas app, where the owner can provide the business justification details 
-in a form submission. The Developer Compliance Center app also contains details about the compliance thresholds and has links to the app settings, so the owner can configure the 
-description and republish if needed.
+submitted a business justification and the app was shared broadly (in this example, with more than 20 users or at least one group), the flow sends the owner an email to notify them that their specific app isn't in compliance with the policy. The email contains a link to the Developer Compliance Center canvas app, where the owner can provide the business justification details in a form submission. The Developer Compliance Center app also contains details about the compliance thresholds and has links to the app settings, so the owner can configure the description and republish if needed.
 
-This app auditing sample process showcases how your CoE department or IT administrators can automate an auditing process on an app-level basis to gather additional information about an 
-app, like business justification and the impact of an outage, from the maker.
+This app auditing sample process showcases how your CoE department or IT administrators can automate an auditing process on an app-level basis to gather additional information about an app, like business justification and the impact of an outage, from the maker.
 
 ### Task 1: Setup compliance process
 
@@ -398,7 +390,7 @@ In this task, you will be setting up the compliance process for the Governance C
 
     ![](images/M06/E4T1S4-0605.png)
 
-    > **Note:** The app will guide you through the setup process. If it indicates that some processes are running in the background, it means backend flows are still in progress. You will see the 'Get Started' screen only after all flows have successfully completed.
+    > **Note:** The app will guide you through the setup process. If it indicates that some processes are running in the background, it means backend flows are still in progress. You will see the 'Get Started' screen only after all flows have completed.
 
 1. Click **Refresh** on the Missing prerequisite window.
 
@@ -424,7 +416,7 @@ In this task, you will be setting up the compliance process for the Governance C
 
 In this task, you will be performing the role of the developer and completing the application information that will be requested by the automated process.
 
-1. When the full process runs the maker will receive an email like the following, with a link to the Developer Compliance Center. For our exercise, we will briefly review and then we will launch the app from the maker portal.
+1. When the full process runs, the maker will receive an email like the following, with a link to the Developer Compliance Center. For our exercise, we will briefly review and then we will launch the app from the maker portal.
 
    ![](images/M03/M3-EX3-T1-S1.png)
 
@@ -520,21 +512,21 @@ In this task, you will be performing the role of the developer and completing th
 
     ![](images/M06/E4T2S25-0605.png)
 
-1. You should see at least one app that has the name lab admin and your number or the **Test App** name. Select the card to review the details of the app.
+1. You should see at least one app that has the name Lab Admin and your number or the **Test App** name. Select the card to review the details of the app.
 
      ![](images/M03/pv117.png)
 
-1. Review the App Compliance section which gives clear guidance on what needs to be updated. Select the icon next to **Missing support details** to open the **Support Details** panel.
+1. Review the App Compliance section, which gives clear guidance on what needs to be updated. Select the icon next to **Missing support details** to open the **Support Details** panel.
 
      ![](images/M03/pv118.png)
 
-1. In the **Support Details** section fill in all the fields with information about your application, you can make it as detailed as you want but submit information for each field in this section **(1)**. Click on **Save (2)**. 
+1. In the **Support Details** section, fill in all the fields with information about your application. You can make it as detailed as you want, but submit information for each field in this section **(1)**. Click on **Save (2)**. 
 
-    > **Note:** A sample information is provided in the image below, but you can enter any information you want in these fields as they are just for demonstration purposes.
+    > **Note:** Sample information is provided in the image below, but you can enter any information you want in these fields as they are just for demonstration purposes.
 
      ![](images/M06/support-details-0705.png)
 
-1. Normally we would also adjust the description by editing the app, but for this lab will skip that.
+1. Normally, we would also adjust the description by editing the app, but for this lab will skip that.
 
 ### Task 3: Admin Review
 
@@ -550,7 +542,7 @@ In this task, you will be performing the administrative review of the applicatio
 
    ![](images/M03/pv121.png)
 
-1. Locate your application. It will be Lab Admin and your # or **Test App** and your initials and select it to open it.
+1. Locate your application. It will be Lab Admin and your # or **Test App** and your initials, and select it to open it.
 
    ![](images/M03/pv122.png)
 
@@ -566,36 +558,36 @@ In this task, you will be performing the administrative review of the applicatio
 
    ![](images/M06/E4T3S7-0605.png)
 
-1. After reviewing, select **Validate Maker Business Requirements (1)** you can advance the process to the next stage by selecting the **Next Stage (2)**.
+1. After reviewing, select **Validate Maker Business Requirements (1)**. You can advance the process to the next stage by selecting the **Next Stage (2)**.
 
    ![](images/M06/E4T3S8-0605.png)
 
-1. The process guide will now have either a Mitigation plan as the active stage or an Access risk depending on if the maker indicated the app is critical or not, select **Next Stage** again to advance.
+1. The process guide will now have either a Mitigation plan as the active stage or an Access risk, depending on whether the maker indicated the app is critical or not. Select **Next Stage** again to advance.
 
    ![](images/M03/pv128.png)
 
-1. In the final stage you can choose a category for the app in the catalog **(1)** and indicate if it was featured. Make your selections and then select **Finish (2)**.
+1. In the final stage, you can choose a category for the app in the catalog **(1)** and indicate if it was featured. Make your selections and then select **Finish (2)**.
 
    ![](images/M03/pv129.png)    
 
-1. You have now completed the full review process. This is an example that is provided with the starter kit you can tailor the process to your own organization's needs including adding 
-stages and steps to the process and requiring additional data from the maker.
+1. You have now completed the full review process. This is an example that is provided with the starter kit. You can tailor the process to your own organization's needs, including adding 
+stages and steps to the process, and requiring additional data from the maker.
 
 
 ## Summary
 
 In this lab, you have accomplished the following:
 
-- Exercise 1 - Explore the CoE Starter Kit
+- Exercise 1 - Explored the CoE Starter Kit
 - Exercise 2 - How much is a connector used in your
-- Exercise 3 - Review tenant audit logs
+- Exercise 3 - Reviewed tenant audit logs
 - Exercise 4 - Application Compliance Process
 
 ## Conclusion
 
 By completing this **Power Platform Workshop: Administration and Governance** hands-on lab, you have gained end-to-end experience in administering and governing the Power Platform within an enterprise environment. You explored how to assess existing usage, implement security controls, and apply Data Loss Prevention (DLP) policies to protect organizational data. You learned how to monitor platform activity using built-in analytics, Dataverse logging, and the CoE Starter Kit.
 
-You also designed and automated business processes using Power Automate, enabling controlled environment provisioning and user onboarding. Through Managed Environments and pipelines, you understood how to enforce governance and manage application lifecycle across development stages. Additionally, you built and shared Power Apps within Microsoft Teams, enabling collaboration and productivity.
+You also designed and automated business processes using Power Automate, enabling controlled environment provisioning and user onboarding. Through Managed Environments and pipelines, you understood how to enforce governance and manage the application lifecycle across development stages. Additionally, you built and shared Power Apps within Microsoft Teams, enabling collaboration and productivity.
 
 Finally, you explored compliance and auditing capabilities using the CoE Starter Kit and Microsoft Purview, gaining insights into app governance and risk management. Overall, this lab equipped you with practical skills to balance innovation and control while managing Power Platform adoption effectively in a real-world organization.
 
