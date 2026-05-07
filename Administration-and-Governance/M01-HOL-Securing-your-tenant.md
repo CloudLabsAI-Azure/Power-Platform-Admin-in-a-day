@@ -1,7 +1,3 @@
-<!--
-#### Please note- the exercises provided here should be completed in a non-production environment. Often you will be assigned an environment by your facilitator. However, if you are completing these labs on your own, make sure to provision a developer or trial environment.
--->
-
 # Lab 1: Securing your Tenant
 
 ### Estimated Duration: 60 Minutes
@@ -449,7 +445,7 @@ In this task, you will create an environment specific DLP and see how it impacts
 
 ## Exercise 5: Configure a security role
 
-In this exercise, you will be configuring a security role to allow users to access the Project table in Dataverse. You will then share a canvas app that uses the Project table with a security group and assign the security role you created to the group.
+In this exercise, you will be creating a custom security role in Dataverse and then sharing a canvas app to a user with that security role to see how it impacts their access.
 
 ### Task 1: Import project management solution
 
@@ -499,11 +495,11 @@ In this task you will, import the Fabrikam Project Management solution, run the 
 
     ![](images/E5T1S11-0505.png)
 
-    - Select **Sign in** again for the **Microsoft Dataverse**
+1. Select **Sign in** again for the **Microsoft Dataverse**
 
-        ![](images/img-01-30.png)
+    ![](images/img-01-30.png)
 
-        >**Note:** When prompted with the sign in window, please sign in with the ODL credentials.
+    >**Note:** When prompted with the sign in window, please sign in with the ODL credentials.
         
 1. Ignore the error message `Create and authorize OAuth connection failed`, and click on the back arrow button. 
 
@@ -633,28 +629,6 @@ In this task you will, build a new Project Manager role, configure permissions o
     ![](images/E5T2S8-0505.png)
 
 1. Do not navigate away from this page.
-
-### Task 3: Share app
-
-In this task you will, share the Project List app with a security group and assign the custom Project Manager role to control access.
-
-1. Go back to the **Solutions** page by selecting the **Back to Solutions** button. 
-
-   ![](images/E5T3S1-0505.png)
-
-1. Click on **Apps (1)**, then select the radio button of the **Project List (2)** application, and select **Share (3)**.
-
-   ![](images/E5T3S2-0505.png)
-
-1. On the **Share** pane, select the **ellipses (1)**, and select **Use classic sharing (2)**.
-
-    ![](images/po-41.png)    
-
-1. On the **Enter a name, email** box, search for **Lab Back Office (1)** and select it. Under **Data permissions** section , from the drop-down, select the **Project Manager (2)**, and then select **Share (3)**
-
-    ![](images/po-42.png)
-
-1. Close the share pane.
  
 ## Summary
 
