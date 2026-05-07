@@ -78,11 +78,11 @@ In this task you will, navigate to the Power Platform admin center to explore, f
 
    ![](images/M01/PDA.png)
 
-1. Now remove the filters, by clicking on the **Environment (1)**, click on **Clear all filters (2)** and then **Apply (3)**. You should see all environments.
+1. Now remove the filters by clicking on the **Environment (1)**, clicking on **Clear all filters (2)**, and then **Apply (3)**. You should see all environments.
 
     ![](images/img-01-03.png)
 
-1. Next, notice all the environments with **Thrive Hr** in the name. These are a set of environments Contoso uses to manage the lifecycle of their Thrive apps; a suite of employee 
+1. Next, notice all the environments with **Thrive Hr** in the name. These are a set of environments Contoso uses to manage the lifecycle of its Thrive apps, a suite of employee 
     engagement apps. They are built in Thrive Hr - Dev and then are promoted to Test -> UAT-> Production after testing by your admin team.
 
     ![](images/M01/envlist.png)    
@@ -91,9 +91,9 @@ In this task you will, navigate to the Power Platform admin center to explore, f
 
     ![](images/img-01-04.png)  
 
-1. This is the environment in which all users are makers and can build their apps and flows. Think of this environment as supporting personal productivity use of the platform. This is also the default location used by any customizations built with Power Apps in Office apps. The default environment can’t be deleted, but you can rename it to make clear its purpose.
+1. This is the environment in which all users are makers and can build their apps and flows. Think of this environment as supporting personal productivity use of the platform. This is also the default location used by any customizations built with Power Apps in Office apps. The default environment can’t be deleted, but you can rename it to make its purpose clear.
 
-1. Select the default environment by Selecting the name in the list to drill down into the detail page.
+1. Select the default environment by selecting the name in the list to drill down into the detail page.
 
     ![](images/M01/denv.png)
 
@@ -113,7 +113,7 @@ In this task you will, navigate to the Power Platform admin center to explore, f
 
     ![](images/img-01-06.png)
 
-1. Go back to the Environment Details page, by clicking on the **default environment** name.
+1. Go back to the Environment Details page by clicking on the **default environment** name.
 
     ![](images/img-01-07.png)
 
@@ -121,13 +121,13 @@ In this task you will, navigate to the Power Platform admin center to explore, f
 
     ![](images/M01/pa.png)
 
-1. These are apps built by users in your default environment. Notice many of them are just test names because this is where a lot of users will experiment and build their first app. As you scroll down the list you might notice some names are more deliberate e.g., Product Showcase. Later in the course, we will talk about how to identify these upcoming apps so you can help guide them to ensure they mature and have adequate governance.
+1. These are apps built by users in your default environment. Notice that many of them are just test names because this is where a lot of users will experiment and build their first app. As you scroll down the list, you might notice some names are more deliberate, e.g., Product Showcase. Later in the course, we will talk about how to identify these upcoming apps so you can help guide them to ensure they mature and have adequate governance.
 
     ![](images/img-01-08.png)
 
 ### Task 2: Review existing Data policies
 
-In this task you will, examine existing DLP policies, including global and exception policies, and review how connectors and environments are configured.
+In this task, you will examine existing DLP policies, including global and exception policies, and review how connectors and environments are configured.
 
 1. From the left navigation menu, select **Security (1)**, then click on **Data and privacy (2)** and select **Data policy (3)**.
 
@@ -142,7 +142,7 @@ In this task you will, examine existing DLP policies, including global and excep
     - As an environment admin or regular environment user, you will also be able to see any tenant-wide DLP policies applied to your environment. However, you would not be able to edit 
       those tenant-side DLP policies.
 
-    - As a Global Admin, Admin, Power Platform Service Admin or D365 Service Admin in your tenant, you will see all policies that exist in your tenant, even those that you did not 
+    - As a Global Admin, Admin, Power Platform Service Admin, or D365 Service Admin in your tenant, you will see all policies that exist in your tenant, even those that you did not 
       create.
 
 1. Notice that the **Contoso Global DLP** policy is intended to span all environments (except selected ones) and represents the Global DLP policy. In this lab environment, the **Contoso Global DLP** policy has 4 environments selected instead of "All except 4".
@@ -181,29 +181,29 @@ In this task you will, examine existing DLP policies, including global and excep
 
 ## Exercise 2: Plan an environment strategy
 
-In this exercise, you will be planning an environment strategy for Fabrikam. You will review the scenario for Fabrikam that explains their current situation. After reviewing you will evaluate and propose an environmental plan.
+In this exercise, you will be planning an environment strategy for Fabrikam. You will review the scenario for Fabrikam that explains their current situation. After reviewing, you will evaluate and propose an environmental plan.
 
 ### Task 1: Read about the current situation at Fabrikam
 
 In this task, read the following and take notes that would help you propose an environment plan for Fabrikam.
 
-You have recently joined the newly formed Power Platform center of Excellence team at Fabrikam and are responsible for establishing a governance strategy. Currently, there is no 
-governance process established and employees can create apps, flows and even environments without any control. Fabrikam has been in existence for 40 years and has 4,500 employees 
-at multiple office locations in the US, UK and EU. Fabrikam employees are all licensed for Office 365 E3 and a growing number of them have either Power Automate or Power Apps per user 
-licenses. Over the last 6 months, Fabrikam’s management realized that this was greatly improving productivity, but they recognised without some planned governance it could easily get 
-out of control. About 50 of the users are more advanced power users of the platform always looking at ways to push its limits. Fabrikam’s sales team of 100 users also use a heavily 
+You have recently joined the newly formed Power Platform Center of Excellence team at Fabrikam and are responsible for establishing a governance strategy. Currently, there is no 
+governance process established, and employees can create apps, flows, and even environments without any control. Fabrikam has been in existence for 40 years and has 4,500 employees 
+at multiple office locations in the US, UK, and EU. Fabrikam employees are all licensed for Office 365 E3, and a growing number of them have either Power Automate or Power Apps per user 
+licenses. Over the last 6 months, Fabrikam’s management realized that this was greatly improving productivity, but they recognised that without some planned governance, it could easily get 
+out of control. About 50 of the users are more advanced power users of the platform, always looking at ways to push its limits. Fabrikam’s sales team of 100 users also uses a heavily 
 customized Dynamics 365 Sales app deployment.
 
-One of the first things you did was look in the admin center to see how many environments were there. Currently, in the tenant, there are 45 environments with a variety of names that users 
+One of the first things you did was look in the admin center to see how many environments there were. Currently, in the tenant, there are 45 environments with a variety of names that users 
 choose. The majority of the applications looked like they were in the default environment or a couple of other custom environments that had been created. There was one environment that 
 was the production Dynamics 365 application environment used by the sales team.
 
-The most organized department is market research, they built an application that is used daily for conducting their market surveys. Currently, there is just a single custom environment 
-named Market Research that supports the application. There are a couple of people in the department who are app makers making all the changes. They tend to do them in the late 
-afternoons and evenings and publish them when nobody's around to avoid impacting other users. There is not currently any testing done before the app is published other than by the person 
+The most organized department is market research; they built an application that is used daily for conducting their market surveys. Currently, there is just a single custom environment 
+named Market Research that supports the application. There are a couple of people in the department who are app makers, making all the changes. They tend to do them in the late 
+afternoons and evenings and publish them when nobody's around to avoid impacting other users. There is currently no testing done before the app is published, other than by the person 
 making the changes. They are open to the testing idea but are not sure how to do it with a single environment.
 
-You found out that the new environments have stopped being created simply because they have run out of storage from creating too many environments. When you asked about this you were 
+You found out that the new environments have stopped being created simply because they have run out of storage from creating too many environments. When you asked about this, you were 
 handed a stack of requests that claimed they needed new environments. The following are the priority requests; we will ask you to help identify how to handle these when you fill out the 
 environment strategy template.
 
@@ -216,9 +216,9 @@ environment strategy template.
 
 - Request 4: HR would like to try the Crisis Comms app that Microsoft published and would like an environment for it to run in.
     
-- Request 5: A user would like to build an app that uses a custom connector for a 3rd party service and also uses the DropBox connector.
+- Request 5: A user would like to build an app that uses a custom connector for a 3rd party service and also uses the Dropbox connector.
 
-Yesterday you got some good news, another 30GB of storage capacity for environments had been procured. You also got permission to put in place the necessary steps to ensure it does not 
+Yesterday, you got some good news: another 30GB of storage capacity for environments had been procured. You also got permission to put in place the necessary steps to ensure it does not 
 get wasted.
 
 ### Task 2: Build an Environment Plan
@@ -264,7 +264,7 @@ In this exercise, you will be creating a DLP policy and evaluating its impact on
 
 ### Task 1: Create a trial environment
 
-In this task you will, set up a new trial environment with Dataverse and assign a security group.
+In this task, you will set up a new trial environment with Dataverse and assign a security group.
 
 1. Navigate back to the **Power Platform admin center**.
 
@@ -272,7 +272,7 @@ In this task you will, set up a new trial environment with Dataverse and assign 
 
    ![](images/newenv.png)
 
-1. On the **New environment** page enter the following details:
+1. On the **New environment** page, enter the following details:
 
     - Type: **Trial (1)** 
     - Region: **United States - Default (2)**
@@ -364,13 +364,13 @@ In this task you will, build a simple scheduled flow that retrieves weather data
 
 18. Select **Done** and wait for the flow run to complete. 
 
-19. Open a new tab in the same browser. Copy and paste the following link in browser https://outlook.office365.com/ to navigate to **Outlook**, and sign in with the ODL credentials.  Now you should get an email with the weather information.
+19. Open a new tab in the same browser. Copy and paste the following link in the browser https://outlook.office365.com/ to navigate to **Outlook**, and sign in with the ODL credentials.  Now you should get an email with the weather information.
 
     ![](images/M01/E4T2S14-0505.png)
 
 ### Task 3: Create a DLP Policy
 
-In this task, you will create an environment specific DLP and see how it impacts your workflow.
+In this task, you will create an environment-specific DLP and see how it impacts your workflow.
 
 1. Navigate to the Power Apps portal, from the top right corner, click on the **gear icon (1)** and select **Admin Center (2)** to navigate to the **Power Platform admin center**.
 
@@ -427,7 +427,7 @@ In this task, you will create an environment specific DLP and see how it impacts
 
     ![](images/M01/E4T3S14-0505.png)
 
-1. On the **Power Automate** page, from the left navigation menu, select **My flows (1)**. The flow should now be suspended because of the **DLP** you created. **Select to open the flow.** This can take up to 5 minutes, wait a few minutes and then select refresh.
+1. On the **Power Automate** page, from the left navigation menu, select **My flows (1)**. The flow should now be suspended because of the **DLP** you created. **Select to open the flow.** This can take up to 5 minutes. Wait a few minutes and then select refresh.
 
     ![](images/M01/E4T3S15-0505.png)
 
@@ -445,7 +445,7 @@ In this task, you will create an environment specific DLP and see how it impacts
 
 ## Exercise 5: Configure a security role
 
-In this exercise, you will be creating a custom security role in Dataverse and then sharing a canvas app to a user with that security role to see how it impacts their access.
+In this exercise, you will create a custom security role in Dataverse and then share a canvas app with that security role to see how it affects the user's access.
 
 ### Task 1: Import project management solution
 
@@ -487,7 +487,7 @@ In this task you will, import the Fabrikam Project Management solution, run the 
 
     ![](images/E5T1S9-0505.png)
 
-10. Select the **Import Sample Data – Projects (1)** flow. You are going to run this flow to insert some sample project data for the app to use. Click on **Edit (2)**.
+10. Select the **Import Sample Data – Projects (1)** flow. Please run this flow to insert sample project data for the app to use. Click on **Edit (2)**.
 
     ![](images/E5T1S10-0505.png)
 
@@ -514,7 +514,7 @@ In this task you will, import the Fabrikam Project Management solution, run the 
 
     ![](images/E5T1S14new-0505.png)
 
-1. You will be navigated to the Connections page, where search of **Dataverse (1)** and select **+ (2)** on Microsoft Dataverse.
+1. You will be navigated to the Connections page, where you will search for **Dataverse (1)** and select **+ (2)** on Microsoft Dataverse.
 
     ![](images/E5T1S15new-0505.png)
 
@@ -522,11 +522,11 @@ In this task you will, import the Fabrikam Project Management solution, run the 
 
     ![](images/E5T1S16new-0505.png)
 
-1. You will be prompted to sign in, please sign in with the ODL credentials. On the Confirmation required window, check **(1)** the request and click on **Allow access (2)**. 
+1. You will be prompted to sign in. Please sign in with the ODL credentials. On the Confirmation required window, check **(1)** the request and click on **Allow access (2)**. 
 
     ![](images/E5T1S17new-0505.png)
 
-1. Navigate back to the Connection reference page in the Solution, select the **Microsoft Dataverse** connection reference, click on the three dots and select **Edit (2)** again.
+1. Navigate back to the Connection reference page in the Solution, select the **Microsoft Dataverse** connection reference, click on the three dots, and select **Edit (2)** again.
 
 1. In the Connection dorpdown, now select the **<inject key="azureAdUserEmail"></inject> (3)** connection you just created and select **Save (4)**.
 
@@ -572,7 +572,7 @@ In this task you will, import the Fabrikam Project Management solution, run the 
 
     ![](images/E5T1S31new-0505.png)
 
-23. Go back to the solution page, by selecting the **Back arrow** button.
+23. Go back to the solution page by selecting the **Back arrow** button.
 
     ![](images/E5T1S32new-0505.png)
 
@@ -580,7 +580,7 @@ In this task you will, import the Fabrikam Project Management solution, run the 
 
     ![](images/E5T1S33new-0505.png)
 
-25. The application should load, and you should see the sample project records the flow created. Select the **+ New** to create a new project.
+25. The application should load, and you should see the sample project record the flow created. Select the **+ New** to create a new project.
 
     ![](images/E5T1S34new-0505.png)
 
@@ -596,7 +596,7 @@ In this task you will, import the Fabrikam Project Management solution, run the 
 
 ### Task 2: Create a security role
 
-In this task you will, build a new Project Manager role, configure permissions on the Project table, and publish the changes.
+In this task, you will build a new Project Manager role, configure permissions on the Project table, and publish the changes.
 
 1. Navigate to the **Power Apps** portal and make sure you have your sandbox environment selected and open the **Fabrikam Project Management** solution.
 
@@ -612,11 +612,11 @@ In this task you will, build a new Project Manager role, configure permissions o
 
     ![](images/E5T2S4-0505.png)
 
-1. By clicking on the dropdown for the permissions under the read column, if you kept selecting the **Organization** on the label it would increase the permissions.
+1. By clicking on the dropdown for the permissions under the read column, if you kept selecting the **Organization** on the label, it would increase the permissions.
 
    ![](images/E5T2S5-0505.png)
 
-1. You will now give this role organization **Read** privilege. Select **Organization (1)** from the **None** drop down  of read column and click on **Save (2)**.
+1. You will now give this role organization **Read** privilege. Select **Organization (1)** from the **None** drop-down  of the read column and click on **Save (2)**.
 
    ![](images/E5T2S6-0505.png)
 
@@ -627,8 +627,6 @@ In this task you will, build a new Project Manager role, configure permissions o
 1. Select **Publish all customizations** and wait for the publishing to be completed.
 
     ![](images/E5T2S8-0505.png)
-
-1. Do not navigate away from this page.
  
 ## Summary
 
