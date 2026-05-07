@@ -19,11 +19,10 @@ In this lab, you will complete the following exercises:
 <!--
 ### Lab Test Environment
 
-This hands-on lab is designed to be completed in an environment setup for multiple students to complete the Admin in a day series of hands-on labs.
+This hands-on lab is designed to be completed in an environment set up for multiple students to complete the Admin in a day series of hands-on labs.
 
 
-You will be assigned one or more users to use to complete the hands-on tasks. Because this is a shared environment, some tasks that require a tenant Global Administrator or a Service 
-Administrator will already be performed.
+You will be assigned one or more users to use to complete the hands-on tasks. Because this is a shared environment, some tasks that require a tenant Global Administrator or a Service Administrator will already be performed.
 -->
 
 ### Exercise 1: Managed Environments
@@ -32,9 +31,9 @@ In this exercise, you will be shifting a pre-made environment from an unmanaged 
 
 ### Task 1: Create a Managed Environment
 
-In this task you will, provision a sandbox with Dataverse, enable the managed environment setting, configure sharing limits, solution checker, usage insights, and add custom maker welcome content.
+In this task, you will provision a sandbox with Dataverse, enable the managed environment setting, configure sharing limits, solution checker, usage insights, and add custom maker welcome content.
 
-1. Navigate to the **Power Platform Admin Center** using the below URL:
+1. Navigate to the **Power Platform Admin Center** using the URL below:
 
    ```
    https://aka.ms/ppac
@@ -85,7 +84,7 @@ In this task you will, provision a sandbox with Dataverse, enable the managed en
 
 1. On the **Enable Managed Evironment** page,
 
-   - Under **Manage sharing**, expand **Power Apps (1)** choose **Exclude sharing with security groups (2)**. Once this is enabled, you can restrict the users the app gets shared.
+   - Under **Manage sharing**, expand **Power Apps (1)** choose **Exclude sharing with security groups (2)**. Once this is enabled, you can restrict the users who can share the app.
 
    - Select the **Limit total individuals who can share to (3)** checkbox and set the limit number to **3 (4)**
 
@@ -97,7 +96,7 @@ In this task you will, provision a sandbox with Dataverse, enable the managed en
 
    - Leave the **Usage insights** checked. This item is selected by default. 
 
-   - For **Maker welcome content**, copy and paste the following into the text box. This will be used to greet users when they log in or switch to the environment. This can either be written in plain text, or as Markdown.
+   - For **Maker welcome content**, copy and paste the following into the text box. This will be used to greet users when they log in or switch to the environment. This can either be written in plain text or as Markdown.
 
       ```
       ![Contoso](https://i.ibb.co/SNSTCx3/something.png) 
@@ -125,8 +124,7 @@ In this task you will, provision a sandbox with Dataverse, enable the managed en
 
 ### Task 2: Review the Features of the Managed Environments
 
-Now that you have created a managed environment, it's time to review the newly enabled features. Managed environments have several features which can be used to expand the functionality 
-of an environment.
+Now that you have created a managed environment, it's time to review the newly enabled features. Managed environments have several features which can be used to expand the functionality of an environment.
 
 ### Task 2.1: Feature 1 - Solution Checking
 
@@ -136,13 +134,13 @@ checker enforcer, follow this link (https://learn.microsoft.com/en-us/power-apps
 
 ![](images/M04/M4-EX1-T2-overview.png)
 
-1. The solution checker comes with three options for the setting, explained below:
+1. The solution checker comes with three options for the settings, explained below:
 
-   - **None:** This option will turn off automatic solution validating and will not give any experience or behavioural changes to authoring, exports, and imports for solutions.
+   - **None:** This option will turn off automatic solution validation and will not give any experience or behavioural changes to authoring, exports, and imports for solutions.
 
    - **Warn:** All custom solutions being imported will be automatically verified, but if there are any highly critical issues, you will receive a notice, but the import will not halt. After the solution is imported, a message will appear showing the validation issues that occurred upon import.
 
-   - **Block:** Similar to the Warn feature, however when highly-critical issues occur, the import process is cancelled, rather than continuing. This will not cause any changes to the environment, since this occurs during the actual import process. For both the Warn and Block options, Power Platform environment admins will receive a summary email with of the solution validation.
+   - **Block:** Similar to the Warn feature, however, when highly-critical issues occur, the import process is cancelled, rather than continuing. This will not cause any changes to the environment, since this occurs during the actual import process. For both the Warn and Block options, Power Platform environment admins will receive a summary email of the solution validation.
 
    - To test this feature, you'll need to import a solution with known errors.
 
@@ -174,7 +172,7 @@ checker enforcer, follow this link (https://learn.microsoft.com/en-us/power-apps
 
     ![](images/img-01-80.png)
 
-1. Do not navigate away from this page.We’ll look at the difference between the Warn and Block options.
+1. Do not navigate away from this page. We’ll look at the difference between the Warn and Block options.
 
 1. Navigate back to the **Power Platform Admin Center**. Select **Environments (1)**, then click **Managed Environment-<inject key="Deployment ID" enableCopy="false" /> (2)**.
 
@@ -194,7 +192,7 @@ checker enforcer, follow this link (https://learn.microsoft.com/en-us/power-apps
 
      >**Note**: You will need to delete the imported solution from the environment to ensure the solution checker is working correctly.
 
-1. Select **Delete** again. Since this is a managed app, you will not need to delete the app, deleting the solution will do that for you.
+1. Select **Delete** again. Since this is a managed app, you will not need to delete the app; deleting the solution will do that for you.
 
     ![](images/M04/pv78.png)
 
@@ -226,13 +224,13 @@ A managed environment allows administrators to add additional data policies in p
 
    ![](images/M04/E1T2.2S5-0605.png)
 
-1. (Optional) Since we have not created any nor have any data policies which are applied to the entire tenant, this page will prompt you to create a new data policy. Feel free to create a policy named DLP 1, which blocks the SQL server connector with a scope of all environments. The policy will then appear on the filtered view.
+1. (Optional) Since we have not created any nor have any data policies that are applied to the entire tenant, this page will prompt you to create a new data policy. Feel free to create a policy named DLP 1, which blocks the SQL server connector with a scope of all environments. The policy will then appear on the filtered view.
 
 <!--
 ### Task 2.3: Feature 3 - Usage Insights
 
 Usage insights provide insights about your managed environments via a weekly digest provided to administrators. This includes analytics of the top apps in the managed environments, the 
-most impactful makers, and inactive resources which can be cleaned up safely. For this to operate, tenant-level analytics must be enabled, which was enabled in a previous tenant for this 
+most impactful makers, and inactive resources that can be cleaned up safely. For this to operate, tenant-level analytics must be enabled, which was enabled in a previous tenant for this 
 module.
 
 >**Note:** You will not receive a weekly digest in this course, as the digest is delivered at the end of the business week. The images below are examples of the digest.
@@ -240,7 +238,7 @@ module.
 
 ### Task 2.3: Feature 3 - Maker Welcome
 
-The maker welcome content will replace the default popup that appears when makers sign into Power Apps and can provide them with helpful information on getting started, and any necessary 
+The maker welcome content will replace the default pop-up that appears when makers sign into Power Apps and can provide them with helpful information on getting started, and any necessary 
 information for the makers associated with the environment.
 
 1. Navigate back to the **Power Platform Admin Center** page.
@@ -265,9 +263,7 @@ information for the makers associated with the environment.
 
 ### Task 2.4: Feature 4 - Limiting Sharing
 
-Share Limiting can prevent makers from sharing **Canvas apps** to everyone in the tenant, other security groups or to a certain amount of individuals. For Dataverse for Teams Environments 
-are not impacted by sharing rules when sharing to a team bound to the environment, however, the sharing rules are enforced when a user attempts to share the app with individuals or groups 
-in a team that is not bound to the environment.
+Share Limiting can prevent makers from sharing **Canvas apps** to everyone in the tenant, other security groups, or to a certain number of individuals. For Dataverse for Teams, environments are not impacted by sharing rules when sharing to a team bound to the environment; however, the sharing rules are enforced when a user attempts to share the app with individuals or groups in a team that is not bound to the environment.
 
 ![](images/M04/share.png)
 
@@ -289,9 +285,9 @@ in a team that is not bound to the environment.
 
    ![](images/img-01-72.png)
 
-   > Note: On the Welcome to power Apps studio pop-up window, click on **Skip**.
+   > Note: On the Welcome to Power Apps studio pop-up window, click on **Skip**.
 
-1. Once the app loads, skip popup then select **+ (1)** on the view window and click on **Rectangle (2)**.
+1. Once the app loads, skip the pop-up, then select **+ (1)** on the view window and click on **Rectangle (2)**.
 
     ![](images/img-01-85.png)
 
@@ -331,7 +327,7 @@ in a team that is not bound to the environment.
 
     ![](images/M04/p4p27.png)
 
-1. A banner will appear at the top of the panel, which will show the sharing rules are enabled, and being enforced. This is because the owner is counted with the number of individuals the app can be shared with.
+1. A banner will appear at the top of the panel, which will show that the sharing rules are enabled and being enforced. This is because the owner is counted among the number of individuals the app can be shared with.
 
    ![](images/M04/M4-EX1-T2-F5-S10.png)
 
@@ -351,7 +347,7 @@ in a team that is not bound to the environment.
 
 In this exercise, you will be configuring a deployment pipeline for the **Thrive HR** app.
 
-Another feature of a managed environment is the ability to utilize the in-platform pipelines to democratize application lifecycle management (ALM) by bringing ALM automation continuous integration and continuous delivery (CI/CD) capabilities to the service. Included with these is the ability to view out-of-the-box analytics within a central location and Power BI reports. 
+Another feature of a managed environment is the ability to utilize the in-platform pipelines to democratize application lifecycle management (ALM) by bringing ALM automation, continuous integration, and continuous delivery (CI/CD) capabilities to the service. Included with these is the ability to view out-of-the-box analytics within a central location and Power BI reports. 
 
 Pipelines can deploy solutions, connections, connection references, and environment variables to environments of the same region as the host environment.
 
@@ -385,7 +381,7 @@ Pipelines can deploy solutions, connections, connection references, and environm
 
     ![](images/img-01-91.png)
 
-     >**Note**: Refresh the portal, if you don not see the environment.
+     >**Note**: Refresh the portal if you do not see the environment.
 
 1. Now, you need to install the pipelines app onto the host environment. In the Resources Panel, select **Dynamics 365 apps**. A list of apps currently installed for the environment will appear.
   
@@ -407,13 +403,13 @@ Pipelines can deploy solutions, connections, connection references, and environm
 
     ![](images/img-01-92.png)
 
-   >**Note**: Wait until the Installation is complete, it may take around 20 - 25 mins. Then only you can see the App in Next task. Click **refresh** and check.
+   >**Note**: Wait until the Installation is complete; it may take around 20 - 25 mins. Then only you can see the App in the next task. Click **refresh** and check.
 
 1. Do not navigate away from this page.
 
 ### Task 1: Configure a deployment pipeline
 
-In this task you will, enable managed environments, install the Power Platform Pipelines app, capture environment IDs, register Dev/Test/Prod in Dataverse, and create a pipeline with deployment stages
+In this task, you will enable managed environments, install the Power Platform Pipelines app, capture environment IDs, register Dev/Test/Prod in Dataverse, and create a pipeline with deployment stages
 
 ### Task 1.1: Add the environments to the database.
 
@@ -476,7 +472,7 @@ In this task you will, enable managed environments, install the Power Platform P
 
    ![](images/M04/p4p51.png)
 
-1. Now we need to add the environments we've created to the pipeline. Scroll down, in the **Linked Developments (1)** section, click on the **elipses(...) (2)** and then elect **Add Existing Deployment Environment (3)**.
+1. Now we need to add the environments we've created to the pipeline. Scroll down, in the **Linked Developments (1)** section, click on the **ellipses (...) (2)** and then select **Add Existing Deployment Environment (3)**.
 
    ![](images/M04/p4p52.png)
 
@@ -488,7 +484,7 @@ In this task you will, enable managed environments, install the Power Platform P
 
    ![](images/M04/E2T1.2S5-0605.png)
 
-1. **On the New Deployment Stage** section scroll down and provide the following details and then select **Save (4)**.
+1. **On the New Deployment Stage** section, scroll down and provide the following details and then select **Save (4)**.
 
    - Name: **Deploy to Test (1)**
 
@@ -512,7 +508,7 @@ In this task you will, enable managed environments, install the Power Platform P
 
    - Description: Enter **Deploy the completed development content to the Production phase (2)**
 
-   - Deployement pipeline: Select **Thrive Hr Standard deployment pipeline (3)**
+   - Deployment pipeline: Select **Thrive Hr Standard deployment pipeline (3)**
 
    - Previous Deployment Stage: **Deploy to Test (4)**
 
@@ -524,9 +520,9 @@ In this task you will, enable managed environments, install the Power Platform P
 
 ### Task 2: Run the pipeline
 
-In this task you will, import a sample solution, run the pipeline to deploy from Dev to Test and then to Prod, test immediate vs. scheduled deployments, and use the Deployment Pipeline Configuration app to monitor, edit, or cancel runs.
+In this task, you will import a sample solution, run the pipeline to deploy from Dev to Test and then to Prod, test immediate vs. scheduled deployments, and use the Deployment Pipeline Configuration app to monitor, edit, or cancel runs.
 
-1. Navigate to **Power Apps** portal in a new tab. Ensure to select **Thrive HR - Dev** environment at the top right.
+1. Navigate to the **Power Apps** portal in a new tab. Ensure to select **Thrive HR - Dev** environment at the top right.
 
    ![](images/M04/p4p58.png)
 
@@ -550,11 +546,11 @@ In this task you will, import a sample solution, run the pipeline to deploy from
 
    ![](images/img-01-96.png)
 
-1. Wait for the solution to get imported, once the solution has been imported, navigate to **Solutions (1)** and then select **Pipeline Example (2)** to open it.
+1. Wait for the solution to get imported. Once the solution has been imported, navigate to **Solutions (1)** and then select **Pipeline Example (2)** to open it.
 
    ![](images/M04/p4p62.png)
 
-1. Click on the three horizontal line from the top left corner **(1)** and the select **Pipelines (2)** from the left side navigation. From here we can view the current deployment stage, and what stage we will be deploying to next. Click on **Deploy here (3)** under Deploy to Test.
+1. Click on the three horizontal lines from the top left corner **(1)** and select **Pipelines (2)** from the left side navigation. From here, we can view the current deployment stage and what stage we will be deploying to next. Click on **Deploy here (3)** under Deploy to Test.
 
    ![](images/M04/E2T2S8-0605.png)
 
@@ -562,7 +558,7 @@ In this task you will, import a sample solution, run the pipeline to deploy from
 
     ![](images/M04/E2T2S9-0605.png)
 
-1. On the Summary page, the AI generated deployment notes **(1)** would appear, then click on **Deploy (2)**.
+1. On the Summary page, the AI-generated deployment notes **(1)** would appear, then click on **Deploy (2)**.
 
     ![](images/M04/E2T2S10-0605.png)
 
@@ -570,11 +566,11 @@ In this task you will, import a sample solution, run the pipeline to deploy from
 
     ![](images/M04/E2T2S11-0605.png)
 
-1. This time, we'll schedule the deployment. To do so, select **Later (1)** from the radial menu, set the date to today's date **(2)** and set the deployment time closest to your current time **(3)** (ex. Your current time is 4:53 PM, then select 5:15 PM). then select **Next (4)**.
+1. This time, we'll schedule the deployment. To do so, select **Later (1)** from the radial menu, set the date to today's date **(2)**, and set the deployment time closest to your current time **(3)** (ex. Your current time is 4:53 PM, then select 5:15 PM). then select **Next (4)**.
 
     ![](images/M04/E2T2S12-0605.png)
 
-1. Review the details, the Deployment notes would be generated by AI **(1)**, then select **Deploy (2)**.
+1. Review the details. The deployment notes would be generated by AI **(1)**, then select **Deploy (2)**.
 
     ![](images/M04/E2T2S13-0605.png)
 
@@ -582,7 +578,7 @@ In this task you will, import a sample solution, run the pipeline to deploy from
 
     ![](images/M04/E2T2S14-0605.png)
 
-1. By selecting the **Run History (1)** tab and selecting the **three dots (2)** next to the Start time. From here, you can also view the run information, such as any notes or comments and **Cancel deployment (3)** if needed.    
+1. By selecting the **Run History (1)** tab and selecting the **three dots (2)** next to the Start time. From here, you can also view the run information, such as any notes or comments, and **Cancel deployment (3)** if needed.    
 
     ![](images/M04/pv90.png)
 
