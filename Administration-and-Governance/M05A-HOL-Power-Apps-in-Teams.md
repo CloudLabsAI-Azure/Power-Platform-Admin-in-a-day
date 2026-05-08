@@ -14,13 +14,13 @@ In this lab, you will complete the following exercises:
 - Exercise 2 - Create your first app 
 - Exercise 3 - Share your app
 
-## Exercise 1 : Teams setup
+## Exercise 1: Teams setup
 
 In this exercise, you will create a new team in Microsoft Teams, add members to the team, and create a Power App within the team.
 
 ### Task 1: Create a team
 
-In this task you will, create a private team named Central IT, add Lab Users 01â€“10 as members, and promote them to co-owners. 
+In this task, you will create a private team named Central IT, add Lab Users 01â€“10 as members, and promote them to co-owners. 
 
 1. Open a new tab, navigate to the **Microsoft Teams**, using the following link.
 
@@ -28,7 +28,7 @@ In this task you will, create a private team named Central IT, add Lab Users 01â
    https://teams.microsoft.com/v2/
    ```
 
-   >**Note:** If prompted to Sign in, please use the lab credentials to sign in.
+   >**Note:** If prompted to sign in, please use the lab credentials to sign in.
 
 1. On the **Enjoy your Teams trial** page, select **Start trial**.
 
@@ -40,7 +40,7 @@ In this task you will, create a private team named Central IT, add Lab Users 01â
 
    ![](images/M05/p5p1.png)
 
-   > **Note:** If you you do not get the above UI, please follow the below step.
+   > **Note:** If you do not get the above UI, please follow the steps below.
    > - Select **Teams (1)**, click on **+ (2)** icon and then select **Create team (3)**.
    > ![](images/M05/pv92.png)
 
@@ -60,13 +60,13 @@ In this task you will, create a private team named Central IT, add Lab Users 01â
 
 1. Do the same for the rest of the users up to **Lab User10** and then select **Add**.
 
-1. Change all the users to have the role of **Owner (1)** to make them **co-owners** of the team and then click on **Add (2)**
+1. Change all the users to have the role of **Owner (1)** to make them **co-owners** of the team, and then click on **Add (2)**
 
    ![](images/M05/p5p4.png)
 
 ### Task 2: Create an app
 
-In this task you will, open Power Apps inside Teams, select the Central IT team, and create a new app
+In this task, you will open Power Apps inside Teams, select the Central IT team, and create a new app
 
 1. From the left navigation pane, click on **Apps (1)**, type **Power Apps (2)** and hit Enter, then select **Open (3)**.
 
@@ -76,7 +76,7 @@ In this task you will, open Power Apps inside Teams, select the Central IT team,
 
    ![](images/M05/p5p6.png)
 
-   > **Note:** If you get a pop-up window showing **This app may have issues in thr web version of Teams**, click on **Show the app anyway**.
+   > **Note:** If you get a pop-up window showing **This app may have issues in the web version of Teams**, click on **Show the app anyway**.
    > ![](images/M05/E1T2S3-note-0605.png)
 
 1. Select **Start now** from the main card.
@@ -91,7 +91,7 @@ In this task you will, open Power Apps inside Teams, select the Central IT team,
 
    ![](images/M05/p5p9.png)
 
-    >**Note**: As your creating the App for the first time it might take around 10-15 minutes to create please wait.
+    >**Note**: As you're creating the App for the first time, it might take around 10-15 minutes to create. Please wait.
 
 1. Keep checking the **Activity (1)** section, where you will receive a notification once the app is ready. You can then build the app **(2)**.
 
@@ -111,9 +111,9 @@ In this exercise, you will create a new app in Power Apps, add a table to the ap
 
 ### Task 1: Add Power Apps and pin it
 
-In this task, you will add the Power Apps app, and then pin it to your pinned apps.
+In this task, you will add the Power Apps app and then pin it to your pinned apps.
 
-1. Select the **ellipsis (...) (1)** from the navigation bar to the left of the screen then select **Power Apps (2)**.
+1. Select the **ellipsis (...) (1)** from the navigation bar to the left of the screen, then select **Power Apps (2)**.
 
    ![](images/M05/E2T1S1-0605.png)
 
@@ -123,9 +123,9 @@ In this task, you will add the Power Apps app, and then pin it to your pinned ap
 
 1. Do not navigate away from this page.
 
-### Task 2: Create an application and table
+### Task 2: Create an application and a table
 
-In this task, you will create an application, and a table, and add new columns to the table.
+In this task, you will create an application and a table, and add new columns to the table.
 
 1. Select **Power Apps (1)** from the navigation bar, then select the **Home (2)** tab and choose **Start now (3)**.
 
@@ -135,7 +135,7 @@ In this task, you will create an application, and a table, and add new columns t
 
    ![](images/M05/p5p13.png)
 
-    >**Note**: If you get Build page load error, it is because you will be able to name the app only after the app is created that will take around 10-15 minutes as mentioned in the previous task. After 10-15 mins, please re perform **Step 1 to 2**. You will be able to provide the App name.
+    >**Note**: If you get a Build page load error, it is because you will be able to name the app only after the app is created, which will take around 10-15 minutes, as mentioned in the previous task. After 10-15 mins, please re-perform **Step 1 to 2**. You will be able to provide the App name.
 
 1. Enter **Special Request Lab 01 (1)** and select **Save (2)**. 
 
@@ -207,7 +207,7 @@ In this task, you will create an application, and a table, and add new columns t
 
     ![](images/M05/p5p23.png)    
     
-1. The app should now have a gallery and a form. Select **Save**, if Save is enabled otherwise no issues it will get saved by default and wait for the app to be saved.
+1. The app should now have a gallery and a form. Select **Save**, if Save is enabled, otherwise no issues, it will get saved by default and wait for the app to be saved.
 
    ![](images/img-01-105.png)
 
@@ -257,7 +257,7 @@ In this task, you will create an application, and a table, and add new columns t
 
 ## Exercise 3: Share your app
 
-In this exercise, you will share the app you created with the Lab Admin Makers team, and give them permissions to use the app and the underlying table.
+In this exercise, you will share the app you created with the Lab Admin Makers team and give them permissions to use the app and the underlying table.
 
 1. Select **Power Apps (1)** from the navigation bar to the left of the screen, then select **Build (2)**.
 
@@ -294,8 +294,8 @@ In this exercise, you will share the app you created with the Lab Admin Makers t
 In this lab, you have accomplished the following:
 
 - Exercise 1 - Teams setup
-- Exercise 2 - Create your first app
-- Exercise 3 - Share your app
+- Exercise 2 - Created your first app
+- Exercise 3 - Shared your app
 
 ### You have successfully completed this module. Click **Next** from the lower right corner to move on to the next page.
 

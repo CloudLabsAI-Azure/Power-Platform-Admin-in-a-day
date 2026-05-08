@@ -19,10 +19,9 @@ In this lab, you will complete the following exercises:
 <!--
 ### Lab Test Environment
 
-This hands-on lab is designed to be completed in an environment setup for multiple students to complete the Admin in a day series of hands-on labs.
+This hands-on lab is designed to be completed in an environment set up for multiple students to complete the Admin in a day series of hands-on labs.
 
-You will be assigned one or more users to use to complete the hands-on tasks. Because this is a shared environment, some tasks that require a tenant Global Administrator or a Service 
-Administrator will already be performed.
+You will be assigned one or more users to use to complete the hands-on tasks. Because this is a shared environment, some tasks that require a tenant Global Administrator or a Service Administrator will already be performed.
 
 This lab does not require you to have completed any of the prior labs.
 -->
@@ -30,11 +29,11 @@ This lab does not require you to have completed any of the prior labs.
 ## Exercise 1: Create Environment Request Form
 
 In this exercise, you will be creating an environment request form using Microsoft Forms. This form could
-collect additional information allowing it to be tailored to your individual organization's requirements.
+collect additional information, allowing it to be tailored to your individual organization's requirements.
 
-### Task 1: Create Microsoft Form
+### Task 1: Create a Microsoft Form
 
-In this task you will, create a form titled New Environment Approval Request with required fields for Environment Name, Business Justification, and Connectors to be used, then preview the saved form.
+In this task, you will create a form titled New Environment Approval Request with required fields for Environment Name, Business Justification, and Connectors to be used, then preview the saved form.
 
 1. Open a new tab and navigate to **Microsoft Forms** with the following URL:
 
@@ -93,15 +92,15 @@ In this task you will, create a form titled New Environment Approval Request wit
 
 In this exercise, you will be building the automated flow to process new form submissions.
 
-> **Note**: For this exercise, we have hard-coded the language, currency and environment template. The Power Platform Administration connector has actions allowing you to dynamically retrieve these and make the process more flexible. You could allow the user to specify the values, or infer them from the user’s Office 365 profile information using the Office 365 connector.
+> **Note**: For this exercise, we have hard-coded the language, currency, and environment template. The Power Platform Administration connector has actions allowing you to dynamically retrieve these and make the process more flexible. You could allow the user to specify the values, or infer them from the user’s Office 365 profile information using the Office 365 connector.
 
 ### Task 1: Delete your sandbox environment
 
-In this task you will, remove the earlier sandbox environment to free up the trial slot.
+In this task, you will remove the earlier sandbox environment to free up the trial slot.
 
 1. Navigate back to the **Power Platform admin center** page.
 
-1. On the **Environment**, select the sandbox environment that you created in module one named **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** in the list of environments.
+1. On the **Environment**, select the sandbox environment that you created in module one, named **My Sandbox-<inject key="Deployment ID" enableCopy="false" />** in the list of environments.
 
    ![](images/sandenv.png)
 
@@ -117,7 +116,7 @@ In this task you will, remove the earlier sandbox environment to free up the tri
 
 ### Task 2: Create New Environment Approval Flow
 
-In this task you will, build a flow triggered by form submissions that requests approval and conditionally creates a new environment.
+In this task, you will build a flow triggered by form submissions that requests approval and conditionally creates a new environment.
 
 1. Navigate to the tab where you have the **Power Automate** portal open. If you have closed it, navigate to the Power Automate portal with the following URL:
 
@@ -157,7 +156,7 @@ In this task you will, build a flow triggered by form submissions that requests 
 
     ![](images/M03/E2T2S9-0605.png)
 
-    >**Note:** Please signin with ODL user credentials if prompted.
+    >**Note:** Please sign in with ODL user credentials if prompted.
 
 1. Select **+ Add action**.
 
@@ -169,7 +168,7 @@ In this task you will, build a flow triggered by form submissions that requests 
 
 1. If prompted, click on **Create new**.
 
-1. Select **Approve/Reject - First to Respond** for Approval type.
+1. Select **Approve/Reject - First to Respond** for the Approval type.
 
     ![](images/M03/pv34.png)
 
@@ -229,7 +228,7 @@ In this task you will, build a flow triggered by form submissions that requests 
 
       ![](images/M03/E2T2S23-0605.png)
 
-      >**Note:** Location determines the region for the environment, in a real process you might allow this to be auto-determined by the user location or something the requester provides.
+      >**Note:** Location determines the region for the environment; in a real process, you might allow this to be auto-determined by the user's location or something the requester provides.
 
    - Environment Sku: **Trial (4)**
    - Click on Save **(5)** but do not navigate away from the page after saving.
@@ -238,7 +237,7 @@ In this task you will, build a flow triggered by form submissions that requests 
 
 ### Task 3: Create a Database and Notify the User
 
-In this task you will, extend the flow to provision a CDS database and send approval/rejection notification emails.
+In this task, you will extend the flow to provision a CDS database and send approval/rejection notification emails.
 
 1. Select **+ Add an action** under **Create Environment**.
 
@@ -314,7 +313,7 @@ In this task you will, extend the flow to provision a CDS database and send appr
 
    - To: Select **Responders Email** from the Dynamic Content pane **(1)**.
    - Subject: **Your environment request was rejected (2)**
-   - Body: **Your request for new environment was rejected (3)**. 
+   - Body: **Your request for a new environment was rejected (3)**. 
 
       ![](images/M03/E2T3S16-0605.png)
 
@@ -336,7 +335,7 @@ In this task you will, extend the flow to provision a CDS database and send appr
 
 ### Task 4: Test the Flow
 
-In this task you will, submit the form, approve the request via email, and verify that the new environment is created successfully in the admin center.
+In this task, you will submit the form, approve the request via email, and verify that the new environment is created successfully in the admin center.
 
 1. Navigate to **Microsoft Forms** and open the form you created.
 
@@ -354,7 +353,7 @@ In this task you will, submit the form, approve the request via email, and verif
 
    ![](images/img-01-44.png)
 
-1. The form should load, provide the following details and then click on **Submit (4)**.
+1. The form should load, provide the following details, and then click on **Submit (4)**.
 
    - Environment name: Provide **Central Apps Test (1)**
    - Business Justification: **We will use this Environment for training new employees (2)**
@@ -362,7 +361,7 @@ In this task you will, submit the form, approve the request via email, and verif
 
      ![](images/M03/E2T4S5-0605.png)    
    
-      >**Note**: For this course, we will be using this environment we created here later in another lab to deploy the Device Ordering solution using Azure Dev Ops, for that lab it will serve as the Test environment which is why we are suggesting naming it Central Apps Test. In real word use, most likely it would be a team/project development environment that would be requested using a form like this.
+      >**Note**: For this course, we will be using the environment we created here later in another lab to deploy the Device Ordering solution using Azure DevOps. For that lab, it will serve as the Test environment, which is why we are suggesting naming it Central Apps Test. In real-world use, most likely it would be a team/project development environment that would be requested using a form like this.
 
 1. Navigate back to the **Power Automate** portal, Go to **My flows** list and open the **New Environment Approval** flow you created.
 
@@ -374,9 +373,9 @@ In this task you will, submit the form, approve the request via email, and verif
 
    ![](images/M03/E2T4S8-0605.png)
 
-1. Open a new tab and navigate to `https://outlook.com`, to open Outlook mail and Sign in with Lab credentials. 
+1. Open a new tab and navigate to `https://outlook.com` to open Outlook mail and sign in with Lab credentials. 
 
-1. You should have an approval request email, select to open it.
+1. You should have an approval request email; select to open it.
 
     ![](images/img-01-47.png)
 
@@ -388,7 +387,7 @@ In this task you will, submit the form, approve the request via email, and verif
 
     ![](images/img-01-48.png)
 
-1. Navigate to the **Power Platform admin center**, and select **Environments (1)**. Click on **Refresh (2)** The new environment **Central Apps Test (3)** should be listed there.
+1. Navigate to the **Power Platform admin center**, and select **Environments (1)**. Click on **Refresh (2)**. The new environment **Central Apps Test (3)** should be listed there.
 
     ![](images/img-01-49.png)
 
@@ -406,7 +405,7 @@ In this task you will, submit the form, approve the request via email, and verif
 
 ![](images/M03/M3-EX3-overview.png)
 
-##### Using the starter kit process can save you time, but as you saw in Exercises 1 and 2 the platform also supports you in building your custom processes.
+##### Using the starter kit process can save you time, but as you saw in Exercises 1 and 2, the platform also supports you in building your custom processes.
 
 ## Exercise 3: Welcome New Makers (Optional if you have time)
 
@@ -415,7 +414,7 @@ Additionally, the flow will add the user to an Office 365 group, so you have an 
 
 ### Task 1: Create Office 365 Group
 
-In this task you will, set up a Microsoft 365 group in Azure AD called Lab Admin Makers and copy its Object ID for use in the flow.
+In this task, you will set up a Microsoft 365 group in Azure AD called Lab Admin Makers and copy its Object ID for use in the flow.
 
 1. Navigate to the **Azure portal** in a new tab with the following URL:
 
@@ -455,11 +454,11 @@ In this task you will, set up a Microsoft 365 group in Azure AD called Lab Admin
 
    ![](images/M03/E3T1S9-0605.png)
 
-1. Paste the **Object Id** to a notepad, you will need it in further task.
+1. Paste the **Object Id** into a notepad, you will need it in a further task.
 
 ### Task 2: Import Flow
 
-In this task you will, import the Send Welcome Email flow into the Power Platform CoE environment, configure necessary admin, Outlook, and Office 365 connections, and complete the setup.
+In this task, you will import the Send Welcome Email flow into the Power Platform CoE environment, configure necessary admin, Outlook, and Office 365 connections, and complete the setup.
 
 1. Navigate to the **Power Platform admin center** and ensure that you are in the **Power Platform COE** environment.
 
@@ -523,7 +522,7 @@ In this task you will, import the Send Welcome Email flow into the Power Platfor
 
 1. Select the available connection and select **Save**. 
 
-1. If the connection is not listed, then follow the below steps:
+1. If the connection is not listed, then follow the steps below:
 
     - Click on **+ Create new**.
 
@@ -563,7 +562,7 @@ In this task you will, import the Send Welcome Email flow into the Power Platfor
 
 1. Select the available connection and select **Save**.   
 
-1. If the connection is not listed, then follow the below steps:    
+1. If the connection is not listed, then follow the steps below:    
 
     - Select **+ Create new**.
 
@@ -601,7 +600,7 @@ In this task you will, import the Send Welcome Email flow into the Power Platfor
 
 1. Select the available connection and select **Save**.   
 
-1. If the connection is not listed, then follow the below steps:
+1. If the connection is not listed, then follow the steps below:
 
     - Select **+ Create new**.
 
@@ -639,9 +638,9 @@ In this task you will, import the Send Welcome Email flow into the Power Platfor
 
 ### Task 3: Edit and Test Flow
 
-In this task you will, edit the flow to use the created group’s ID, turn it on, and test it by creating a new app. Verify that the maker is added to the group and receives a welcome email.
+In this task, you will edit the flow to use the created group’s ID, turn it on, and test it by creating a new app. Verify that the maker is added to the group and receives a welcome email.
 
-1. Navigate to Power Apps maker portal with the following URL, and ensure to select the **Central Apps Test** environment.
+1. Navigate to the Power Apps maker portal with the following URL, and ensure to select the **Central Apps Test** environment.
 
    ```
    https://make.powerapps.com/
@@ -669,7 +668,7 @@ In this task you will, edit the flow to use the created group’s ID, turn it on
 
    ![](images/M03/pv64.png)
 
-1. Go back to the **Power Apps** main page by selecting the **Back** button and on the Leave the app? window, select **Leave**.
+1. Go back to the **Power Apps** main page by selecting the **Back** button, and on the Leave the app? window, select **Leave**.
 
    ![](images/M3-EX4-T3-S6.png)
 
@@ -701,7 +700,7 @@ In this task you will, edit the flow to use the created group’s ID, turn it on
 
     ![](images/M03/pv69.png)
 
-1. Select on the **back button**.
+1. Select the **back button**.
 
     ![](images/M03/pv70.png)
 
@@ -733,7 +732,7 @@ In this task you will, edit the flow to use the created group’s ID, turn it on
 
     ![](images/M03/E3T3S23-0605.png)
     
-1. Navigate to [Outlook](https://outlook.office365.com/). You should get a welcome email. Open the email. If you don’t get an email, it is probably because you didn’t create an application in the past 24 hours, create a new Power App and run the flow again.
+1. Navigate to [Outlook](https://outlook.office365.com/). You should get a welcome email. Open the email. If you don’t get an email, it is probably because you didn’t create an application in the past 24 hours. Create a new Power App and run the flow again.
     
     ![](images/img-01-73.png)
 
