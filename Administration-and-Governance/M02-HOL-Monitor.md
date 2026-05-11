@@ -48,17 +48,13 @@ In this exercise, you will explore the out-of-the-box analytics that are availab
 
 1. Navigate to **Power Platform admin center**.
 
-1. Expand **Analytics** and select **Power Automate**.
+1. From the **Manage (1)** section, and select **Power Automate (2)**. Go to **Environment view (3)** tab and click on **Change filters (4)**.
 
-   ![](images/M02/M2-EX1-T1-S3.png)
-
-1. Ensure you’re under the **Environment View (1)**. Select **Change filters (2)**
-
-   ![](images/M02/pp123.png)
+   ![](images/M02/E1T1S2-1105.png)
 
 1. Change the Environmnent to **Power Platform COE (1)** environment and the **Apply (2)**.
 
-   ![](images/M03/pp124.png)
+   ![](images/M02/E1T1S3.1-1105.png)
 
 1. Review the visuals in the **Runs** tab and then select the **Usage** tab.
 
@@ -81,9 +77,11 @@ In this exercise, you will explore the out-of-the-box analytics that are availab
 
 ### Task 2: Explore the Power Apps analytics (Read only)
 
-1. In the **Power Platform admin center**. Under **Analytics**, expand **Power Apps (1)**. Change the Primary Tab to **Environment View (2)**. Click on **Change filters (3)**. Switch the environment to **Power Platform COE (4)** by changing the available filters and clicking on **Apply (4)**
+1. In the **Power Platform admin center**. From **Manage (1)** section, select **Power Apps (1)**. Click on **Reports (3)** tab and change the Primary Tab to **Environment View (4)**. Click on **Change filters (5)**. Switch the environment to **Power Platform COE (6)** by changing the available filters and clicking on **Apply (7)**
 
-   ![](images/M03/pp125.png)
+   ![](images/M02/E1T2S1.1-1105.png)
+
+   ![](images/M02/E1T2S1.2-1105.png)
 
 1. Review the visuals in **Usage**, and all other tabs.
 
@@ -114,9 +112,9 @@ In this exercise, you will explore the out-of-the-box analytics that are availab
 
 1. Navigate to **Power Platform admin center**.
 
-1. Expand **Resources** and select **Capacity**.
+1. Go to **Licensing (1)** tab and select **Capacity add-ons (2)**
 
-    ![](images/M02/M2-EX1-T3-S2.png)
+    ![](images/M02/E1T3S2-1105.png)
 
 1. Notice the data in the **Storage capacity usage** panel.
 
@@ -152,19 +150,13 @@ In this exercise, you will explore the out-of-the-box analytics that are availab
 
 1. Close the Excel file. You won’t need to save any changes you’ve made.
 
-1. Go to the navigation pane on the far left and expand **Analytics**, then select **Dataverse**.
+1. Go to the navigation pane from the **Manage (1)** tab, go to **Dataverse (2)**. Select **Home (3)** and click on **Change filters (4)**.
 
-    ![](images/M02/M2-EX1-T3-S11.png)
-
-1. Review the visuals.
-
-13. Select **Change filters**.
-
-    ![](images/M02/pp127.png)
+    ![](images/M02/E1T3S12.1-1105.png)
 
 14. Change the **From** date to one week prior today’s date **(1)** and the **To** date to today **(2)**. Select **Apply (3)**.
 
-    ![](images/M02/pp128.png)
+    ![](images/M02/E1T3S13.1-1105.png)
 
 15. The visuals should change to reflect your changes.
 
